@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "Bu yazılımı kullanırsanız aşağıdaki onaylı yazar bilgileriyle atıfta bulunun. Dört yazardan oluşan ekip listesi kullanıcı tarafından onaylanmıştır."
+message: "Bu yazılımı kullanırsanız aşağıdaki onaylı yazar bilgileriyle atıfta bulunun. Yazar listesi kullanıcı tarafından onaylanmıştır."
 title: Financial Network Benchmark
 type: software
 abstract: "Finansal ağlarda kritik düğüm yöntemlerinin ve hesaplama maliyetlerinin tekrarlanabilir analizi için araştırma yazılımı."
@@ -13,6 +13,8 @@ authors:
     given-names: Özge
   - family-names: Aysan
     given-names: Edanur
+  - family-names: Deligöz
+    given-names: Tuba
 license: MIT
 keywords:
   - financial-networks
