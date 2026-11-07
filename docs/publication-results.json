@@ -1,0 +1,32 @@
+{
+  "repository": "https://github.com/tubadeligoz/financial-network-benchmark",
+  "public": true,
+  "default_branch": "main",
+  "issues_enabled": true,
+  "license": "MIT",
+  "authors": [
+    "Tuba Rukiye Dan",
+    "Aysu Nacakcı",
+    "Özge Çelik",
+    "Edanur Aysan"
+  ],
+  "validated_source_commit": "0d8805a6065df037b22eaba6dcdcbacc47028a3b",
+  "github_actions": {
+    "run_id": 42414320923,
+    "status": "completed",
+    "conclusion": "success",
+    "url": "https://github.com/tubadeligoz/financial-network-benchmark/actions/runs/42414320923"
+  },
+  "readme_screenshots_loaded": 4,
+  "raw_data_published": false,
+  "local_tests": {
+    "backend": 141,
+    "frontend": 8
+  },
+  "limitations": [
+    "macOS/Linux not executed",
+    "Real BIS data not required by hosted CI; optional real-data browser test skipped",
+    "DebtRank uses only explicitly synthetic banks"
+  ],
+  "documentation_followup": "Publication-status documentation only; CI skipped for follow-up commit."
+}

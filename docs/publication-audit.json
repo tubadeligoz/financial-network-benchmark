@@ -1,8 +1,8 @@
 {
-  "candidate_count": 130,
+  "candidate_count": 131,
   "credential_pattern_findings": [],
   "limitations": "Pattern scan, not an exhaustive security audit; publication state is recorded separately in publication-review.md.",
   "screenshots_png_valid": true,
-  "git_object_count": 310,
+  "git_object_count": 323,
   "git_object_credential_findings": []
 }

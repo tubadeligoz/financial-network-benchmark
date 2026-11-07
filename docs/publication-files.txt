@@ -71,6 +71,7 @@ docs/phase5-results.json
 docs/phase5-results.md
 docs/publication-audit.json
 docs/publication-files.txt
+docs/publication-results.json
 docs/publication-review.md
 docs/real-data-verification.json
 docs/reproducibility.md

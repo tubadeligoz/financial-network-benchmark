@@ -194,7 +194,7 @@ Proje kodu kullanıcı onayıyla MIT lisanslıdır; tam metin LICENSE dosyasınd
 BIS istatistikleri [BIS kullanım koşullarına](https://data.bis.org/help/legal) tabidir;
 kaynak atfı korunur, destek/bağlantı izlenimi verilmez ve Türkçe açıklamalar resmî BIS
 çevirisi değildir. Ham finansal veri Git'e eklenmez. Sentetik kaynaklar bağımsız kurgu
-olarak etiketlidir. Public paylaşım öncesi kod lisansı ve veri kullanım koşulları gözden geçirilmelidir.
+olarak etiketlidir. Yayın öncesinde kod lisansı ve veri kullanım koşulları gözden geçirilmiştir.
 
 
 ## Araştırma Sorularının Kapsamı
@@ -269,7 +269,7 @@ git clone https://github.com/tubadeligoz/financial-network-benchmark.git
 cd financial-network-benchmark
 ```
 
-Public/main yayını kullanıcı tarafından onaylanmıştır; GitHub oturumu açıldıktan sonra yayın ve erişim kontrolü tamamlanacaktır.
+Repo Public olarak `main` dalında yayımlanmıştır. [GitHub Actions doğrulaması](https://github.com/tubadeligoz/financial-network-benchmark/actions/runs/42414320923) başarılıdır.
 
 ### macOS ve Ubuntu
 

@@ -1,7 +1,7 @@
 # Yayın öncesi inceleme — Faz 7
 
-Henüz repository oluşturulmadı, public ayarı yapılmadı veya push gönderilmedi.
-Bu belge somut yerel dosya paketinin incelemesidir; yayın sonrası başarı raporu değildir.
+Bu belge yayın öncesi inceleme kaydını ve aşağıdaki yayın sonrası doğrulamayı içerir.
+Nihai durum için docs/publication-results.json kaydına bakın.
 
 ## Hedef ayarlar
 
@@ -75,3 +75,16 @@ Yerel README görsel yolları 4/4 doğrulandı; en büyük yayın adayı 194 KB 
 ## Kullanıcı yayın onayı
 
 2026-11-08 tarihinde kullanıcı dört kişilik ekip listesini, Public/main yayınını ve push işlemini açıkça onayladı. Ek yayın izni beklenmiyor. GitHub bağlayıcısı Unknown tool hatası döndürüyor; kullanılabilir tarayıcıda oturum açık olmadığından giriş bekleniyor. Repository oluşturma, push ve hosted CI henüz tamamlanmadı.
+
+## Yayın sonrası doğrulama
+
+Repo 2026-11-08 Türkiye saatinde Public olarak oluşturuldu. `main` varsayılan dal,
+Issues açık, MIT lisansı GitHub tarafından tanındı. İlk commit:
+`0d8805a6065df037b22eaba6dcdcbacc47028a3b`; normal push başarılı, force push yapılmadı.
+Türkçe README ve Mermaid GitHub üzerinde görüntülendi. Dört README PNG görselinin
+her biri tarayıcıda yüklendi (complete=true, naturalWidth>0). Dokuz konu eklendi.
+GitHub Actions 42414320923 completed/success: bağımlılık kurulumu, backend lint/tip,
+Python testleri, frontend lint/tip/test/build ve sentetik tarayıcı akışları başarılı.
+Ham BIS verisi ve yerel deney klasörleri yayımlanmadı. Son belge commit'i yalnızca
+bu doğrulama kaydını ve README yayın durumunu günceller; [skip ci] kullanılır.
+Önceki bölümlerdeki henüz/yayın kapısı ifadeleri hazırlık anının tarihsel kaydıdır.
