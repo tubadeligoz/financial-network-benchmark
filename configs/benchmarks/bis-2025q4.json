@@ -1,0 +1,28 @@
+{
+  "experiment_id": "bis-2025q4-v1",
+  "source": {
+    "kind": "bis",
+    "input": "data/raw/bis-all-sectors-2025q4/observations.csv",
+    "manifest": "data/raw/bis-all-sectors-2025q4/manifest.json",
+    "period": "2025-Q4",
+    "missing_policy": "exclude"
+  },
+  "expected_graph": {
+    "dataset_id": "bis-lbs",
+    "dataset_version": "WS_LBS_D_PUB/1.0",
+    "selected_period": "2025-Q4",
+    "graph_sha256": "685d173adc6d483df20b4c409409035d79554ef86621553a4d93b4c76673e144"
+  },
+  "algorithms": [
+    {"case_id": "strength", "algorithm_id": "strength", "parameters": {}},
+    {"case_id": "betweenness-exact", "algorithm_id": "betweenness", "parameters": {}},
+    {"case_id": "betweenness-inverse-exact", "algorithm_id": "betweenness", "parameters": {"mode": "inverse_exposure"}},
+    {"case_id": "pagerank", "algorithm_id": "pagerank", "parameters": {}}
+  ],
+  "repeat_count": 5,
+  "random_seed": 42,
+  "warmup_count": 1,
+  "timeout": {"trial_seconds": 60, "algorithm_seconds": 20},
+  "measurement": {"memory_repeats": 5, "sample_interval_ms": 5, "rss_limit_mb": 2048},
+  "top_k": [5, 10, 20]
+}

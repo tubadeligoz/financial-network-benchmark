@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "financial-network-benchmark"
+version = "0.1.0"
+description = "Validated BIS LBS exposure graph infrastructure"
+requires-python = ">=3.11"
+dependencies = ["networkx>=3.6,<4", "pandas>=2.2,<4", "pyarrow>=18,<27", "scipy>=1.14,<2", "psutil>=6,<8", "fastapi>=0.115,<1", "uvicorn>=0.30,<1"]
+
+[project.optional-dependencies]
+test = ["pytest>=8,<10", "httpx>=0.27,<1"]
+quality = ["ruff==0.17.4", "mypy==1.20.2"]
+
+[project.scripts]
+fnb = "app.cli:main"
+fnb-score = "app.algorithms.cli:main"
+fnb-benchmark = "app.benchmark.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["app*"]
+
+[tool.setuptools.package-data]
+"app.datasets" = ["bis_codes.json", "synthetic_banks.json"]
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["F", "E9"]

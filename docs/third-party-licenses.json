@@ -1,0 +1,34 @@
+{
+  "networkx": {
+    "version": "3.6.1",
+    "license": "BSD-3-Clause"
+  },
+  "pandas": {
+    "version": "3.1.1",
+    "license": "BSD-3-Clause"
+  },
+  "numpy": {
+    "version": "2.4.6",
+    "license": "BSD-3-Clause AND 0BSD AND MIT AND Zlib AND CC0-1.0"
+  },
+  "scipy": {
+    "version": "1.17.1",
+    "license": "Copyright (c) 2001-2002 Enthought, Inc. 2003, SciPy Developers."
+  },
+  "pyarrow": {
+    "version": "26.0.1",
+    "license": "Apache-2.0"
+  },
+  "psutil": {
+    "version": "7.2.2",
+    "license": "BSD-3-Clause"
+  },
+  "fastapi": {
+    "version": "0.162.2",
+    "license": "MIT"
+  },
+  "uvicorn": {
+    "version": "0.54.0",
+    "license": "BSD-3-Clause"
+  }
+}

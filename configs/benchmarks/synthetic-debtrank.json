@@ -1,0 +1,13 @@
+{
+  "experiment_id": "synthetic-debtrank-v1",
+  "source": {"kind":"synthetic_financial","period":"synthetic-T0"},
+  "algorithms": [
+    {"case_id":"debtrank-impact","algorithm_id":"debtrank","parameters":{"mode":"impact_ranking","shock_magnitude":1}},
+    {"case_id":"debtrank-scenario","algorithm_id":"debtrank","parameters":{"initial_shocks":{"SYN-BANK-C":0.5}}}
+  ],
+  "repeat_count":5,
+  "warmup_count":1,
+  "random_seed":42,
+  "measurement":{"memory_repeats":5,"sample_interval_ms":5,"rss_limit_mb":2048},
+  "timeout":{"trial_seconds":30,"algorithm_seconds":10}
+}

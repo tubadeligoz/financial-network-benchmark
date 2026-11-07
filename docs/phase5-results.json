@@ -1,0 +1,279 @@
+{
+  "phase": 5,
+  "verified_on": "2026-11-07",
+  "status": "complete_in_approved_synthetic_scope",
+  "approved_scope": "Independent synthetic bank DebtRank and stress scenarios; Max-Flow deferred",
+  "observed_BIS_risk_computed": false,
+  "model_id": "debtrank-single-pass-book-equity",
+  "model_version": "1.0.0",
+  "tests": {
+    "python_passed": 134,
+    "frontend_unit_passed": 6,
+    "chromium_e2e_passed": 3,
+    "typecheck": "passed",
+    "lint": "passed",
+    "build": "passed"
+  },
+  "single_bank_reference_scenarios": [
+    {
+      "period": "synthetic-T0",
+      "graph_sha256": "605bfe5195251491853e5213878e330dcf6c940ab8e7d9a4bdf4eb588088d6b7",
+      "initial_shocks": {
+        "SYN-BANK-C": 0.5
+      },
+      "aggregate_initial_distress": 0.043478260869565216,
+      "aggregate_distress": 0.2389855072463768,
+      "debtrank_score": 0.19550724637681158,
+      "affected_nodes": [
+        "SYN-BANK-A",
+        "SYN-BANK-B",
+        "SYN-BANK-C",
+        "SYN-BANK-D"
+      ],
+      "final_distress": {
+        "SYN-BANK-A": 0.095,
+        "SYN-BANK-B": 0.25,
+        "SYN-BANK-C": 0.5158333333333334,
+        "SYN-BANK-D": 0.3,
+        "SYN-BANK-E": 0.0
+      },
+      "steps": 3
+    },
+    {
+      "period": "synthetic-T1",
+      "graph_sha256": "fc44a53c1588f339a11ff69c5f095648cb47304633ae5a154d3f66c129fa7515",
+      "initial_shocks": {
+        "SYN-BANK-C": 0.5
+      },
+      "aggregate_initial_distress": 0.046875,
+      "aggregate_distress": 0.4292751736111111,
+      "debtrank_score": 0.3824001736111111,
+      "affected_nodes": [
+        "SYN-BANK-A",
+        "SYN-BANK-B",
+        "SYN-BANK-C",
+        "SYN-BANK-D"
+      ],
+      "final_distress": {
+        "SYN-BANK-A": 0.2708333333333333,
+        "SYN-BANK-B": 0.5,
+        "SYN-BANK-C": 0.58125,
+        "SYN-BANK-D": 0.4444444444444444,
+        "SYN-BANK-E": 0.0
+      },
+      "steps": 3
+    }
+  ],
+  "benchmark_summary": {
+    "aggregated": {
+      "debtrank-impact": {
+        "memory_complete": true,
+        "memory_successes": 5,
+        "pipeline_seconds": {
+          "dataset_load_validation_seconds": {
+            "count": 0,
+            "max": null,
+            "mean": null,
+            "median": null,
+            "min": null,
+            "standard_deviation": null
+          },
+          "graph_build_seconds": {
+            "count": 0,
+            "max": null,
+            "mean": null,
+            "median": null,
+            "min": null,
+            "standard_deviation": null
+          },
+          "snapshot_read_seconds": {
+            "count": 0,
+            "max": null,
+            "mean": null,
+            "median": null,
+            "min": null,
+            "standard_deviation": null
+          },
+          "synthetic_generation_seconds": {
+            "count": 5,
+            "max": 0.0008797,
+            "mean": 0.0008204800000000001,
+            "median": 0.0008118,
+            "min": 0.0007801,
+            "standard_deviation": 4.076729081015806e-05
+          }
+        },
+        "process_peak_rss_bytes": {
+          "count": 5,
+          "max": 94564352,
+          "mean": 94388224,
+          "median": 94486528,
+          "min": 94023680,
+          "standard_deviation": 215166.74360132887
+        },
+        "ranking_repeatable": true,
+        "runtime_seconds": {
+          "count": 5,
+          "max": 0.0004073,
+          "mean": 0.00038566,
+          "median": 0.0003849,
+          "min": 0.0003689,
+          "standard_deviation": 1.4912008583688497e-05
+        },
+        "sampled_peak_delta_bytes": {
+          "count": 5,
+          "max": 106496,
+          "mean": 102400,
+          "median": 102400,
+          "min": 98304,
+          "standard_deviation": 2896.309375740099
+        },
+        "sampled_peak_rss_bytes": {
+          "count": 5,
+          "max": 94547968,
+          "mean": 94366924.8,
+          "median": 94466048,
+          "min": 93999104,
+          "standard_deviation": 217250.23371955208
+        },
+        "status_counts": {
+          "completed": 10
+        },
+        "timing_complete": true,
+        "timing_successes": 5
+      },
+      "debtrank-scenario": {
+        "memory_complete": true,
+        "memory_successes": 5,
+        "pipeline_seconds": {
+          "dataset_load_validation_seconds": {
+            "count": 0,
+            "max": null,
+            "mean": null,
+            "median": null,
+            "min": null,
+            "standard_deviation": null
+          },
+          "graph_build_seconds": {
+            "count": 0,
+            "max": null,
+            "mean": null,
+            "median": null,
+            "min": null,
+            "standard_deviation": null
+          },
+          "snapshot_read_seconds": {
+            "count": 0,
+            "max": null,
+            "mean": null,
+            "median": null,
+            "min": null,
+            "standard_deviation": null
+          },
+          "synthetic_generation_seconds": {
+            "count": 5,
+            "max": 0.0009237,
+            "mean": 0.00081792,
+            "median": 0.0007932,
+            "min": 0.0007792,
+            "standard_deviation": 5.9635786236118306e-05
+          }
+        },
+        "process_peak_rss_bytes": {
+          "count": 5,
+          "max": 94257152,
+          "mean": 94183424,
+          "median": 94208000,
+          "min": 94076928,
+          "standard_deviation": 68232.52479573067
+        },
+        "ranking_repeatable": true,
+        "runtime_seconds": {
+          "count": 5,
+          "max": 0.000221,
+          "mean": 0.00017982,
+          "median": 0.0001836,
+          "min": 0.0001474,
+          "standard_deviation": 3.008275253363628e-05
+        },
+        "sampled_peak_delta_bytes": {
+          "count": 5,
+          "max": 110592,
+          "mean": 104038.4,
+          "median": 102400,
+          "min": 102400,
+          "standard_deviation": 3663.5737743356553
+        },
+        "sampled_peak_rss_bytes": {
+          "count": 5,
+          "max": 94236672,
+          "mean": 94159667.2,
+          "median": 94183424,
+          "min": 94052352,
+          "standard_deviation": 69354.36415395934
+        },
+        "status_counts": {
+          "completed": 10
+        },
+        "timing_complete": true,
+        "timing_successes": 5
+      }
+    },
+    "algorithm_cases": [
+      {
+        "algorithm_id": "debtrank",
+        "case_id": "debtrank-impact",
+        "parameters": {
+          "mode": "impact_ranking",
+          "shock_magnitude": 1
+        }
+      },
+      {
+        "algorithm_id": "debtrank",
+        "case_id": "debtrank-scenario",
+        "parameters": {
+          "initial_shocks": {
+            "SYN-BANK-C": 0.5
+          }
+        }
+      }
+    ],
+    "comparison_exclusions": [
+      {
+        "left_case": "debtrank-impact",
+        "reason": "DebtRank comparison requires the same model version and shock configuration.",
+        "right_case": "debtrank-scenario"
+      }
+    ],
+    "experiment_id": "synthetic-debtrank-v1",
+    "graph": {
+      "creditor_scope": "synthetic_banks",
+      "data_kind": "synthetic",
+      "dataset_id": "synthetic-bank-stress",
+      "dataset_version": "1.0.0",
+      "debtor_scope": "synthetic_banks",
+      "density": 0.25,
+      "direction": "creditor_to_debtor",
+      "edge_count": 5,
+      "exposure_unit": "synthetic monetary units",
+      "graph_sha256": "605bfe5195251491853e5213878e330dcf6c940ab8e7d9a4bdf4eb588088d6b7",
+      "node_count": 5,
+      "selected_period": "synthetic-T0"
+    },
+    "rankings_available": [
+      "debtrank-impact",
+      "debtrank-scenario"
+    ],
+    "raw_trial_count": 20,
+    "run_id": "20261107T181934-2d058b2c",
+    "status": "completed"
+  },
+  "benchmark_path": "experiments\\synthetic-debtrank-v1\\runs\\20261107T181934-2d058b2c",
+  "stress_experiment_id": "stress-2c0b1e5d8e904b638a602bf1e832be4d",
+  "stress_scenarios": 4,
+  "stress_impact_rankings": 4,
+  "local_url": "http://127.0.0.1:8000",
+  "maxflow_implemented": false,
+  "pushed": false,
+  "deployed": false
+}

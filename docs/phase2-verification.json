@@ -1,0 +1,433 @@
+{
+  "edges": 3094,
+  "graph_sha256": "685d173adc6d483df20b4c409409035d79554ef86621553a4d93b4c76673e144",
+  "nodes": 218,
+  "period": "2025-Q4",
+  "runs": [
+    {
+      "algorithm": "strength",
+      "algorithm_version": "1.0.0",
+      "metadata": {
+        "coverage": "partial_observed_network; absent pairs are unknown",
+        "creditor_scope": "resident_reporting_banks",
+        "data_kind": "observed_aggregate",
+        "debtor_scope": "all_sectors",
+        "direction": "creditor_to_debtor",
+        "exposure_unit": "million USD",
+        "implementation": "networkx",
+        "networkx_version": "3.6.1",
+        "scipy_version": "1.17.1",
+        "score_metric": "total_strength",
+        "score_scales_comparable_across_algorithms": false,
+        "score_unit": "million USD",
+        "source_file_sha256": "1c55544cd3af0c6af1cf2f10b9ae67abe4f5a6709b9e195c88ed065abcb32a48",
+        "tie_policy": "score descending, node_id ascending (lexicographic); ordinal rank"
+      },
+      "parameters": {
+        "sort_by": "total_strength"
+      },
+      "repeat_identical": true,
+      "result_file": "strength.json",
+      "status": "completed",
+      "top5": [
+        {
+          "metrics": {
+            "in_degree": 28,
+            "in_strength": 2677225.987,
+            "out_degree": 167,
+            "out_strength": 5510992.0,
+            "total_strength": 8188217.987
+          },
+          "node_id": "GB",
+          "rank": 1,
+          "score": 8188217.987
+        },
+        {
+          "metrics": {
+            "in_degree": 27,
+            "in_strength": 3925706.521,
+            "out_degree": 88,
+            "out_strength": 4228225.0,
+            "total_strength": 8153931.521
+          },
+          "node_id": "US",
+          "rank": 2,
+          "score": 8153931.521
+        },
+        {
+          "metrics": {
+            "in_degree": 27,
+            "in_strength": 1464850.308,
+            "out_degree": 190,
+            "out_strength": 3059736.0,
+            "total_strength": 4524586.308
+          },
+          "node_id": "FR",
+          "rank": 3,
+          "score": 4524586.308
+        },
+        {
+          "metrics": {
+            "in_degree": 26,
+            "in_strength": 784977.782,
+            "out_degree": 45,
+            "out_strength": 1066489.078,
+            "total_strength": 1851466.8599999999
+          },
+          "node_id": "CA",
+          "rank": 4,
+          "score": 1851466.8599999999
+        },
+        {
+          "metrics": {
+            "in_degree": 26,
+            "in_strength": 1528402.923,
+            "out_degree": 0,
+            "out_strength": 0.0,
+            "total_strength": 1528402.923
+          },
+          "node_id": "KY",
+          "rank": 5,
+          "score": 1528402.923
+        }
+      ]
+    },
+    {
+      "algorithm": "betweenness",
+      "algorithm_version": "1.0.0",
+      "metadata": {
+        "coverage": "partial_observed_network; absent pairs are unknown",
+        "creditor_scope": "resident_reporting_banks",
+        "data_kind": "observed_aggregate",
+        "debtor_scope": "all_sectors",
+        "direction": "creditor_to_debtor",
+        "distance_transform": "unit_hops",
+        "endpoints": false,
+        "implementation": "networkx",
+        "limitations": [
+          "Shortest paths are structural, not observed contagion paths."
+        ],
+        "method": "exact",
+        "networkx_version": "3.6.1",
+        "sample_size": null,
+        "sampled_sources": null,
+        "scipy_version": "1.17.1",
+        "score_scales_comparable_across_algorithms": false,
+        "seed": null,
+        "source_file_sha256": "1c55544cd3af0c6af1cf2f10b9ae67abe4f5a6709b9e195c88ed065abcb32a48",
+        "tie_policy": "score descending, node_id ascending (lexicographic); ordinal rank"
+      },
+      "parameters": {
+        "distance_scale": 1.0,
+        "k": null,
+        "mode": "unweighted",
+        "normalized": true,
+        "seed": 42
+      },
+      "repeat_identical": true,
+      "result_file": "betweenness-unweighted.json",
+      "status": "completed",
+      "top5": [
+        {
+          "metrics": {},
+          "node_id": "FR",
+          "rank": 1,
+          "score": 0.007656616569324498
+        },
+        {
+          "metrics": {},
+          "node_id": "CH",
+          "rank": 2,
+          "score": 0.007626948660998289
+        },
+        {
+          "metrics": {},
+          "node_id": "AU",
+          "rank": 3,
+          "score": 0.005945526929141301
+        },
+        {
+          "metrics": {},
+          "node_id": "GB",
+          "rank": 4,
+          "score": 0.005801067651782537
+        },
+        {
+          "metrics": {},
+          "node_id": "BE",
+          "rank": 5,
+          "score": 0.004935348391067069
+        }
+      ]
+    },
+    {
+      "algorithm": "betweenness",
+      "algorithm_version": "1.0.0",
+      "metadata": {
+        "coverage": "partial_observed_network; absent pairs are unknown",
+        "creditor_scope": "resident_reporting_banks",
+        "data_kind": "observed_aggregate",
+        "debtor_scope": "all_sectors",
+        "direction": "creditor_to_debtor",
+        "distance_transform": "c/exposure",
+        "endpoints": false,
+        "implementation": "networkx",
+        "limitations": [
+          "Shortest paths are structural, not observed contagion paths.",
+          "Floating point distance ties may affect shortest-path counts."
+        ],
+        "method": "exact",
+        "networkx_version": "3.6.1",
+        "sample_size": null,
+        "sampled_sources": null,
+        "scipy_version": "1.17.1",
+        "score_scales_comparable_across_algorithms": false,
+        "seed": null,
+        "source_file_sha256": "1c55544cd3af0c6af1cf2f10b9ae67abe4f5a6709b9e195c88ed065abcb32a48",
+        "tie_policy": "score descending, node_id ascending (lexicographic); ordinal rank"
+      },
+      "parameters": {
+        "distance_scale": 1.0,
+        "k": null,
+        "mode": "inverse_exposure",
+        "normalized": true,
+        "seed": 42
+      },
+      "repeat_identical": true,
+      "result_file": "betweenness-inverse-exposure.json",
+      "status": "completed",
+      "top5": [
+        {
+          "metrics": {},
+          "node_id": "GB",
+          "rank": 1,
+          "score": 0.09295528247141151
+        },
+        {
+          "metrics": {},
+          "node_id": "US",
+          "rank": 2,
+          "score": 0.06912442396313365
+        },
+        {
+          "metrics": {},
+          "node_id": "FR",
+          "rank": 3,
+          "score": 0.060889230244068955
+        },
+        {
+          "metrics": {},
+          "node_id": "HK",
+          "rank": 4,
+          "score": 0.02250810718552654
+        },
+        {
+          "metrics": {},
+          "node_id": "CH",
+          "rank": 5,
+          "score": 0.011478067929680834
+        }
+      ]
+    },
+    {
+      "algorithm": "betweenness",
+      "algorithm_version": "1.0.0",
+      "metadata": {
+        "coverage": "partial_observed_network; absent pairs are unknown",
+        "creditor_scope": "resident_reporting_banks",
+        "data_kind": "observed_aggregate",
+        "debtor_scope": "all_sectors",
+        "direction": "creditor_to_debtor",
+        "distance_transform": "unit_hops",
+        "endpoints": false,
+        "implementation": "networkx",
+        "limitations": [
+          "Shortest paths are structural, not observed contagion paths."
+        ],
+        "method": "approximate_source_sampling",
+        "networkx_version": "3.6.1",
+        "sample_size": 64,
+        "sampled_sources": [
+          "RO",
+          "BT",
+          "AM",
+          "TG",
+          "GG",
+          "FK",
+          "ER",
+          "CG",
+          "TD",
+          "BR",
+          "SH",
+          "YE",
+          "NA",
+          "BM",
+          "PE",
+          "KY",
+          "AR",
+          "AO",
+          "BN",
+          "EE",
+          "ET",
+          "MN",
+          "PH",
+          "ZA",
+          "NI",
+          "DK",
+          "SV",
+          "RW",
+          "SO",
+          "UZ",
+          "KW",
+          "EG",
+          "LK",
+          "PA",
+          "GH",
+          "AE",
+          "CN",
+          "SN",
+          "UG",
+          "IE",
+          "TJ",
+          "CM",
+          "TV",
+          "ID",
+          "VE",
+          "TW",
+          "JO",
+          "BO",
+          "IQ",
+          "IL",
+          "TO",
+          "GB",
+          "AW",
+          "LT",
+          "MY",
+          "BZ",
+          "JM",
+          "BI",
+          "NE",
+          "GN",
+          "IR",
+          "NR",
+          "DJ",
+          "BF"
+        ],
+        "scipy_version": "1.17.1",
+        "score_scales_comparable_across_algorithms": false,
+        "seed": 42,
+        "source_file_sha256": "1c55544cd3af0c6af1cf2f10b9ae67abe4f5a6709b9e195c88ed065abcb32a48",
+        "tie_policy": "score descending, node_id ascending (lexicographic); ordinal rank"
+      },
+      "parameters": {
+        "distance_scale": 1.0,
+        "k": 64,
+        "mode": "unweighted",
+        "normalized": true,
+        "seed": 42
+      },
+      "repeat_identical": true,
+      "result_file": "betweenness-approximate.json",
+      "status": "completed",
+      "top5": [
+        {
+          "metrics": {},
+          "node_id": "CH",
+          "rank": 1,
+          "score": 0.008423582234997761
+        },
+        {
+          "metrics": {},
+          "node_id": "FR",
+          "rank": 2,
+          "score": 0.006978348459377549
+        },
+        {
+          "metrics": {},
+          "node_id": "AU",
+          "rank": 3,
+          "score": 0.00655110545203921
+        },
+        {
+          "metrics": {},
+          "node_id": "GB",
+          "rank": 4,
+          "score": 0.0056914973356778364
+        },
+        {
+          "metrics": {},
+          "node_id": "ES",
+          "rank": 5,
+          "score": 0.004758487182641424
+        }
+      ]
+    },
+    {
+      "algorithm": "pagerank",
+      "algorithm_version": "1.0.0",
+      "metadata": {
+        "coverage": "partial_observed_network; absent pairs are unknown",
+        "creditor_scope": "resident_reporting_banks",
+        "dangling": "uniform",
+        "data_kind": "observed_aggregate",
+        "debtor_scope": "all_sectors",
+        "direction": "creditor_to_debtor",
+        "implementation": "networkx",
+        "limitations": [
+          "Incoming financial connectivity is not default probability or credit quality."
+        ],
+        "networkx_tol": 4.5871559633027526e-11,
+        "networkx_version": "3.6.1",
+        "personalization": "uniform",
+        "scipy_version": "1.17.1",
+        "score_scales_comparable_across_algorithms": false,
+        "score_unit": "dimensionless",
+        "source_file_sha256": "1c55544cd3af0c6af1cf2f10b9ae67abe4f5a6709b9e195c88ed065abcb32a48",
+        "tie_policy": "score descending, node_id ascending (lexicographic); ordinal rank",
+        "tolerance_semantics": "global L1 iterate difference"
+      },
+      "parameters": {
+        "alpha": 0.85,
+        "max_iterations": 1000,
+        "tolerance": 1e-08,
+        "weighted": true
+      },
+      "repeat_identical": true,
+      "result_file": "pagerank.json",
+      "status": "completed",
+      "top5": [
+        {
+          "metrics": {},
+          "node_id": "US",
+          "rank": 1,
+          "score": 0.03878045087931062
+        },
+        {
+          "metrics": {},
+          "node_id": "GB",
+          "rank": 2,
+          "score": 0.03340186529125014
+        },
+        {
+          "metrics": {},
+          "node_id": "FR",
+          "rank": 3,
+          "score": 0.018402420011548865
+        },
+        {
+          "metrics": {},
+          "node_id": "DE",
+          "rank": 4,
+          "score": 0.01774528061835262
+        },
+        {
+          "metrics": {},
+          "node_id": "KY",
+          "rank": 5,
+          "score": 0.016635612380950078
+        }
+      ]
+    }
+  ],
+  "source_graph_unchanged": true
+}

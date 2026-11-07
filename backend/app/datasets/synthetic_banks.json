@@ -1,0 +1,35 @@
+{
+  "dataset_id": "synthetic-bank-stress",
+  "version": "1.0.0",
+  "label": "SYNTHETIC — NOT CALIBRATED TO BIS",
+  "unit": "synthetic monetary units",
+  "assumptions": {
+    "capital_definition": "synthetic book equity used as loss-absorbing buffer; not regulatory Tier 1",
+    "valuation": "single-pass proportional distress impact; zero recovery in impact coefficients",
+    "balance_sheet": "fixed external assets and liabilities; no fire sales, funding runs or clearing payments",
+    "coverage": "complete fictional bilateral bank network; omitted pairs are explicitly zero",
+    "calibration": "handcrafted teaching scenarios, no actual banks or observed financial calibration"
+  },
+  "periods": {
+    "synthetic-T0": {
+      "banks": [
+        {"id":"SYN-BANK-A","equity":100,"external_assets":200,"external_liabilities":125},
+        {"id":"SYN-BANK-B","equity":80,"external_assets":200,"external_liabilities":140},
+        {"id":"SYN-BANK-C","equity":60,"external_assets":200,"external_liabilities":80},
+        {"id":"SYN-BANK-D","equity":50,"external_assets":200,"external_liabilities":165},
+        {"id":"SYN-BANK-E","equity":40,"external_assets":200,"external_liabilities":160}
+      ],
+      "exposures": [["SYN-BANK-A","SYN-BANK-B",20],["SYN-BANK-B","SYN-BANK-C",40],["SYN-BANK-C","SYN-BANK-A",10],["SYN-BANK-A","SYN-BANK-D",15],["SYN-BANK-D","SYN-BANK-C",30]]
+    },
+    "synthetic-T1": {
+      "banks": [
+        {"id":"SYN-BANK-A","equity":80,"external_assets":200,"external_liabilities":150},
+        {"id":"SYN-BANK-B","equity":60,"external_assets":200,"external_liabilities":170},
+        {"id":"SYN-BANK-C","equity":50,"external_assets":200,"external_liabilities":65},
+        {"id":"SYN-BANK-D","equity":45,"external_assets":200,"external_liabilities":180},
+        {"id":"SYN-BANK-E","equity":40,"external_assets":200,"external_liabilities":160}
+      ],
+      "exposures": [["SYN-BANK-A","SYN-BANK-B",30],["SYN-BANK-B","SYN-BANK-C",60],["SYN-BANK-C","SYN-BANK-A",15],["SYN-BANK-A","SYN-BANK-D",15],["SYN-BANK-D","SYN-BANK-C",40]]
+    }
+  }
+}

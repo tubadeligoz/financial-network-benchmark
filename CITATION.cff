@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "Bu yazılımı kullanırsanız aşağıdaki onaylı yazar bilgileriyle atıfta bulunun. Dört yazardan oluşan ekip listesi kullanıcı tarafından onaylanmıştır."
+title: Financial Network Benchmark
+type: software
+abstract: "Finansal ağlarda kritik düğüm yöntemlerinin ve hesaplama maliyetlerinin tekrarlanabilir analizi için araştırma yazılımı."
+repository-code: https://github.com/tubadeligoz/financial-network-benchmark
+authors:
+  - family-names: Dan
+    given-names: Tuba Rukiye
+  - family-names: Nacakcı
+    given-names: Aysu
+  - family-names: Çelik
+    given-names: Özge
+  - family-names: Aysan
+    given-names: Edanur
+license: MIT
+keywords:
+  - financial-networks
+  - graph-algorithms
+  - benchmarking

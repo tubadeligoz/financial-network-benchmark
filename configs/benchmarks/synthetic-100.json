@@ -1,0 +1,15 @@
+{
+  "experiment_id": "synthetic-er-100-v1",
+  "source": {"kind": "synthetic", "generator": {"node_count": 100, "edge_count": 400, "model": "erdos_renyi", "seed": 42, "directed": true, "weighted": true}},
+  "algorithms": [
+    {"case_id": "strength", "algorithm_id": "strength", "parameters": {}},
+    {"case_id": "betweenness-k32", "algorithm_id": "betweenness", "parameters": {"k": 32, "seed": 42}},
+    {"case_id": "pagerank", "algorithm_id": "pagerank", "parameters": {}}
+  ],
+  "repeat_count": 5,
+  "random_seed": 42,
+  "warmup_count": 1,
+  "timeout": {"trial_seconds": 60, "algorithm_seconds": 20},
+  "measurement": {"memory_repeats": 5, "sample_interval_ms": 5, "rss_limit_mb": 2048},
+  "top_k": [5, 10, 20]
+}

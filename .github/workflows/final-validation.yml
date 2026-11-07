@@ -1,0 +1,68 @@
+name: Final validation
+on:
+  push:
+    branches: [main, develop, 'feature/**']
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: windows-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Install Python dependencies
+        run: |
+          python -m venv .venv
+          ./.venv/Scripts/python.exe -m pip install -r backend/requirements-lock.txt
+          ./.venv/Scripts/python.exe -m pip install --no-deps -e backend
+      - name: Backend lint and gradual types
+        run: |
+          ./.venv/Scripts/python.exe -m ruff check --config backend/pyproject.toml backend/app scripts tests
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          ./.venv/Scripts/python.exe -m mypy --config-file mypy.ini
+      - name: Python regression and integration tests
+        run: ./.venv/Scripts/python.exe -m pytest -q --junitxml=data/processed/ci-python.xml
+      - name: Pin npm
+        run: npm install --global npm@11.6.2
+      - name: Clean frontend installation
+        working-directory: frontend
+        run: npm ci --no-audit --no-fund
+      - name: Frontend lint
+        working-directory: frontend
+        run: npm run lint
+      - name: Frontend strict types
+        working-directory: frontend
+        run: npm run typecheck
+      - name: Frontend component tests
+        working-directory: frontend
+        run: npm test
+      - name: Frontend build
+        working-directory: frontend
+        run: npm run build
+      - name: Prepare synthetic-only browser workspace
+        run: ./.venv/Scripts/python.exe scripts/prepare_ci_fixture.py --output data/processed/ci-workspace
+      - name: Install Chromium
+        working-directory: frontend
+        run: npx playwright install chromium
+      - name: Synthetic browser workflows
+        working-directory: frontend
+        env:
+          FNB_E2E_MANAGED: '1'
+          FNB_WEB_URL: http://127.0.0.1:4173
+          FNB_PROJECT_ROOT: ${{ github.workspace }}/data/processed/ci-workspace
+        run: npm run test:e2e
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: validation-evidence
+          path: |
+            data/processed/ci-python.xml
+            frontend/test-results/

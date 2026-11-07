@@ -1,0 +1,4805 @@
+{
+  "all_completed_rankings_repeatable": true,
+  "experiment_count": 9,
+  "maximum_memory_sample_gap_ms": 96.9232,
+  "measured_source_matches_current": true,
+  "recorded_environments_equal": true,
+  "records": [
+    {
+      "comparisons": [
+        {
+          "interpretation": "ranking agreement, not accuracy; missing nodes never filled with zero",
+          "left_case": "betweenness-exact",
+          "left_only_nodes": [],
+          "node_count": 219,
+          "right_case": "betweenness-inverse-exact",
+          "right_only_nodes": [],
+          "spearman": 0.8997845954263444,
+          "spearman_undefined_reason": null,
+          "top_k": [
+            {
+              "common_nodes": [
+                "CH",
+                "FR",
+                "GB"
+              ],
+              "jaccard": 0.42857142857142855,
+              "k": 5,
+              "left_cutoff_tie": false,
+              "overlap": 0.6,
+              "right_cutoff_tie": false
+            },
+            {
+              "common_nodes": [
+                "CH",
+                "ES",
+                "FR",
+                "GB",
+                "LU"
+              ],
+              "jaccard": 0.3333333333333333,
+              "k": 10,
+              "left_cutoff_tie": false,
+              "overlap": 0.5,
+              "right_cutoff_tie": false
+            },
+            {
+              "common_nodes": [
+                "AT",
+                "AU",
+                "BE",
+                "CH",
+                "DK",
+                "ES",
+                "FI",
+                "FR",
+                "GB",
+                "GG",
+                "HK",
+                "IT",
+                "KR",
+                "LU",
+                "SE",
+                "TW",
+                "US",
+                "ZA"
+              ],
+              "jaccard": 0.8181818181818182,
+              "k": 20,
+              "left_cutoff_tie": false,
+              "overlap": 0.9,
+              "right_cutoff_tie": true
+            }
+          ],
+          "universe": "identical"
+        },
+        {
+          "interpretation": "ranking agreement, not accuracy; missing nodes never filled with zero",
+          "left_case": "betweenness-exact",
+          "left_only_nodes": [],
+          "node_count": 219,
+          "right_case": "pagerank",
+          "right_only_nodes": [],
+          "spearman": 0.5197150430388628,
+          "spearman_undefined_reason": null,
+          "top_k": [
+            {
+              "common_nodes": [
+                "FR",
+                "GB"
+              ],
+              "jaccard": 0.25,
+              "k": 5,
+              "left_cutoff_tie": false,
+              "overlap": 0.4,
+              "right_cutoff_tie": false
+            },
+            {
+              "common_nodes": [
+                "CH",
+                "FR",
+                "GB",
+                "LU"
+              ],
+              "jaccard": 0.25,
+              "k": 10,
+              "left_cutoff_tie": false,
+              "overlap": 0.4,
+              "right_cutoff_tie": false
+            },
+            {
+              "common_nodes": [
+                "CH",
+                "ES",
+                "FR",
+                "GB",
+                "HK",
+                "IE",
+                "IT",
+                "LU",
+                "NL",
+                "SE",
+                "US"
+              ],
+              "jaccard": 0.3793103448275862,
+              "k": 20,
+              "left_cutoff_tie": false,
+              "overlap": 0.55,
+              "right_cutoff_tie": false
+            }
+          ],
+          "universe": "identical"
+        },
+        {
+          "interpretation": "ranking agreement, not accuracy; missing nodes never filled with zero",
+          "left_case": "betweenness-exact",
+          "left_only_nodes": [],
+          "node_count": 219,
+          "right_case": "strength",
+          "right_only_nodes": [],
+          "spearman": 0.5547670770326366,
+          "spearman_undefined_reason": null,
+          "top_k": [
+            {
+              "common_nodes": [
+                "FR",
+                "GB"
+              ],
+              "jaccard": 0.25,
+              "k": 5,
+              "left_cutoff_tie": false,
+              "overlap": 0.4,
+              "right_cutoff_tie": false
+            },
+            {
+              "common_nodes": [
+                "FR",
+                "GB",
+                "LU"
+              ],
+              "jaccard": 0.17647058823529413,
+              "k": 10,
+              "left_cutoff_tie": false,
+              "overlap": 0.3,
+              "right_cutoff_tie": false
+            },
+            {
+              "common_nodes": [
+                "AU",
+                "BE",
+                "CH",
+                "ES",
+                "FR",
+                "GB",
+                "HK",
+                "IE",
+                "IT",
+                "LU",
+                "NL",
+                "SE",
+                "US"
+              ],
+              "jaccard": 0.48148148148148145,
+              "k": 20,
+              "left_cutoff_tie": false,
+              "overlap": 0.65,
+              "right_cutoff_tie": false
+            }
+          ],
+          "universe": "identical"
+        },
+        {
+          "interpretation": "ranking agreement, not accuracy; missing nodes never filled with zero",
+          "left_case": "betweenness-inverse-exact",
+          "left_only_nodes": [],
+          "node_count": 219,
+          "right_case": "pagerank",
+          "right_only_nodes": [],
+          "spearman": 0.4780614148810248,
+          "spearman_undefined_reason": null,
+          "top_k": [
+            {
+              "common_nodes": [
+                "FR",
+                "GB",
+                "US"
+              ],
+              "jaccard": 0.42857142857142855,
+              "k": 5,
+              "left_cutoff_tie": false,
+              "overlap": 0.6,
+              "right_cutoff_tie": false
+            },
+            {
+              "common_nodes": [
+                "CH",
+                "FR",
+                "GB",
+                "LU",
+                "US"
+              ],
+              "jaccard": 0.3333333333333333,
+              "k": 10,
+              "left_cutoff_tie": false,
+              "overlap": 0.5,
+              "right_cutoff_tie": false
+            },
+            {
+              "common_nodes": [
+                "CA",
+                "CH",
+                "ES",
+                "FR",
+                "GB",
+                "HK",
+                "IT",
+                "LU",
+                "SE",
+                "US"
+              ],
+              "jaccard": 0.3333333333333333,
+              "k": 20,
+              "left_cutoff_tie": true,
+              "overlap": 0.5,
+              "right_cutoff_tie": false
+            }
+          ],
+          "universe": "identical"
+        },
+        {
+          "interpretation": "ranking agreement, not accuracy; missing nodes never filled with zero",
+          "left_case": "betweenness-inverse-exact",
+          "left_only_nodes": [],
+          "node_count": 219,
+          "right_case": "strength",
+          "right_only_nodes": [],
+          "spearman": 0.5059833220061053,
+          "spearman_undefined_reason": null,
+          "top_k": [
+            {
+              "common_nodes": [
+                "FR",
+                "GB",
+                "US"
+              ],
+              "jaccard": 0.42857142857142855,
+              "k": 5,
+              "left_cutoff_tie": false,
+              "overlap": 0.6,
+              "right_cutoff_tie": false
+            },
+            {
+              "common_nodes": [
+                "FR",
+                "GB",
+                "HK",
+                "LU",
+                "US"
+              ],
+              "jaccard": 0.3333333333333333,
+              "k": 10,
+              "left_cutoff_tie": false,
+              "overlap": 0.5,
+              "right_cutoff_tie": false
+            },
+            {
+              "common_nodes": [
+                "AU",
+                "BE",
+                "CA",
+                "CH",
+                "ES",
+                "FR",
+                "GB",
+                "HK",
+                "IT",
+                "LU",
+                "SE",
+                "US"
+              ],
+              "jaccard": 0.42857142857142855,
+              "k": 20,
+              "left_cutoff_tie": true,
+              "overlap": 0.6,
+              "right_cutoff_tie": false
+            }
+          ],
+          "universe": "identical"
+        },
+        {
+          "interpretation": "ranking agreement, not accuracy; missing nodes never filled with zero",
+          "left_case": "pagerank",
+          "left_only_nodes": [],
+          "node_count": 219,
+          "right_case": "strength",
+          "right_only_nodes": [],
+          "spearman": 0.9832699956442352,
+          "spearman_undefined_reason": null,
+          "top_k": [
+            {
+              "common_nodes": [
+                "FR",
+                "GB",
+                "KY",
+                "US"
+              ],
+              "jaccard": 0.6666666666666666,
+              "k": 5,
+              "left_cutoff_tie": false,
+              "overlap": 0.8,
+              "right_cutoff_tie": false
+            },
+            {
+              "common_nodes": [
+                "CA",
+                "DE",
+                "FR",
+                "GB",
+                "JP",
+                "KY",
+                "LU",
+                "NL",
+                "US"
+              ],
+              "jaccard": 0.8181818181818182,
+              "k": 10,
+              "left_cutoff_tie": false,
+              "overlap": 0.9,
+              "right_cutoff_tie": false
+            },
+            {
+              "common_nodes": [
+                "CA",
+                "CH",
+                "CN",
+                "DE",
+                "ES",
+                "FR",
+                "GB",
+                "HK",
+                "IE",
+                "IT",
+                "JE",
+                "JP",
+                "KY",
+                "LU",
+                "NL",
+                "SE",
+                "SG",
+                "US"
+              ],
+              "jaccard": 0.8181818181818182,
+              "k": 20,
+              "left_cutoff_tie": false,
+              "overlap": 0.9,
+              "right_cutoff_tie": false
+            }
+          ],
+          "universe": "identical"
+        }
+      ],
+      "environment": {
+        "application_source_sha256": "c466b9033b4a9a382b89118234cea4eec48637572dc4611ef7fe400d84ab5d58",
+        "benchmark_version": "1.0.0",
+        "clock": {
+          "adjustable": false,
+          "implementation": "QueryPerformanceCounter()",
+          "monotonic": true,
+          "resolution": 1e-07
+        },
+        "executable": "<PROJECT_ROOT>\\.venv\\Scripts\\python.exe",
+        "logical_cpus": 64,
+        "machine": "AMD64",
+        "measurement_notes": [
+          "One trial per fresh process; serial scheduling.",
+          "Timing and memory series are separate; OS caches and other system load are not controlled.",
+          "CPU frequency/power policy/thermal state are not locked. No hardware affinity is forced."
+        ],
+        "packages": {
+          "networkx": "3.6.1",
+          "numpy": "2.4.6",
+          "pandas": "3.1.1",
+          "psutil": "7.2.2",
+          "pyarrow": "26.0.1",
+          "scipy": "1.17.1"
+        },
+        "physical_cpus": 32,
+        "platform": "Windows-10-10.0.26300-SP0",
+        "processor": "AMD64 Family 23 Model 49 Stepping 0, AuthenticAMD",
+        "python": "3.11.1 (tags/v3.11.1:a7a450f, Dec  6 2022, 19:58:39) [MSC v.1934 64 bit (AMD64)]",
+        "total_ram_bytes": 51429548032,
+        "worker_thread_limits": {
+          "MKL_NUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1"
+        }
+      },
+      "path": "<PROJECT_ROOT>\\experiments\\bis-2025q3-v1\\runs\\20261107T160834-e31ead2f",
+      "summary": {
+        "aggregated": {
+          "betweenness-exact": {
+            "memory_complete": true,
+            "memory_successes": 5,
+            "pipeline_seconds": {
+              "dataset_load_validation_seconds": {
+                "count": 5,
+                "max": 0.3889335,
+                "mean": 0.3432798,
+                "median": 0.3321469,
+                "min": 0.3240511,
+                "standard_deviation": 0.02675685298722553
+              },
+              "graph_build_seconds": {
+                "count": 5,
+                "max": 0.0487904,
+                "mean": 0.04179344,
+                "median": 0.039875,
+                "min": 0.039229,
+                "standard_deviation": 0.003993077313676758
+              },
+              "snapshot_read_seconds": {
+                "count": 0,
+                "max": null,
+                "mean": null,
+                "median": null,
+                "min": null,
+                "standard_deviation": null
+              },
+              "synthetic_generation_seconds": {
+                "count": 0,
+                "max": null,
+                "mean": null,
+                "median": null,
+                "min": null,
+                "standard_deviation": null
+              }
+            },
+            "process_peak_rss_bytes": {
+              "count": 5,
+              "max": 115556352,
+              "mean": 115286016,
+              "median": 115294208,
+              "min": 114954240,
+              "standard_deviation": 236949.26322738375
+            },
+            "ranking_repeatable": true,
+            "runtime_seconds": {
+              "count": 5,
+              "max": 0.0231287,
+              "mean": 0.02285476,
+              "median": 0.0229451,
+              "min": 0.022403,
+              "standard_deviation": 0.0002938129643157358
+            },
+            "sampled_peak_delta_bytes": {
+              "count": 5,
+              "max": 253952,
+              "mean": 177766.4,
+              "median": 155648,
+              "min": 106496,
+              "standard_deviation": 68146.4114154223
+            },
+            "sampled_peak_rss_bytes": {
+              "count": 5,
+              "max": 110850048,
+              "mean": 110609203.2,
+              "median": 110596096,
+              "min": 110424064,
+              "standard_deviation": 167846.06372268609
+            },
+            "status_counts": {
+              "completed": 10
+            },
+            "timing_complete": true,
+            "timing_successes": 5
+          },
+          "betweenness-inverse-exact": {
+            "memory_complete": true,
+            "memory_successes": 5,
+            "pipeline_seconds": {
+              "dataset_load_validation_seconds": {
+                "count": 5,
+                "max": 0.327475,
+                "mean": 0.32188304,
+                "median": 0.3254605,
+                "min": 0.3123197,
+                "standard_deviation": 0.006841049634595558
+              },
+              "graph_build_seconds": {
+                "count": 5,
+                "max": 0.0407139,
+                "mean": 0.03962748,
+                "median": 0.0396595,
+                "min": 0.0387488,
+                "standard_deviation": 0.0007767704596597367
+              },
+              "snapshot_read_seconds": {
+                "count": 0,
+                "max": null,
+                "mean": null,
+                "median": null,
+                "min": null,
+                "standard_deviation": null
+              },
+              "synthetic_generation_seconds": {
+                "count": 0,
+                "max": null,
+                "mean": null,
+                "median": null,
+                "min": null,
+                "standard_deviation": null
+              }
+            },
+            "process_peak_rss_bytes": {
+              "count": 5,
+              "max": 117108736,
+              "mean": 115473612.8,
+              "median": 114933760,
+              "min": 114733056,
+              "standard_deviation": 1001082.0083185992
+            },
+            "ranking_repeatable": true,
+            "runtime_seconds": {
+              "count": 5,
+              "max": 0.0674374,
+              "mean": 0.06197048,
+              "median": 0.0590638,
+              "min": 0.0584838,
+              "standard_deviation": 0.0043089160576646164
+            },
+            "sampled_peak_delta_bytes": {
+              "count": 5,
+              "max": 602112,
+              "mean": 339148.8,
+              "median": 311296,
+              "min": 102400,
+              "standard_deviation": 179813.93348458846
+            },
+            "sampled_peak_rss_bytes": {
+              "count": 5,
+              "max": 112959488,
+              "mean": 111765913.6,
+              "median": 111513600,
+              "min": 111132672,
+              "standard_deviation": 718626.8286536483
+            },
+            "status_counts": {
+              "completed": 10
+            },
+            "timing_complete": true,
+            "timing_successes": 5
+          },
+          "pagerank": {
+            "memory_complete": true,
+            "memory_successes": 5,
+            "pipeline_seconds": {
+              "dataset_load_validation_seconds": {
+                "count": 5,
+                "max": 0.3256213,
+                "mean": 0.3237894,
+                "median": 0.3239745,
+                "min": 0.3221853,
+                "standard_deviation": 0.0013538705477260343
+              },
+              "graph_build_seconds": {
+                "count": 5,
+                "max": 0.0434451,
+                "mean": 0.0415963,
+                "median": 0.0413029,
+                "min": 0.0402563,
+                "standard_deviation": 0.0012777021170836329
+              },
+              "snapshot_read_seconds": {
+                "count": 0,
+                "max": null,
+                "mean": null,
+                "median": null,
+                "min": null,
+                "standard_deviation": null
+              },
+              "synthetic_generation_seconds": {
+                "count": 0,
+                "max": null,
+                "mean": null,
+                "median": null,
+                "min": null,
+                "standard_deviation": null
+              }
+            },
+            "process_peak_rss_bytes": {
+              "count": 5,
+              "max": 121589760,
+              "mean": 121257164.8,
+              "median": 121397248,
+              "min": 120578048,
+              "standard_deviation": 419369.195534436
+            },
+            "ranking_repeatable": true,
+            "runtime_seconds": {
+              "count": 5,
+              "max": 0.0051013,
+              "mean": 0.00443536,
+              "median": 0.0042064,
+              "min": 0.0041396,
+              "standard_deviation": 0.0004019699652959159
+            },
+            "sampled_peak_delta_bytes": {
+              "count": 5,
+              "max": 409600,
+              "mean": 176128,
+              "median": 118784,
+              "min": 110592,
+              "standard_deviation": 130655.33774017807
+            },
+            "sampled_peak_rss_bytes": {
+              "count": 5,
+              "max": 117477376,
+              "mean": 117370060.8,
+              "median": 117452800,
+              "min": 117018624,
+              "standard_deviation": 197212.93601384267
+            },
+            "status_counts": {
+              "completed": 10
+            },
+            "timing_complete": true,
+            "timing_successes": 5
+          },
+          "strength": {
+            "memory_complete": true,
+            "memory_successes": 5,
+            "pipeline_seconds": {
+              "dataset_load_validation_seconds": {
+                "count": 5,
+                "max": 0.3286489,
+                "mean": 0.32690292,
+                "median": 0.3270642,
+                "min": 0.3242273,
+                "standard_deviation": 0.0016970845300102223
+              },
+              "graph_build_seconds": {
+                "count": 5,
+                "max": 0.0424486,
+                "mean": 0.04106356,
+                "median": 0.0407216,
+                "min": 0.040041,
+                "standard_deviation": 0.0011134879379678987
+              },
+              "snapshot_read_seconds": {
+                "count": 0,
+                "max": null,
+                "mean": null,
+                "median": null,
+                "min": null,
+                "standard_deviation": null
+              },
+              "synthetic_generation_seconds": {
+                "count": 0,
+                "max": null,
+                "mean": null,
+                "median": null,
+                "min": null,
+                "standard_deviation": null
+              }
+            },
+            "process_peak_rss_bytes": {
+              "count": 5,
+              "max": 115511296,
+              "mean": 115050905.6,
+              "median": 114855936,
+              "min": 114724864,
+              "standard_deviation": 356629.66653490847
+            },
+            "ranking_repeatable": true,
+            "runtime_seconds": {
+              "count": 5,
+              "max": 0.0039423,
+              "mean": 0.00363304,
+              "median": 0.0035884,
+              "min": 0.0034544,
+              "standard_deviation": 0.00019769548047439027
+            },
+            "sampled_peak_delta_bytes": {
+              "count": 5,
+              "max": 294912,
+              "mean": 193331.2,
+              "median": 159744,
+              "min": 143360,
+              "standard_deviation": 62750.39916367066
+            },
+            "sampled_peak_rss_bytes": {
+              "count": 5,
+              "max": 110776320,
+              "mean": 110477312,
+              "median": 110354432,
+              "min": 110247936,
+              "standard_deviation": 265214.0231586558
+            },
+            "status_counts": {
+              "completed": 10
+            },
+            "timing_complete": true,
+            "timing_successes": 5
+          }
+        },
+        "algorithm_cases": [
+          {
+            "algorithm_id": "strength",
+            "case_id": "strength",
+            "parameters": {}
+          },
+          {
+            "algorithm_id": "betweenness",
+            "case_id": "betweenness-exact",
+            "parameters": {
+              "seed": 42
+            }
+          },
+          {
+            "algorithm_id": "betweenness",
+            "case_id": "betweenness-inverse-exact",
+            "parameters": {
+              "mode": "inverse_exposure",
+              "seed": 42
+            }
+          },
+          {
+            "algorithm_id": "pagerank",
+            "case_id": "pagerank",
+            "parameters": {}
+          }
+        ],
+        "experiment_id": "bis-2025q3-v1",
+        "graph": {
+          "creditor_scope": "resident_reporting_banks",
+          "data_kind": "observed_aggregate",
+          "dataset_id": "bis-lbs",
+          "dataset_version": "WS_LBS_D_PUB/1.0",
+          "debtor_scope": "all_sectors",
+          "density": 0.06482761509781744,
+          "direction": "creditor_to_debtor",
+          "edge_count": 3095,
+          "exposure_unit": "million USD",
+          "graph_sha256": "fbaea23ae25b9f10747afc30c9fa5bab093c59ec5629de82d788af511b2c7509",
+          "node_count": 219,
+          "selected_period": "2025-Q3"
+        },
+        "rankings_available": [
+          "betweenness-exact",
+          "betweenness-inverse-exact",
+          "pagerank",
+          "strength"
+        ],
+        "raw_trial_count": 40,
+        "run_id": "20261107T160834-e31ead2f",
+        "status": "completed"
+      },
+      "timing_pipeline_medians": {
+        "dataset_load_validation_seconds": 0.32603340000000003,
+        "graph_build_seconds": 0.040484000000000006
+      }
+    },
+    {
+      "comparisons": [
+        {
+          "interpretation": "ranking agreement, not accuracy; missing nodes never filled with zero",
+          "left_case": "betweenness-exact",
+          "left_only_nodes": [],
+          "node_count": 218,
+          "right_case": "betweenness-inverse-exact",
+          "right_only_nodes": [],
+          "spearman": 0.8997854033906845,
+          "spearman_undefined_reason": null,
+          "top_k": [
+            {
+              "common_nodes": [
+                "CH",
+                "FR",
+                "GB"
+              ],
+              "jaccard": 0.42857142857142855,
+              "k": 5,
+              "left_cutoff_tie": false,
+              "overlap": 0.6,
+              "right_cutoff_tie": false
+            },
+            {
+              "common_nodes": [
+                "AT",
+                "CH",
+                "FR",
+                "GB",
+                "LU"
+              ],
+              "jaccard": 0.3333333333333333,
+              "k": 10,
+              "left_cutoff_tie": false,
+              "overlap": 0.5,
+              "right_cutoff_tie": false
+            },
+            {
+              "common_nodes": [
+                "AT",
+                "AU",
+                "BE",
+                "CH",
+                "DK",
+                "ES",
+                "FI",
+                "FR",
+                "GB",
+                "GG",
+                "HK",
+                "IT",
+                "KR",
+                "LU",
+                "SE",
+                "TW",
+                "US",
+                "ZA"
+              ],
+              "jaccard": 0.8181818181818182,
+              "k": 20,
+              "left_cutoff_tie": false,
+              "overlap": 0.9,
+              "right_cutoff_tie": true
+            }
+          ],
+          "universe": "identical"
+        },
+        {
+          "interpretation": "ranking agreement, not accuracy; missing nodes never filled with zero",
+          "left_case": "betweenness-exact",
+          "left_only_nodes": [],
+          "node_count": 218,
+          "right_case": "pagerank",
+          "right_only_nodes": [],
+          "spearman": 0.5201246791648624,
+          "spearman_undefined_reason": null,
+          "top_k": [
+            {
+              "common_nodes": [
+                "FR",
+                "GB"
+              ],
+              "jaccard": 0.25,
+              "k": 5,
+              "left_cutoff_tie": false,
+              "overlap": 0.4,
+              "right_cutoff_tie": false
+            },
+            {
+              "common_nodes": [
+                "CH",
+                "FR",
+                "GB",
+                "LU"
+              ],
+              "jaccard": 0.25,
+              "k": 10,
+              "left_cutoff_tie": false,
+              "overlap": 0.4,
+              "right_cutoff_tie": false
+            },
+            {
+              "common_nodes": [
+                "CH",
+                "ES",
+                "FR",
+                "GB",
+                "HK",
+                "IE",
+                "IT",
+                "LU",
+                "NL",
+                "SE",
+                "US"
+              ],
+              "jaccard": 0.3793103448275862,
+              "k": 20,
+              "left_cutoff_tie": false,
+              "overlap": 0.55,
+              "right_cutoff_tie": false
+            }
+          ],
+          "universe": "identical"
+        },
+        {
+          "interpretation": "ranking agreement, not accuracy; missing nodes never filled with zero",
+          "left_case": "betweenness-exact",
+          "left_only_nodes": [],
+          "node_count": 218,
+          "right_case": "strength",
+          "right_only_nodes": [],
+          "spearman": 0.5557481382618364,
+          "spearman_undefined_reason": null,
+          "top_k": [
+            {
+              "common_nodes": [
+                "FR",
+                "GB"
+              ],
+              "jaccard": 0.25,
+              "k": 5,
+              "left_cutoff_tie": false,
+              "overlap": 0.4,
+              "right_cutoff_tie": false
+            },
+            {
+              "common_nodes": [
+                "FR",
+                "GB",
+                "LU"
+              ],
+              "jaccard": 0.17647058823529413,
+              "k": 10,
+              "left_cutoff_tie": false,
+              "overlap": 0.3,
+              "right_cutoff_tie": false
+            },
+            {
+              "common_nodes": [
+                "AU",
+                "BE",
+                "CH",
+                "ES",
+                "FR",
+                "GB",
+                "HK",
+                "IE",
+                "IT",
+                "LU",
+                "NL",
+                "SE",
+                "US"
+              ],
+              "jaccard": 0.48148148148148145,
+              "k": 20,
+              "left_cutoff_tie": false,
+              "overlap": 0.65,
+              "right_cutoff_tie": false
+            }
+          ],
+          "universe": "identical"
+        },
+        {
+          "interpretation": "ranking agreement, not accuracy; missing nodes never filled with zero",
+          "left_case": "betweenness-inverse-exact",
+          "left_only_nodes": [],
+          "node_count": 218,
+          "right_case": "pagerank",
+          "right_only_nodes": [],
+          "spearman": 0.47752029339824825,
+          "spearman_undefined_reason": null,
+          "top_k": [
+            {
+              "common_nodes": [
+                "FR",
+                "GB",
+                "US"
+              ],
+              "jaccard": 0.42857142857142855,
+              "k": 5,
+              "left_cutoff_tie": false,
+              "overlap": 0.6,
+              "right_cutoff_tie": false
+            },
+            {
+              "common_nodes": [
+                "CH",
+                "FR",
+                "GB",
+                "LU",
+                "US"
+              ],
+              "jaccard": 0.3333333333333333,
+              "k": 10,
+              "left_cutoff_tie": false,
+              "overlap": 0.5,
+              "right_cutoff_tie": false
+            },
+            {
+              "common_nodes": [
+                "CA",
+                "CH",
+                "ES",
+                "FR",
+                "GB",
+                "HK",
+                "IT",
+                "LU",
+                "SE",
+                "US"
+              ],
+              "jaccard": 0.3333333333333333,
+              "k": 20,
+              "left_cutoff_tie": true,
+              "overlap": 0.5,
+              "right_cutoff_tie": false
+            }
+          ],
+          "universe": "identical"
+        },
+        {
+          "interpretation": "ranking agreement, not accuracy; missing nodes never filled with zero",
+          "left_case": "betweenness-inverse-exact",
+          "left_only_nodes": [],
+          "node_count": 218,
+          "right_case": "strength",
+          "right_only_nodes": [],
+          "spearman": 0.5065968241017077,
+          "spearman_undefined_reason": null,
+          "top_k": [
+            {
+              "common_nodes": [
+                "FR",
+                "GB",
+                "US"
+              ],
+              "jaccard": 0.42857142857142855,
+              "k": 5,
+              "left_cutoff_tie": false,
+              "overlap": 0.6,
+              "right_cutoff_tie": false
+            },
+            {
+              "common_nodes": [
+                "FR",
+                "GB",
+                "HK",
+                "LU",
+                "US"
+              ],
+              "jaccard": 0.3333333333333333,
+              "k": 10,
+              "left_cutoff_tie": false,
+              "overlap": 0.5,
+              "right_cutoff_tie": false
+            },
+            {
+              "common_nodes": [
+                "AU",
+                "BE",
+                "CA",
+                "CH",
+                "ES",
+                "FR",
+                "GB",
+                "HK",
+                "IT",
+                "LU",
+                "SE",
+                "US"
+              ],
+              "jaccard": 0.42857142857142855,
+              "k": 20,
+              "left_cutoff_tie": true,
+              "overlap": 0.6,
+              "right_cutoff_tie": false
+            }
+          ],
+          "universe": "identical"
+        },
+        {
+          "interpretation": "ranking agreement, not accuracy; missing nodes never filled with zero",
+          "left_case": "pagerank",
+          "left_only_nodes": [],
+          "node_count": 218,
+          "right_case": "strength",
+          "right_only_nodes": [],
+          "spearman": 0.9836123773577912,
+          "spearman_undefined_reason": null,
+          "top_k": [
+            {
+              "common_nodes": [
+                "FR",
+                "GB",
+                "KY",
+                "US"
+              ],
+              "jaccard": 0.6666666666666666,
+              "k": 5,
+              "left_cutoff_tie": false,
+              "overlap": 0.8,
+              "right_cutoff_tie": false
+            },
+            {
+              "common_nodes": [
+                "CA",
+                "DE",
+                "FR",
+                "GB",
+                "JP",
+                "KY",
+                "LU",
+                "NL",
+                "US"
+              ],
+              "jaccard": 0.8181818181818182,
+              "k": 10,
+              "left_cutoff_tie": false,
+              "overlap": 0.9,
+              "right_cutoff_tie": false
+            },
+            {
+              "common_nodes": [
+                "CA",
+                "CH",
+                "CN",
+                "DE",
+                "ES",
+                "FR",
+                "GB",
+                "HK",
+                "IE",
+                "IT",
+                "JE",
+                "JP",
+                "KY",
+                "LU",
+                "NL",
+                "SE",
+                "SG",
+                "US"
+              ],
+              "jaccard": 0.8181818181818182,
+              "k": 20,
+              "left_cutoff_tie": false,
+              "overlap": 0.9,
+              "right_cutoff_tie": false
+            }
+          ],
+          "universe": "identical"
+        }
+      ],
+      "environment": {
+        "application_source_sha256": "c466b9033b4a9a382b89118234cea4eec48637572dc4611ef7fe400d84ab5d58",
+        "benchmark_version": "1.0.0",
+        "clock": {
+          "adjustable": false,
+          "implementation": "QueryPerformanceCounter()",
+          "monotonic": true,
+          "resolution": 1e-07
+        },
+        "executable": "<PROJECT_ROOT>\\.venv\\Scripts\\python.exe",
+        "logical_cpus": 64,
+        "machine": "AMD64",
+        "measurement_notes": [
+          "One trial per fresh process; serial scheduling.",
+          "Timing and memory series are separate; OS caches and other system load are not controlled.",
+          "CPU frequency/power policy/thermal state are not locked. No hardware affinity is forced."
+        ],
+        "packages": {
+          "networkx": "3.6.1",
+          "numpy": "2.4.6",
+          "pandas": "3.1.1",
+          "psutil": "7.2.2",
+          "pyarrow": "26.0.1",
+          "scipy": "1.17.1"
+        },
+        "physical_cpus": 32,
+        "platform": "Windows-10-10.0.26300-SP0",
+        "processor": "AMD64 Family 23 Model 49 Stepping 0, AuthenticAMD",
+        "python": "3.11.1 (tags/v3.11.1:a7a450f, Dec  6 2022, 19:58:39) [MSC v.1934 64 bit (AMD64)]",
+        "total_ram_bytes": 51429548032,
+        "worker_thread_limits": {
+          "MKL_NUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1"
+        }
+      },
+      "path": "<PROJECT_ROOT>\\experiments\\bis-2025q4-v1\\runs\\20261107T161001-e3701400",
+      "summary": {
+        "aggregated": {
+          "betweenness-exact": {
+            "memory_complete": true,
+            "memory_successes": 5,
+            "pipeline_seconds": {
+              "dataset_load_validation_seconds": {
+                "count": 5,
+                "max": 0.3267062,
+                "mean": 0.32423138,
+                "median": 0.3238632,
+                "min": 0.3223555,
+                "standard_deviation": 0.0019222187315703627
+              },
+              "graph_build_seconds": {
+                "count": 5,
+                "max": 0.0398916,
+                "mean": 0.03927928,
+                "median": 0.0391264,
+                "min": 0.0386949,
+                "standard_deviation": 0.0005165300543046851
+              },
+              "snapshot_read_seconds": {
+                "count": 0,
+                "max": null,
+                "mean": null,
+                "median": null,
+                "min": null,
+                "standard_deviation": null
+              },
+              "synthetic_generation_seconds": {
+                "count": 0,
+                "max": null,
+                "mean": null,
+                "median": null,
+                "min": null,
+                "standard_deviation": null
+              }
+            },
+            "process_peak_rss_bytes": {
+              "count": 5,
+              "max": 115290112,
+              "mean": 114979635.2,
+              "median": 115073024,
+              "min": 114622464,
+              "standard_deviation": 314585.0664275086
+            },
+            "ranking_repeatable": true,
+            "runtime_seconds": {
+              "count": 5,
+              "max": 0.0232124,
+              "mean": 0.02292868,
+              "median": 0.0228984,
+              "min": 0.0227647,
+              "standard_deviation": 0.00018004079259990017
+            },
+            "sampled_peak_delta_bytes": {
+              "count": 5,
+              "max": 241664,
+              "mean": 158105.6,
+              "median": 114688,
+              "min": 98304,
+              "standard_deviation": 72846.64316768482
+            },
+            "sampled_peak_rss_bytes": {
+              "count": 5,
+              "max": 110743552,
+              "mean": 110484684.8,
+              "median": 110514176,
+              "min": 110288896,
+              "standard_deviation": 192455.34485485198
+            },
+            "status_counts": {
+              "completed": 10
+            },
+            "timing_complete": true,
+            "timing_successes": 5
+          },
+          "betweenness-inverse-exact": {
+            "memory_complete": true,
+            "memory_successes": 5,
+            "pipeline_seconds": {
+              "dataset_load_validation_seconds": {
+                "count": 5,
+                "max": 0.3256868,
+                "mean": 0.32402496000000003,
+                "median": 0.3244773,
+                "min": 0.3213785,
+                "standard_deviation": 0.001616942609680374
+              },
+              "graph_build_seconds": {
+                "count": 5,
+                "max": 0.0404383,
+                "mean": 0.03935674,
+                "median": 0.039083,
+                "min": 0.0388937,
+                "standard_deviation": 0.0006382440152480873
+              },
+              "snapshot_read_seconds": {
+                "count": 0,
+                "max": null,
+                "mean": null,
+                "median": null,
+                "min": null,
+                "standard_deviation": null
+              },
+              "synthetic_generation_seconds": {
+                "count": 0,
+                "max": null,
+                "mean": null,
+                "median": null,
+                "min": null,
+                "standard_deviation": null
+              }
+            },
+            "process_peak_rss_bytes": {
+              "count": 5,
+              "max": 116645888,
+              "mean": 115902054.4,
+              "median": 115523584,
+              "min": 115212288,
+              "standard_deviation": 677579.1828301693
+            },
+            "ranking_repeatable": true,
+            "runtime_seconds": {
+              "count": 5,
+              "max": 0.0589149,
+              "mean": 0.05773956,
+              "median": 0.0580669,
+              "min": 0.0557637,
+              "standard_deviation": 0.0011844498925661648
+            },
+            "sampled_peak_delta_bytes": {
+              "count": 5,
+              "max": 663552,
+              "mean": 461209.6,
+              "median": 380928,
+              "min": 376832,
+              "standard_deviation": 125266.63611991821
+            },
+            "sampled_peak_rss_bytes": {
+              "count": 5,
+              "max": 111763456,
+              "mean": 111561113.6,
+              "median": 111579136,
+              "min": 111378432,
+              "standard_deviation": 145814.14827375291
+            },
+            "status_counts": {
+              "completed": 10
+            },
+            "timing_complete": true,
+            "timing_successes": 5
+          },
+          "pagerank": {
+            "memory_complete": true,
+            "memory_successes": 5,
+            "pipeline_seconds": {
+              "dataset_load_validation_seconds": {
+                "count": 5,
+                "max": 0.3258366,
+                "mean": 0.32201409999999997,
+                "median": 0.3239496,
+                "min": 0.3116542,
+                "standard_deviation": 0.005933061801464738
+              },
+              "graph_build_seconds": {
+                "count": 5,
+                "max": 0.0397353,
+                "mean": 0.03886712,
+                "median": 0.039193,
+                "min": 0.0373823,
+                "standard_deviation": 0.000946955572875518
+              },
+              "snapshot_read_seconds": {
+                "count": 0,
+                "max": null,
+                "mean": null,
+                "median": null,
+                "min": null,
+                "standard_deviation": null
+              },
+              "synthetic_generation_seconds": {
+                "count": 0,
+                "max": null,
+                "mean": null,
+                "median": null,
+                "min": null,
+                "standard_deviation": null
+              }
+            },
+            "process_peak_rss_bytes": {
+              "count": 5,
+              "max": 121180160,
+              "mean": 121031884.8,
+              "median": 121057280,
+              "min": 120905728,
+              "standard_deviation": 119817.62696364838
+            },
+            "ranking_repeatable": true,
+            "runtime_seconds": {
+              "count": 5,
+              "max": 0.0043443,
+              "mean": 0.00411146,
+              "median": 0.0040688,
+              "min": 0.0039724,
+              "standard_deviation": 0.0001406740310078586
+            },
+            "sampled_peak_delta_bytes": {
+              "count": 5,
+              "max": 352256,
+              "mean": 279347.2,
+              "median": 315392,
+              "min": 110592,
+              "standard_deviation": 97850.68814883215
+            },
+            "sampled_peak_rss_bytes": {
+              "count": 5,
+              "max": 117620736,
+              "mean": 117207040,
+              "median": 116965376,
+              "min": 116944896,
+              "standard_deviation": 343319.5756259756
+            },
+            "status_counts": {
+              "completed": 10
+            },
+            "timing_complete": true,
+            "timing_successes": 5
+          },
+          "strength": {
+            "memory_complete": true,
+            "memory_successes": 5,
+            "pipeline_seconds": {
+              "dataset_load_validation_seconds": {
+                "count": 5,
+                "max": 0.3269878,
+                "mean": 0.32377764,
+                "median": 0.3252041,
+                "min": 0.3186293,
+                "standard_deviation": 0.003268327443509903
+              },
+              "graph_build_seconds": {
+                "count": 5,
+                "max": 0.0403051,
+                "mean": 0.03955008,
+                "median": 0.0398576,
+                "min": 0.0381677,
+                "standard_deviation": 0.0008792552996712627
+              },
+              "snapshot_read_seconds": {
+                "count": 0,
+                "max": null,
+                "mean": null,
+                "median": null,
+                "min": null,
+                "standard_deviation": null
+              },
+              "synthetic_generation_seconds": {
+                "count": 0,
+                "max": null,
+                "mean": null,
+                "median": null,
+                "min": null,
+                "standard_deviation": null
+              }
+            },
+            "process_peak_rss_bytes": {
+              "count": 5,
+              "max": 115245056,
+              "mean": 115013222.4,
+              "median": 115052544,
+              "min": 114737152,
+              "standard_deviation": 210627.61516192506
+            },
+            "ranking_repeatable": true,
+            "runtime_seconds": {
+              "count": 5,
+              "max": 0.003474,
+              "mean": 0.00335352,
+              "median": 0.0033943,
+              "min": 0.0032015,
+              "standard_deviation": 0.00011809338254110603
+            },
+            "sampled_peak_delta_bytes": {
+              "count": 5,
+              "max": 135168,
+              "mean": 120422.4,
+              "median": 131072,
+              "min": 98304,
+              "standard_deviation": 18454.741526231137
+            },
+            "sampled_peak_rss_bytes": {
+              "count": 5,
+              "max": 110649344,
+              "mean": 110424064,
+              "median": 110587904,
+              "min": 110043136,
+              "standard_deviation": 272422.49352063425
+            },
+            "status_counts": {
+              "completed": 10
+            },
+            "timing_complete": true,
+            "timing_successes": 5
+          }
+        },
+        "algorithm_cases": [
+          {
+            "algorithm_id": "strength",
+            "case_id": "strength",
+            "parameters": {}
+          },
+          {
+            "algorithm_id": "betweenness",
+            "case_id": "betweenness-exact",
+            "parameters": {
+              "seed": 42
+            }
+          },
+          {
+            "algorithm_id": "betweenness",
+            "case_id": "betweenness-inverse-exact",
+            "parameters": {
+              "mode": "inverse_exposure",
+              "seed": 42
+            }
+          },
+          {
+            "algorithm_id": "pagerank",
+            "case_id": "pagerank",
+            "parameters": {}
+          }
+        ],
+        "experiment_id": "bis-2025q4-v1",
+        "graph": {
+          "creditor_scope": "resident_reporting_banks",
+          "data_kind": "observed_aggregate",
+          "dataset_id": "bis-lbs",
+          "dataset_version": "WS_LBS_D_PUB/1.0",
+          "debtor_scope": "all_sectors",
+          "density": 0.06540396567031666,
+          "direction": "creditor_to_debtor",
+          "edge_count": 3094,
+          "exposure_unit": "million USD",
+          "graph_sha256": "685d173adc6d483df20b4c409409035d79554ef86621553a4d93b4c76673e144",
+          "node_count": 218,
+          "selected_period": "2025-Q4"
+        },
+        "rankings_available": [
+          "betweenness-exact",
+          "betweenness-inverse-exact",
+          "pagerank",
+          "strength"
+        ],
+        "raw_trial_count": 40,
+        "run_id": "20261107T161001-e3701400",
+        "status": "completed"
+      },
+      "timing_pipeline_medians": {
+        "dataset_load_validation_seconds": 0.32421345,
+        "graph_build_seconds": 0.03921025
+      }
+    },
+    {
+      "comparisons": [
+        {
+          "interpretation": "ranking agreement, not accuracy; missing nodes never filled with zero",
+          "left_case": "betweenness-k32",
+          "left_only_nodes": [],
+          "node_count": 100,
+          "right_case": "pagerank",
+          "right_only_nodes": [],
+          "spearman": 0.39393939393939387,
+          "spearman_undefined_reason": null,
+          "top_k": [
+            {
+              "common_nodes": [
+                "syn-00000033"
+              ],
+              "jaccard": 0.1111111111111111,
+              "k": 5,
+              "left_cutoff_tie": false,
+              "overlap": 0.2,
+              "right_cutoff_tie": false
+            },
+            {
+              "common_nodes": [
+                "syn-00000013",
+                "syn-00000028",
+                "syn-00000033"
+              ],
+              "jaccard": 0.17647058823529413,
+              "k": 10,
+              "left_cutoff_tie": false,
+              "overlap": 0.3,
+              "right_cutoff_tie": false
+            },
+            {
+              "common_nodes": [
+                "syn-00000003",
+                "syn-00000010",
+                "syn-00000013",
+                "syn-00000027",
+                "syn-00000028",
+                "syn-00000031",
+                "syn-00000033",
+                "syn-00000054",
+                "syn-00000069"
+              ],
+              "jaccard": 0.2903225806451613,
+              "k": 20,
+              "left_cutoff_tie": false,
+              "overlap": 0.45,
+              "right_cutoff_tie": false
+            }
+          ],
+          "universe": "identical"
+        },
+        {
+          "interpretation": "ranking agreement, not accuracy; missing nodes never filled with zero",
+          "left_case": "betweenness-k32",
+          "left_only_nodes": [],
+          "node_count": 100,
+          "right_case": "strength",
+          "right_only_nodes": [],
+          "spearman": 0.6401680168016801,
+          "spearman_undefined_reason": null,
+          "top_k": [
+            {
+              "common_nodes": [
+                "syn-00000031",
+                "syn-00000033"
+              ],
+              "jaccard": 0.25,
+              "k": 5,
+              "left_cutoff_tie": false,
+              "overlap": 0.4,
+              "right_cutoff_tie": false
+            },
+            {
+              "common_nodes": [
+                "syn-00000008",
+                "syn-00000020",
+                "syn-00000028",
+                "syn-00000031",
+                "syn-00000033",
+                "syn-00000069",
+                "syn-00000070"
+              ],
+              "jaccard": 0.5384615384615384,
+              "k": 10,
+              "left_cutoff_tie": false,
+              "overlap": 0.7,
+              "right_cutoff_tie": false
+            },
+            {
+              "common_nodes": [
+                "syn-00000000",
+                "syn-00000003",
+                "syn-00000008",
+                "syn-00000013",
+                "syn-00000020",
+                "syn-00000027",
+                "syn-00000028",
+                "syn-00000031",
+                "syn-00000033",
+                "syn-00000054",
+                "syn-00000058",
+                "syn-00000069",
+                "syn-00000070",
+                "syn-00000083"
+              ],
+              "jaccard": 0.5384615384615384,
+              "k": 20,
+              "left_cutoff_tie": false,
+              "overlap": 0.7,
+              "right_cutoff_tie": false
+            }
+          ],
+          "universe": "identical"
+        },
+        {
+          "interpretation": "ranking agreement, not accuracy; missing nodes never filled with zero",
+          "left_case": "pagerank",
+          "left_only_nodes": [],
+          "node_count": 100,
+          "right_case": "strength",
+          "right_only_nodes": [],
+          "spearman": 0.5032583258325832,
+          "spearman_undefined_reason": null,
+          "top_k": [
+            {
+              "common_nodes": [
+                "syn-00000033",
+                "syn-00000054"
+              ],
+              "jaccard": 0.25,
+              "k": 5,
+              "left_cutoff_tie": false,
+              "overlap": 0.4,
+              "right_cutoff_tie": false
+            },
+            {
+              "common_nodes": [
+                "syn-00000028",
+                "syn-00000033",
+                "syn-00000054"
+              ],
+              "jaccard": 0.17647058823529413,
+              "k": 10,
+              "left_cutoff_tie": false,
+              "overlap": 0.3,
+              "right_cutoff_tie": false
+            },
+            {
+              "common_nodes": [
+                "syn-00000003",
+                "syn-00000013",
+                "syn-00000027",
+                "syn-00000028",
+                "syn-00000031",
+                "syn-00000033",
+                "syn-00000054",
+                "syn-00000069"
+              ],
+              "jaccard": 0.25,
+              "k": 20,
+              "left_cutoff_tie": false,
+              "overlap": 0.4,
+              "right_cutoff_tie": false
+            }
+          ],
+          "universe": "identical"
+        }
+      ],
+      "environment": {
+        "application_source_sha256": "c466b9033b4a9a382b89118234cea4eec48637572dc4611ef7fe400d84ab5d58",
+        "benchmark_version": "1.0.0",
+        "clock": {
+          "adjustable": false,
+          "implementation": "QueryPerformanceCounter()",
+          "monotonic": true,
+          "resolution": 1e-07
+        },
+        "executable": "<PROJECT_ROOT>\\.venv\\Scripts\\python.exe",
+        "logical_cpus": 64,
+        "machine": "AMD64",
+        "measurement_notes": [
+          "One trial per fresh process; serial scheduling.",
+          "Timing and memory series are separate; OS caches and other system load are not controlled.",
+          "CPU frequency/power policy/thermal state are not locked. No hardware affinity is forced."
+        ],
+        "packages": {
+          "networkx": "3.6.1",
+          "numpy": "2.4.6",
+          "pandas": "3.1.1",
+          "psutil": "7.2.2",
+          "pyarrow": "26.0.1",
+          "scipy": "1.17.1"
+        },
+        "physical_cpus": 32,
+        "platform": "Windows-10-10.0.26300-SP0",
+        "processor": "AMD64 Family 23 Model 49 Stepping 0, AuthenticAMD",
+        "python": "3.11.1 (tags/v3.11.1:a7a450f, Dec  6 2022, 19:58:39) [MSC v.1934 64 bit (AMD64)]",
+        "total_ram_bytes": 51429548032,
+        "worker_thread_limits": {
+          "MKL_NUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1"
+        }
+      },
+      "path": "<PROJECT_ROOT>\\experiments\\synthetic-er-100-v1\\runs\\20261107T161126-0439c2f9",
+      "summary": {
+        "aggregated": {
+          "betweenness-k32": {
+            "memory_complete": true,
+            "memory_successes": 5,
+            "pipeline_seconds": {
+              "dataset_load_validation_seconds": {
+                "count": 0,
+                "max": null,
+                "mean": null,
+                "median": null,
+                "min": null,
+                "standard_deviation": null
+              },
+              "graph_build_seconds": {
+                "count": 0,
+                "max": null,
+                "mean": null,
+                "median": null,
+                "min": null,
+                "standard_deviation": null
+              },
+              "snapshot_read_seconds": {
+                "count": 0,
+                "max": null,
+                "mean": null,
+                "median": null,
+                "min": null,
+                "standard_deviation": null
+              },
+              "synthetic_generation_seconds": {
+                "count": 5,
+                "max": 0.004452,
+                "mean": 0.00430008,
+                "median": 0.0043266,
+                "min": 0.0041842,
+                "standard_deviation": 0.00010744455314253965
+              }
+            },
+            "process_peak_rss_bytes": {
+              "count": 5,
+              "max": 95248384,
+              "mean": 94854348.8,
+              "median": 94777344,
+              "min": 94666752,
+              "standard_deviation": 229858.2359351085
+            },
+            "ranking_repeatable": true,
+            "runtime_seconds": {
+              "count": 5,
+              "max": 0.0054493,
+              "mean": 0.00510304,
+              "median": 0.0050268,
+              "min": 0.0049594,
+              "standard_deviation": 0.00019818050610491425
+            },
+            "sampled_peak_delta_bytes": {
+              "count": 5,
+              "max": 106496,
+              "mean": 102400,
+              "median": 102400,
+              "min": 98304,
+              "standard_deviation": 4096.0
+            },
+            "sampled_peak_rss_bytes": {
+              "count": 5,
+              "max": 95223808,
+              "mean": 94829772.8,
+              "median": 94752768,
+              "min": 94642176,
+              "standard_deviation": 229858.2359351085
+            },
+            "status_counts": {
+              "completed": 10
+            },
+            "timing_complete": true,
+            "timing_successes": 5
+          },
+          "pagerank": {
+            "memory_complete": true,
+            "memory_successes": 5,
+            "pipeline_seconds": {
+              "dataset_load_validation_seconds": {
+                "count": 0,
+                "max": null,
+                "mean": null,
+                "median": null,
+                "min": null,
+                "standard_deviation": null
+              },
+              "graph_build_seconds": {
+                "count": 0,
+                "max": null,
+                "mean": null,
+                "median": null,
+                "min": null,
+                "standard_deviation": null
+              },
+              "snapshot_read_seconds": {
+                "count": 0,
+                "max": null,
+                "mean": null,
+                "median": null,
+                "min": null,
+                "standard_deviation": null
+              },
+              "synthetic_generation_seconds": {
+                "count": 5,
+                "max": 0.0044,
+                "mean": 0.0042769,
+                "median": 0.0042758,
+                "min": 0.0041787,
+                "standard_deviation": 8.692275306270524e-05
+              }
+            },
+            "process_peak_rss_bytes": {
+              "count": 5,
+              "max": 102297600,
+              "mean": 102150144,
+              "median": 102236160,
+              "min": 101838848,
+              "standard_deviation": 189193.52614717025
+            },
+            "ranking_repeatable": true,
+            "runtime_seconds": {
+              "count": 5,
+              "max": 0.002001,
+              "mean": 0.00195218,
+              "median": 0.0019502,
+              "min": 0.0019081,
+              "standard_deviation": 3.519122049602718e-05
+            },
+            "sampled_peak_delta_bytes": {
+              "count": 5,
+              "max": 106496,
+              "mean": 99942.4,
+              "median": 98304,
+              "min": 98304,
+              "standard_deviation": 3663.5737743356553
+            },
+            "sampled_peak_rss_bytes": {
+              "count": 5,
+              "max": 102273024,
+              "mean": 102125568,
+              "median": 102211584,
+              "min": 101814272,
+              "standard_deviation": 189193.52614717025
+            },
+            "status_counts": {
+              "completed": 10
+            },
+            "timing_complete": true,
+            "timing_successes": 5
+          },
+          "strength": {
+            "memory_complete": true,
+            "memory_successes": 5,
+            "pipeline_seconds": {
+              "dataset_load_validation_seconds": {
+                "count": 0,
+                "max": null,
+                "mean": null,
+                "median": null,
+                "min": null,
+                "standard_deviation": null
+              },
+              "graph_build_seconds": {
+                "count": 0,
+                "max": null,
+                "mean": null,
+                "median": null,
+                "min": null,
+                "standard_deviation": null
+              },
+              "snapshot_read_seconds": {
+                "count": 0,
+                "max": null,
+                "mean": null,
+                "median": null,
+                "min": null,
+                "standard_deviation": null
+              },
+              "synthetic_generation_seconds": {
+                "count": 5,
+                "max": 0.0043087,
+                "mean": 0.0042313,
+                "median": 0.0042268,
+                "min": 0.0041522,
+                "standard_deviation": 6.297940139442427e-05
+              }
+            },
+            "process_peak_rss_bytes": {
+              "count": 5,
+              "max": 94896128,
+              "mean": 94815027.2,
+              "median": 94846976,
+              "min": 94707712,
+              "standard_deviation": 76760.39512144268
+            },
+            "ranking_repeatable": true,
+            "runtime_seconds": {
+              "count": 5,
+              "max": 0.0008899,
+              "mean": 0.00086632,
+              "median": 0.0008677,
+              "min": 0.0008434,
+              "standard_deviation": 1.869376901536979e-05
+            },
+            "sampled_peak_delta_bytes": {
+              "count": 5,
+              "max": 98304,
+              "mean": 98304,
+              "median": 98304,
+              "min": 98304,
+              "standard_deviation": 0.0
+            },
+            "sampled_peak_rss_bytes": {
+              "count": 5,
+              "max": 94871552,
+              "mean": 94789632,
+              "median": 94822400,
+              "min": 94679040,
+              "standard_deviation": 78200.35314498267
+            },
+            "status_counts": {
+              "completed": 10
+            },
+            "timing_complete": true,
+            "timing_successes": 5
+          }
+        },
+        "algorithm_cases": [
+          {
+            "algorithm_id": "strength",
+            "case_id": "strength",
+            "parameters": {}
+          },
+          {
+            "algorithm_id": "betweenness",
+            "case_id": "betweenness-k32",
+            "parameters": {
+              "k": 32,
+              "seed": 42
+            }
+          },
+          {
+            "algorithm_id": "pagerank",
+            "case_id": "pagerank",
+            "parameters": {}
+          }
+        ],
+        "experiment_id": "synthetic-er-100-v1",
+        "graph": {
+          "creditor_scope": "synthetic_entities",
+          "data_kind": "synthetic",
+          "dataset_id": "synthetic-erdos_renyi",
+          "dataset_version": "generator-v1",
+          "debtor_scope": "synthetic_entities",
+          "density": 0.04040404040404041,
+          "direction": "creditor_to_debtor",
+          "edge_count": 400,
+          "exposure_unit": "synthetic units",
+          "graph_sha256": "cd1df1ee7d992a4d27a85fdfa98dd4fb7df908739f1b1eae8b3c2800262554d7",
+          "node_count": 100,
+          "selected_period": "synthetic"
+        },
+        "rankings_available": [
+          "betweenness-k32",
+          "pagerank",
+          "strength"
+        ],
+        "raw_trial_count": 30,
+        "run_id": "20261107T161126-0439c2f9",
+        "status": "completed"
+      },
+      "timing_pipeline_medians": {}
+    },
+    {
+      "comparisons": [
+        {
+          "interpretation": "ranking agreement, not accuracy; missing nodes never filled with zero",
+          "left_case": "betweenness-k32",
+          "left_only_nodes": [],
+          "node_count": 500,
+          "right_case": "pagerank",
+          "right_only_nodes": [],
+          "spearman": 0.4591030967979541,
+          "spearman_undefined_reason": null,
+          "top_k": [
+            {
+              "common_nodes": [],
+              "jaccard": 0.0,
+              "k": 5,
+              "left_cutoff_tie": false,
+              "overlap": 0.0,
+              "right_cutoff_tie": false
+            },
+            {
+              "common_nodes": [
+                "syn-00000205"
+              ],
+              "jaccard": 0.05263157894736842,
+              "k": 10,
+              "left_cutoff_tie": false,
+              "overlap": 0.1,
+              "right_cutoff_tie": false
+            },
+            {
+              "common_nodes": [
+                "syn-00000160",
+                "syn-00000205"
+              ],
+              "jaccard": 0.05263157894736842,
+              "k": 20,
+              "left_cutoff_tie": false,
+              "overlap": 0.1,
+              "right_cutoff_tie": false
+            }
+          ],
+          "universe": "identical"
+        },
+        {
+          "interpretation": "ranking agreement, not accuracy; missing nodes never filled with zero",
+          "left_case": "betweenness-k32",
+          "left_only_nodes": [],
+          "node_count": 500,
+          "right_case": "strength",
+          "right_only_nodes": [],
+          "spearman": 0.5564230866256639,
+          "spearman_undefined_reason": null,
+          "top_k": [
+            {
+              "common_nodes": [
+                "syn-00000232"
+              ],
+              "jaccard": 0.1111111111111111,
+              "k": 5,
+              "left_cutoff_tie": false,
+              "overlap": 0.2,
+              "right_cutoff_tie": false
+            },
+            {
+              "common_nodes": [
+                "syn-00000194",
+                "syn-00000232"
+              ],
+              "jaccard": 0.1111111111111111,
+              "k": 10,
+              "left_cutoff_tie": false,
+              "overlap": 0.2,
+              "right_cutoff_tie": false
+            },
+            {
+              "common_nodes": [
+                "syn-00000194",
+                "syn-00000232",
+                "syn-00000382",
+                "syn-00000425"
+              ],
+              "jaccard": 0.1111111111111111,
+              "k": 20,
+              "left_cutoff_tie": false,
+              "overlap": 0.2,
+              "right_cutoff_tie": false
+            }
+          ],
+          "universe": "identical"
+        },
+        {
+          "interpretation": "ranking agreement, not accuracy; missing nodes never filled with zero",
+          "left_case": "pagerank",
+          "left_only_nodes": [],
+          "node_count": 500,
+          "right_case": "strength",
+          "right_only_nodes": [],
+          "spearman": 0.5192393931188458,
+          "spearman_undefined_reason": null,
+          "top_k": [
+            {
+              "common_nodes": [],
+              "jaccard": 0.0,
+              "k": 5,
+              "left_cutoff_tie": false,
+              "overlap": 0.0,
+              "right_cutoff_tie": false
+            },
+            {
+              "common_nodes": [],
+              "jaccard": 0.0,
+              "k": 10,
+              "left_cutoff_tie": false,
+              "overlap": 0.0,
+              "right_cutoff_tie": false
+            },
+            {
+              "common_nodes": [
+                "syn-00000041",
+                "syn-00000135"
+              ],
+              "jaccard": 0.05263157894736842,
+              "k": 20,
+              "left_cutoff_tie": false,
+              "overlap": 0.1,
+              "right_cutoff_tie": false
+            }
+          ],
+          "universe": "identical"
+        }
+      ],
+      "environment": {
+        "application_source_sha256": "c466b9033b4a9a382b89118234cea4eec48637572dc4611ef7fe400d84ab5d58",
+        "benchmark_version": "1.0.0",
+        "clock": {
+          "adjustable": false,
+          "implementation": "QueryPerformanceCounter()",
+          "monotonic": true,
+          "resolution": 1e-07
+        },
+        "executable": "<PROJECT_ROOT>\\.venv\\Scripts\\python.exe",
+        "logical_cpus": 64,
+        "machine": "AMD64",
+        "measurement_notes": [
+          "One trial per fresh process; serial scheduling.",
+          "Timing and memory series are separate; OS caches and other system load are not controlled.",
+          "CPU frequency/power policy/thermal state are not locked. No hardware affinity is forced."
+        ],
+        "packages": {
+          "networkx": "3.6.1",
+          "numpy": "2.4.6",
+          "pandas": "3.1.1",
+          "psutil": "7.2.2",
+          "pyarrow": "26.0.1",
+          "scipy": "1.17.1"
+        },
+        "physical_cpus": 32,
+        "platform": "Windows-10-10.0.26300-SP0",
+        "processor": "AMD64 Family 23 Model 49 Stepping 0, AuthenticAMD",
+        "python": "3.11.1 (tags/v3.11.1:a7a450f, Dec  6 2022, 19:58:39) [MSC v.1934 64 bit (AMD64)]",
+        "total_ram_bytes": 51429548032,
+        "worker_thread_limits": {
+          "MKL_NUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1"
+        }
+      },
+      "path": "<PROJECT_ROOT>\\experiments\\synthetic-er-500-v1\\runs\\20261107T161208-15fcae28",
+      "summary": {
+        "aggregated": {
+          "betweenness-k32": {
+            "memory_complete": true,
+            "memory_successes": 5,
+            "pipeline_seconds": {
+              "dataset_load_validation_seconds": {
+                "count": 0,
+                "max": null,
+                "mean": null,
+                "median": null,
+                "min": null,
+                "standard_deviation": null
+              },
+              "graph_build_seconds": {
+                "count": 0,
+                "max": null,
+                "mean": null,
+                "median": null,
+                "min": null,
+                "standard_deviation": null
+              },
+              "snapshot_read_seconds": {
+                "count": 0,
+                "max": null,
+                "mean": null,
+                "median": null,
+                "min": null,
+                "standard_deviation": null
+              },
+              "synthetic_generation_seconds": {
+                "count": 5,
+                "max": 0.0172878,
+                "mean": 0.01697534,
+                "median": 0.0171568,
+                "min": 0.016287,
+                "standard_deviation": 0.0004093788929585895
+              }
+            },
+            "process_peak_rss_bytes": {
+              "count": 5,
+              "max": 99028992,
+              "mean": 98873344,
+              "median": 98906112,
+              "min": 98603008,
+              "standard_deviation": 164555.23882271265
+            },
+            "ranking_repeatable": true,
+            "runtime_seconds": {
+              "count": 5,
+              "max": 0.0247663,
+              "mean": 0.02465508,
+              "median": 0.0246511,
+              "min": 0.0245115,
+              "standard_deviation": 0.00010018463954120015
+            },
+            "sampled_peak_delta_bytes": {
+              "count": 5,
+              "max": 253952,
+              "mean": 144179.2,
+              "median": 110592,
+              "min": 98304,
+              "standard_deviation": 65497.58874340337
+            },
+            "sampled_peak_rss_bytes": {
+              "count": 5,
+              "max": 98983936,
+              "mean": 98653798.4,
+              "median": 98832384,
+              "min": 97931264,
+              "standard_deviation": 434529.42596422625
+            },
+            "status_counts": {
+              "completed": 10
+            },
+            "timing_complete": true,
+            "timing_successes": 5
+          },
+          "pagerank": {
+            "memory_complete": true,
+            "memory_successes": 5,
+            "pipeline_seconds": {
+              "dataset_load_validation_seconds": {
+                "count": 0,
+                "max": null,
+                "mean": null,
+                "median": null,
+                "min": null,
+                "standard_deviation": null
+              },
+              "graph_build_seconds": {
+                "count": 0,
+                "max": null,
+                "mean": null,
+                "median": null,
+                "min": null,
+                "standard_deviation": null
+              },
+              "snapshot_read_seconds": {
+                "count": 0,
+                "max": null,
+                "mean": null,
+                "median": null,
+                "min": null,
+                "standard_deviation": null
+              },
+              "synthetic_generation_seconds": {
+                "count": 5,
+                "max": 0.0175495,
+                "mean": 0.0172364,
+                "median": 0.01722,
+                "min": 0.0170151,
+                "standard_deviation": 0.00022629138295569268
+              }
+            },
+            "process_peak_rss_bytes": {
+              "count": 5,
+              "max": 106336256,
+              "mean": 106085580.8,
+              "median": 106123264,
+              "min": 105795584,
+              "standard_deviation": 216302.15500359677
+            },
+            "ranking_repeatable": true,
+            "runtime_seconds": {
+              "count": 5,
+              "max": 0.003437,
+              "mean": 0.00339624,
+              "median": 0.0034071,
+              "min": 0.0033329,
+              "standard_deviation": 3.9833001393317e-05
+            },
+            "sampled_peak_delta_bytes": {
+              "count": 5,
+              "max": 147456,
+              "mean": 117964.8,
+              "median": 106496,
+              "min": 106496,
+              "standard_deviation": 17947.772764329282
+            },
+            "sampled_peak_rss_bytes": {
+              "count": 5,
+              "max": 106283008,
+              "mean": 106054451.2,
+              "median": 106094592,
+              "min": 105771008,
+              "standard_deviation": 208018.73835594716
+            },
+            "status_counts": {
+              "completed": 10
+            },
+            "timing_complete": true,
+            "timing_successes": 5
+          },
+          "strength": {
+            "memory_complete": true,
+            "memory_successes": 5,
+            "pipeline_seconds": {
+              "dataset_load_validation_seconds": {
+                "count": 0,
+                "max": null,
+                "mean": null,
+                "median": null,
+                "min": null,
+                "standard_deviation": null
+              },
+              "graph_build_seconds": {
+                "count": 0,
+                "max": null,
+                "mean": null,
+                "median": null,
+                "min": null,
+                "standard_deviation": null
+              },
+              "snapshot_read_seconds": {
+                "count": 0,
+                "max": null,
+                "mean": null,
+                "median": null,
+                "min": null,
+                "standard_deviation": null
+              },
+              "synthetic_generation_seconds": {
+                "count": 5,
+                "max": 0.0172528,
+                "mean": 0.017093479999999998,
+                "median": 0.0170693,
+                "min": 0.0169863,
+                "standard_deviation": 0.00010923615244048097
+              }
+            },
+            "process_peak_rss_bytes": {
+              "count": 5,
+              "max": 98881536,
+              "mean": 98679193.6,
+              "median": 98709504,
+              "min": 98299904,
+              "standard_deviation": 226127.3953434214
+            },
+            "ranking_repeatable": true,
+            "runtime_seconds": {
+              "count": 5,
+              "max": 0.0046759,
+              "mean": 0.00419366,
+              "median": 0.0040862,
+              "min": 0.0040327,
+              "standard_deviation": 0.0002721933191685645
+            },
+            "sampled_peak_delta_bytes": {
+              "count": 5,
+              "max": 114688,
+              "mean": 108134.4,
+              "median": 106496,
+              "min": 106496,
+              "standard_deviation": 3663.5737743356553
+            },
+            "sampled_peak_rss_bytes": {
+              "count": 5,
+              "max": 97873920,
+              "mean": 97678131.2,
+              "median": 97755136,
+              "min": 97284096,
+              "standard_deviation": 230514.2045844464
+            },
+            "status_counts": {
+              "completed": 10
+            },
+            "timing_complete": true,
+            "timing_successes": 5
+          }
+        },
+        "algorithm_cases": [
+          {
+            "algorithm_id": "strength",
+            "case_id": "strength",
+            "parameters": {}
+          },
+          {
+            "algorithm_id": "betweenness",
+            "case_id": "betweenness-k32",
+            "parameters": {
+              "k": 32,
+              "seed": 42
+            }
+          },
+          {
+            "algorithm_id": "pagerank",
+            "case_id": "pagerank",
+            "parameters": {}
+          }
+        ],
+        "experiment_id": "synthetic-er-500-v1",
+        "graph": {
+          "creditor_scope": "synthetic_entities",
+          "data_kind": "synthetic",
+          "dataset_id": "synthetic-erdos_renyi",
+          "dataset_version": "generator-v1",
+          "debtor_scope": "synthetic_entities",
+          "density": 0.008016032064128256,
+          "direction": "creditor_to_debtor",
+          "edge_count": 2000,
+          "exposure_unit": "synthetic units",
+          "graph_sha256": "56875f2853a9b85058aac84c43f808f79e39c37bb6275cef1616649948981de9",
+          "node_count": 500,
+          "selected_period": "synthetic"
+        },
+        "rankings_available": [
+          "betweenness-k32",
+          "pagerank",
+          "strength"
+        ],
+        "raw_trial_count": 30,
+        "run_id": "20261107T161208-15fcae28",
+        "status": "completed"
+      },
+      "timing_pipeline_medians": {}
+    },
+    {
+      "comparisons": [
+        {
+          "interpretation": "ranking agreement, not accuracy; missing nodes never filled with zero",
+          "left_case": "betweenness-k32",
+          "left_only_nodes": [],
+          "node_count": 1000,
+          "right_case": "pagerank",
+          "right_only_nodes": [],
+          "spearman": 0.42007665532789423,
+          "spearman_undefined_reason": null,
+          "top_k": [
+            {
+              "common_nodes": [],
+              "jaccard": 0.0,
+              "k": 5,
+              "left_cutoff_tie": false,
+              "overlap": 0.0,
+              "right_cutoff_tie": false
+            },
+            {
+              "common_nodes": [],
+              "jaccard": 0.0,
+              "k": 10,
+              "left_cutoff_tie": false,
+              "overlap": 0.0,
+              "right_cutoff_tie": false
+            },
+            {
+              "common_nodes": [],
+              "jaccard": 0.0,
+              "k": 20,
+              "left_cutoff_tie": false,
+              "overlap": 0.0,
+              "right_cutoff_tie": false
+            }
+          ],
+          "universe": "identical"
+        },
+        {
+          "interpretation": "ranking agreement, not accuracy; missing nodes never filled with zero",
+          "left_case": "betweenness-k32",
+          "left_only_nodes": [],
+          "node_count": 1000,
+          "right_case": "strength",
+          "right_only_nodes": [],
+          "spearman": 0.5621799900112188,
+          "spearman_undefined_reason": null,
+          "top_k": [
+            {
+              "common_nodes": [
+                "syn-00000302"
+              ],
+              "jaccard": 0.1111111111111111,
+              "k": 5,
+              "left_cutoff_tie": false,
+              "overlap": 0.2,
+              "right_cutoff_tie": false
+            },
+            {
+              "common_nodes": [
+                "syn-00000095",
+                "syn-00000302",
+                "syn-00000671"
+              ],
+              "jaccard": 0.17647058823529413,
+              "k": 10,
+              "left_cutoff_tie": false,
+              "overlap": 0.3,
+              "right_cutoff_tie": false
+            },
+            {
+              "common_nodes": [
+                "syn-00000095",
+                "syn-00000302",
+                "syn-00000611",
+                "syn-00000671"
+              ],
+              "jaccard": 0.1111111111111111,
+              "k": 20,
+              "left_cutoff_tie": false,
+              "overlap": 0.2,
+              "right_cutoff_tie": false
+            }
+          ],
+          "universe": "identical"
+        },
+        {
+          "interpretation": "ranking agreement, not accuracy; missing nodes never filled with zero",
+          "left_case": "pagerank",
+          "left_only_nodes": [],
+          "node_count": 1000,
+          "right_case": "strength",
+          "right_only_nodes": [],
+          "spearman": 0.5373782304763536,
+          "spearman_undefined_reason": null,
+          "top_k": [
+            {
+              "common_nodes": [],
+              "jaccard": 0.0,
+              "k": 5,
+              "left_cutoff_tie": false,
+              "overlap": 0.0,
+              "right_cutoff_tie": false
+            },
+            {
+              "common_nodes": [],
+              "jaccard": 0.0,
+              "k": 10,
+              "left_cutoff_tie": false,
+              "overlap": 0.0,
+              "right_cutoff_tie": false
+            },
+            {
+              "common_nodes": [
+                "syn-00000823"
+              ],
+              "jaccard": 0.02564102564102564,
+              "k": 20,
+              "left_cutoff_tie": false,
+              "overlap": 0.05,
+              "right_cutoff_tie": false
+            }
+          ],
+          "universe": "identical"
+        }
+      ],
+      "environment": {
+        "application_source_sha256": "c466b9033b4a9a382b89118234cea4eec48637572dc4611ef7fe400d84ab5d58",
+        "benchmark_version": "1.0.0",
+        "clock": {
+          "adjustable": false,
+          "implementation": "QueryPerformanceCounter()",
+          "monotonic": true,
+          "resolution": 1e-07
+        },
+        "executable": "<PROJECT_ROOT>\\.venv\\Scripts\\python.exe",
+        "logical_cpus": 64,
+        "machine": "AMD64",
+        "measurement_notes": [
+          "One trial per fresh process; serial scheduling.",
+          "Timing and memory series are separate; OS caches and other system load are not controlled.",
+          "CPU frequency/power policy/thermal state are not locked. No hardware affinity is forced."
+        ],
+        "packages": {
+          "networkx": "3.6.1",
+          "numpy": "2.4.6",
+          "pandas": "3.1.1",
+          "psutil": "7.2.2",
+          "pyarrow": "26.0.1",
+          "scipy": "1.17.1"
+        },
+        "physical_cpus": 32,
+        "platform": "Windows-10-10.0.26300-SP0",
+        "processor": "AMD64 Family 23 Model 49 Stepping 0, AuthenticAMD",
+        "python": "3.11.1 (tags/v3.11.1:a7a450f, Dec  6 2022, 19:58:39) [MSC v.1934 64 bit (AMD64)]",
+        "total_ram_bytes": 51429548032,
+        "worker_thread_limits": {
+          "MKL_NUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1"
+        }
+      },
+      "path": "<PROJECT_ROOT>\\experiments\\synthetic-er-1000-v1\\runs\\20261107T161254-33c7415c",
+      "summary": {
+        "aggregated": {
+          "betweenness-k32": {
+            "memory_complete": true,
+            "memory_successes": 5,
+            "pipeline_seconds": {
+              "dataset_load_validation_seconds": {
+                "count": 0,
+                "max": null,
+                "mean": null,
+                "median": null,
+                "min": null,
+                "standard_deviation": null
+              },
+              "graph_build_seconds": {
+                "count": 0,
+                "max": null,
+                "mean": null,
+                "median": null,
+                "min": null,
+                "standard_deviation": null
+              },
+              "snapshot_read_seconds": {
+                "count": 0,
+                "max": null,
+                "mean": null,
+                "median": null,
+                "min": null,
+                "standard_deviation": null
+              },
+              "synthetic_generation_seconds": {
+                "count": 5,
+                "max": 0.0388243,
+                "mean": 0.03463224,
+                "median": 0.0336753,
+                "min": 0.032876,
+                "standard_deviation": 0.00239612359301435
+              }
+            },
+            "process_peak_rss_bytes": {
+              "count": 5,
+              "max": 102961152,
+              "mean": 102626918.4,
+              "median": 102768640,
+              "min": 102309888,
+              "standard_deviation": 297469.4443952185
+            },
+            "ranking_repeatable": true,
+            "runtime_seconds": {
+              "count": 5,
+              "max": 0.060857,
+              "mean": 0.05198938,
+              "median": 0.0498896,
+              "min": 0.0493205,
+              "standard_deviation": 0.004970257023233306
+            },
+            "sampled_peak_delta_bytes": {
+              "count": 5,
+              "max": 237568,
+              "mean": 130252.8,
+              "median": 102400,
+              "min": 102400,
+              "standard_deviation": 60017.233151820656
+            },
+            "sampled_peak_rss_bytes": {
+              "count": 5,
+              "max": 101814272,
+              "mean": 100798464,
+              "median": 101015552,
+              "min": 99680256,
+              "standard_deviation": 862404.9941228309
+            },
+            "status_counts": {
+              "completed": 10
+            },
+            "timing_complete": true,
+            "timing_successes": 5
+          },
+          "pagerank": {
+            "memory_complete": true,
+            "memory_successes": 5,
+            "pipeline_seconds": {
+              "dataset_load_validation_seconds": {
+                "count": 0,
+                "max": null,
+                "mean": null,
+                "median": null,
+                "min": null,
+                "standard_deviation": null
+              },
+              "graph_build_seconds": {
+                "count": 0,
+                "max": null,
+                "mean": null,
+                "median": null,
+                "min": null,
+                "standard_deviation": null
+              },
+              "snapshot_read_seconds": {
+                "count": 0,
+                "max": null,
+                "mean": null,
+                "median": null,
+                "min": null,
+                "standard_deviation": null
+              },
+              "synthetic_generation_seconds": {
+                "count": 5,
+                "max": 0.0343324,
+                "mean": 0.033692639999999996,
+                "median": 0.0337759,
+                "min": 0.0327782,
+                "standard_deviation": 0.0006716387071930859
+              }
+            },
+            "process_peak_rss_bytes": {
+              "count": 5,
+              "max": 110252032,
+              "mean": 109903052.8,
+              "median": 110002176,
+              "min": 109305856,
+              "standard_deviation": 373684.52498223685
+            },
+            "ranking_repeatable": true,
+            "runtime_seconds": {
+              "count": 5,
+              "max": 0.0059403,
+              "mean": 0.00518404,
+              "median": 0.0050522,
+              "min": 0.0048513,
+              "standard_deviation": 0.00043530106593023634
+            },
+            "sampled_peak_delta_bytes": {
+              "count": 5,
+              "max": 491520,
+              "mean": 340787.2,
+              "median": 471040,
+              "min": 106496,
+              "standard_deviation": 194104.59544070563
+            },
+            "sampled_peak_rss_bytes": {
+              "count": 5,
+              "max": 109223936,
+              "mean": 108870041.6,
+              "median": 108986368,
+              "min": 108007424,
+              "standard_deviation": 494570.586700018
+            },
+            "status_counts": {
+              "completed": 10
+            },
+            "timing_complete": true,
+            "timing_successes": 5
+          },
+          "strength": {
+            "memory_complete": true,
+            "memory_successes": 5,
+            "pipeline_seconds": {
+              "dataset_load_validation_seconds": {
+                "count": 0,
+                "max": null,
+                "mean": null,
+                "median": null,
+                "min": null,
+                "standard_deviation": null
+              },
+              "graph_build_seconds": {
+                "count": 0,
+                "max": null,
+                "mean": null,
+                "median": null,
+                "min": null,
+                "standard_deviation": null
+              },
+              "snapshot_read_seconds": {
+                "count": 0,
+                "max": null,
+                "mean": null,
+                "median": null,
+                "min": null,
+                "standard_deviation": null
+              },
+              "synthetic_generation_seconds": {
+                "count": 5,
+                "max": 0.0375759,
+                "mean": 0.034587559999999996,
+                "median": 0.0339323,
+                "min": 0.0323032,
+                "standard_deviation": 0.00229489820318898
+              }
+            },
+            "process_peak_rss_bytes": {
+              "count": 5,
+              "max": 102879232,
+              "mean": 102638387.2,
+              "median": 102658048,
+              "min": 102367232,
+              "standard_deviation": 238754.9932529161
+            },
+            "ranking_repeatable": true,
+            "runtime_seconds": {
+              "count": 5,
+              "max": 0.0110536,
+              "mean": 0.00924166,
+              "median": 0.0084961,
+              "min": 0.008317,
+              "standard_deviation": 0.0012027913318610175
+            },
+            "sampled_peak_delta_bytes": {
+              "count": 5,
+              "max": 368640,
+              "mean": 362086.4,
+              "median": 360448,
+              "min": 360448,
+              "standard_deviation": 3663.5737743356553
+            },
+            "sampled_peak_rss_bytes": {
+              "count": 5,
+              "max": 100945920,
+              "mean": 99791667.2,
+              "median": 99708928,
+              "min": 98811904,
+              "standard_deviation": 760822.4903847151
+            },
+            "status_counts": {
+              "completed": 10
+            },
+            "timing_complete": true,
+            "timing_successes": 5
+          }
+        },
+        "algorithm_cases": [
+          {
+            "algorithm_id": "strength",
+            "case_id": "strength",
+            "parameters": {}
+          },
+          {
+            "algorithm_id": "betweenness",
+            "case_id": "betweenness-k32",
+            "parameters": {
+              "k": 32,
+              "seed": 42
+            }
+          },
+          {
+            "algorithm_id": "pagerank",
+            "case_id": "pagerank",
+            "parameters": {}
+          }
+        ],
+        "experiment_id": "synthetic-er-1000-v1",
+        "graph": {
+          "creditor_scope": "synthetic_entities",
+          "data_kind": "synthetic",
+          "dataset_id": "synthetic-erdos_renyi",
+          "dataset_version": "generator-v1",
+          "debtor_scope": "synthetic_entities",
+          "density": 0.004004004004004004,
+          "direction": "creditor_to_debtor",
+          "edge_count": 4000,
+          "exposure_unit": "synthetic units",
+          "graph_sha256": "0a8350afc9e8291ab0ef5fc597ad29289962b9c731a75c6fd11f237731dbff2b",
+          "node_count": 1000,
+          "selected_period": "synthetic"
+        },
+        "rankings_available": [
+          "betweenness-k32",
+          "pagerank",
+          "strength"
+        ],
+        "raw_trial_count": 30,
+        "run_id": "20261107T161254-33c7415c",
+        "status": "completed"
+      },
+      "timing_pipeline_medians": {}
+    },
+    {
+      "comparisons": [
+        {
+          "interpretation": "ranking agreement, not accuracy; missing nodes never filled with zero",
+          "left_case": "betweenness-k32",
+          "left_only_nodes": [],
+          "node_count": 5000,
+          "right_case": "pagerank",
+          "right_only_nodes": [],
+          "spearman": 0.42347102576997797,
+          "spearman_undefined_reason": null,
+          "top_k": [
+            {
+              "common_nodes": [],
+              "jaccard": 0.0,
+              "k": 5,
+              "left_cutoff_tie": false,
+              "overlap": 0.0,
+              "right_cutoff_tie": false
+            },
+            {
+              "common_nodes": [],
+              "jaccard": 0.0,
+              "k": 10,
+              "left_cutoff_tie": false,
+              "overlap": 0.0,
+              "right_cutoff_tie": false
+            },
+            {
+              "common_nodes": [],
+              "jaccard": 0.0,
+              "k": 20,
+              "left_cutoff_tie": false,
+              "overlap": 0.0,
+              "right_cutoff_tie": false
+            }
+          ],
+          "universe": "identical"
+        },
+        {
+          "interpretation": "ranking agreement, not accuracy; missing nodes never filled with zero",
+          "left_case": "betweenness-k32",
+          "left_only_nodes": [],
+          "node_count": 5000,
+          "right_case": "strength",
+          "right_only_nodes": [],
+          "spearman": 0.559784068641154,
+          "spearman_undefined_reason": null,
+          "top_k": [
+            {
+              "common_nodes": [],
+              "jaccard": 0.0,
+              "k": 5,
+              "left_cutoff_tie": false,
+              "overlap": 0.0,
+              "right_cutoff_tie": false
+            },
+            {
+              "common_nodes": [],
+              "jaccard": 0.0,
+              "k": 10,
+              "left_cutoff_tie": false,
+              "overlap": 0.0,
+              "right_cutoff_tie": false
+            },
+            {
+              "common_nodes": [
+                "syn-00001905"
+              ],
+              "jaccard": 0.02564102564102564,
+              "k": 20,
+              "left_cutoff_tie": false,
+              "overlap": 0.05,
+              "right_cutoff_tie": false
+            }
+          ],
+          "universe": "identical"
+        },
+        {
+          "interpretation": "ranking agreement, not accuracy; missing nodes never filled with zero",
+          "left_case": "pagerank",
+          "left_only_nodes": [],
+          "node_count": 5000,
+          "right_case": "strength",
+          "right_only_nodes": [],
+          "spearman": 0.5554016746221792,
+          "spearman_undefined_reason": null,
+          "top_k": [
+            {
+              "common_nodes": [],
+              "jaccard": 0.0,
+              "k": 5,
+              "left_cutoff_tie": false,
+              "overlap": 0.0,
+              "right_cutoff_tie": false
+            },
+            {
+              "common_nodes": [],
+              "jaccard": 0.0,
+              "k": 10,
+              "left_cutoff_tie": false,
+              "overlap": 0.0,
+              "right_cutoff_tie": false
+            },
+            {
+              "common_nodes": [
+                "syn-00001055",
+                "syn-00003935",
+                "syn-00004723"
+              ],
+              "jaccard": 0.08108108108108109,
+              "k": 20,
+              "left_cutoff_tie": false,
+              "overlap": 0.15,
+              "right_cutoff_tie": false
+            }
+          ],
+          "universe": "identical"
+        }
+      ],
+      "environment": {
+        "application_source_sha256": "c466b9033b4a9a382b89118234cea4eec48637572dc4611ef7fe400d84ab5d58",
+        "benchmark_version": "1.0.0",
+        "clock": {
+          "adjustable": false,
+          "implementation": "QueryPerformanceCounter()",
+          "monotonic": true,
+          "resolution": 1e-07
+        },
+        "executable": "<PROJECT_ROOT>\\.venv\\Scripts\\python.exe",
+        "logical_cpus": 64,
+        "machine": "AMD64",
+        "measurement_notes": [
+          "One trial per fresh process; serial scheduling.",
+          "Timing and memory series are separate; OS caches and other system load are not controlled.",
+          "CPU frequency/power policy/thermal state are not locked. No hardware affinity is forced."
+        ],
+        "packages": {
+          "networkx": "3.6.1",
+          "numpy": "2.4.6",
+          "pandas": "3.1.1",
+          "psutil": "7.2.2",
+          "pyarrow": "26.0.1",
+          "scipy": "1.17.1"
+        },
+        "physical_cpus": 32,
+        "platform": "Windows-10-10.0.26300-SP0",
+        "processor": "AMD64 Family 23 Model 49 Stepping 0, AuthenticAMD",
+        "python": "3.11.1 (tags/v3.11.1:a7a450f, Dec  6 2022, 19:58:39) [MSC v.1934 64 bit (AMD64)]",
+        "total_ram_bytes": 51429548032,
+        "worker_thread_limits": {
+          "MKL_NUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1"
+        }
+      },
+      "path": "<PROJECT_ROOT>\\experiments\\synthetic-er-5000-v1\\runs\\20261107T161347-8abfeee5",
+      "summary": {
+        "aggregated": {
+          "betweenness-k32": {
+            "memory_complete": true,
+            "memory_successes": 5,
+            "pipeline_seconds": {
+              "dataset_load_validation_seconds": {
+                "count": 0,
+                "max": null,
+                "mean": null,
+                "median": null,
+                "min": null,
+                "standard_deviation": null
+              },
+              "graph_build_seconds": {
+                "count": 0,
+                "max": null,
+                "mean": null,
+                "median": null,
+                "min": null,
+                "standard_deviation": null
+              },
+              "snapshot_read_seconds": {
+                "count": 0,
+                "max": null,
+                "mean": null,
+                "median": null,
+                "min": null,
+                "standard_deviation": null
+              },
+              "synthetic_generation_seconds": {
+                "count": 5,
+                "max": 0.2301151,
+                "mean": 0.22348118,
+                "median": 0.2223059,
+                "min": 0.2208362,
+                "standard_deviation": 0.003765617570465692
+              }
+            },
+            "process_peak_rss_bytes": {
+              "count": 5,
+              "max": 124813312,
+              "mean": 124430745.6,
+              "median": 124559360,
+              "min": 123854848,
+              "standard_deviation": 376203.71972217393
+            },
+            "ranking_repeatable": true,
+            "runtime_seconds": {
+              "count": 5,
+              "max": 0.4097538,
+              "mean": 0.36717384000000003,
+              "median": 0.3555476,
+              "min": 0.3415508,
+              "standard_deviation": 0.02650413412852795
+            },
+            "sampled_peak_delta_bytes": {
+              "count": 5,
+              "max": 2506752,
+              "mean": 2170060.8,
+              "median": 2170880,
+              "min": 1740800,
+              "standard_deviation": 282659.6151472651
+            },
+            "sampled_peak_rss_bytes": {
+              "count": 5,
+              "max": 120909824,
+              "mean": 120677171.2,
+              "median": 120705024,
+              "min": 120397824,
+              "standard_deviation": 202687.86056199812
+            },
+            "status_counts": {
+              "completed": 10
+            },
+            "timing_complete": true,
+            "timing_successes": 5
+          },
+          "pagerank": {
+            "memory_complete": true,
+            "memory_successes": 5,
+            "pipeline_seconds": {
+              "dataset_load_validation_seconds": {
+                "count": 0,
+                "max": null,
+                "mean": null,
+                "median": null,
+                "min": null,
+                "standard_deviation": null
+              },
+              "graph_build_seconds": {
+                "count": 0,
+                "max": null,
+                "mean": null,
+                "median": null,
+                "min": null,
+                "standard_deviation": null
+              },
+              "snapshot_read_seconds": {
+                "count": 0,
+                "max": null,
+                "mean": null,
+                "median": null,
+                "min": null,
+                "standard_deviation": null
+              },
+              "synthetic_generation_seconds": {
+                "count": 5,
+                "max": 0.2245893,
+                "mean": 0.22302512,
+                "median": 0.2232031,
+                "min": 0.221128,
+                "standard_deviation": 0.0012830449259476468
+              }
+            },
+            "process_peak_rss_bytes": {
+              "count": 5,
+              "max": 132227072,
+              "mean": 131990323.2,
+              "median": 131993600,
+              "min": 131719168,
+              "standard_deviation": 180698.13994394077
+            },
+            "ranking_repeatable": true,
+            "runtime_seconds": {
+              "count": 5,
+              "max": 0.0570682,
+              "mean": 0.05646474,
+              "median": 0.0569387,
+              "min": 0.0552402,
+              "standard_deviation": 0.0007836300038921425
+            },
+            "sampled_peak_delta_bytes": {
+              "count": 5,
+              "max": 4358144,
+              "mean": 3304652.8,
+              "median": 2924544,
+              "min": 2490368,
+              "standard_deviation": 896707.8602728985
+            },
+            "sampled_peak_rss_bytes": {
+              "count": 5,
+              "max": 130007040,
+              "mean": 129068236.8,
+              "median": 128970752,
+              "min": 128266240,
+              "standard_deviation": 793093.91656928
+            },
+            "status_counts": {
+              "completed": 10
+            },
+            "timing_complete": true,
+            "timing_successes": 5
+          },
+          "strength": {
+            "memory_complete": true,
+            "memory_successes": 5,
+            "pipeline_seconds": {
+              "dataset_load_validation_seconds": {
+                "count": 0,
+                "max": null,
+                "mean": null,
+                "median": null,
+                "min": null,
+                "standard_deviation": null
+              },
+              "graph_build_seconds": {
+                "count": 0,
+                "max": null,
+                "mean": null,
+                "median": null,
+                "min": null,
+                "standard_deviation": null
+              },
+              "snapshot_read_seconds": {
+                "count": 0,
+                "max": null,
+                "mean": null,
+                "median": null,
+                "min": null,
+                "standard_deviation": null
+              },
+              "synthetic_generation_seconds": {
+                "count": 5,
+                "max": 0.2271445,
+                "mean": 0.22302622,
+                "median": 0.2230942,
+                "min": 0.2201835,
+                "standard_deviation": 0.002806387184085617
+              }
+            },
+            "process_peak_rss_bytes": {
+              "count": 5,
+              "max": 124899328,
+              "mean": 124526592,
+              "median": 124477440,
+              "min": 124329984,
+              "standard_deviation": 218224.94728146918
+            },
+            "ranking_repeatable": true,
+            "runtime_seconds": {
+              "count": 5,
+              "max": 0.047178,
+              "mean": 0.045718919999999996,
+              "median": 0.045757,
+              "min": 0.0442932,
+              "standard_deviation": 0.0010221272386547577
+            },
+            "sampled_peak_delta_bytes": {
+              "count": 5,
+              "max": 1462272,
+              "mean": 1416396.8,
+              "median": 1421312,
+              "min": 1368064,
+              "standard_deviation": 33701.89198249855
+            },
+            "sampled_peak_rss_bytes": {
+              "count": 5,
+              "max": 120131584,
+              "mean": 120035737.6,
+              "median": 120029184,
+              "min": 119955456,
+              "standard_deviation": 70980.26461489138
+            },
+            "status_counts": {
+              "completed": 10
+            },
+            "timing_complete": true,
+            "timing_successes": 5
+          }
+        },
+        "algorithm_cases": [
+          {
+            "algorithm_id": "strength",
+            "case_id": "strength",
+            "parameters": {}
+          },
+          {
+            "algorithm_id": "betweenness",
+            "case_id": "betweenness-k32",
+            "parameters": {
+              "k": 32,
+              "seed": 42
+            }
+          },
+          {
+            "algorithm_id": "pagerank",
+            "case_id": "pagerank",
+            "parameters": {}
+          }
+        ],
+        "experiment_id": "synthetic-er-5000-v1",
+        "graph": {
+          "creditor_scope": "synthetic_entities",
+          "data_kind": "synthetic",
+          "dataset_id": "synthetic-erdos_renyi",
+          "dataset_version": "generator-v1",
+          "debtor_scope": "synthetic_entities",
+          "density": 0.0008001600320064013,
+          "direction": "creditor_to_debtor",
+          "edge_count": 20000,
+          "exposure_unit": "synthetic units",
+          "graph_sha256": "aa821a5d273b0ac691b9bb3e7142c41e708d8655344ee5d3d13c5354ee9c36cc",
+          "node_count": 5000,
+          "selected_period": "synthetic"
+        },
+        "rankings_available": [
+          "betweenness-k32",
+          "pagerank",
+          "strength"
+        ],
+        "raw_trial_count": 30,
+        "run_id": "20261107T161347-8abfeee5",
+        "status": "completed"
+      },
+      "timing_pipeline_medians": {}
+    },
+    {
+      "comparisons": [
+        {
+          "interpretation": "ranking agreement, not accuracy; missing nodes never filled with zero",
+          "left_case": "betweenness-k32",
+          "left_only_nodes": [],
+          "node_count": 10000,
+          "right_case": "pagerank",
+          "right_only_nodes": [],
+          "spearman": 0.41988020768250345,
+          "spearman_undefined_reason": null,
+          "top_k": [
+            {
+              "common_nodes": [],
+              "jaccard": 0.0,
+              "k": 5,
+              "left_cutoff_tie": false,
+              "overlap": 0.0,
+              "right_cutoff_tie": false
+            },
+            {
+              "common_nodes": [],
+              "jaccard": 0.0,
+              "k": 10,
+              "left_cutoff_tie": false,
+              "overlap": 0.0,
+              "right_cutoff_tie": false
+            },
+            {
+              "common_nodes": [],
+              "jaccard": 0.0,
+              "k": 20,
+              "left_cutoff_tie": false,
+              "overlap": 0.0,
+              "right_cutoff_tie": false
+            }
+          ],
+          "universe": "identical"
+        },
+        {
+          "interpretation": "ranking agreement, not accuracy; missing nodes never filled with zero",
+          "left_case": "betweenness-k32",
+          "left_only_nodes": [],
+          "node_count": 10000,
+          "right_case": "strength",
+          "right_only_nodes": [],
+          "spearman": 0.5590510007094975,
+          "spearman_undefined_reason": null,
+          "top_k": [
+            {
+              "common_nodes": [],
+              "jaccard": 0.0,
+              "k": 5,
+              "left_cutoff_tie": false,
+              "overlap": 0.0,
+              "right_cutoff_tie": false
+            },
+            {
+              "common_nodes": [],
+              "jaccard": 0.0,
+              "k": 10,
+              "left_cutoff_tie": false,
+              "overlap": 0.0,
+              "right_cutoff_tie": false
+            },
+            {
+              "common_nodes": [],
+              "jaccard": 0.0,
+              "k": 20,
+              "left_cutoff_tie": false,
+              "overlap": 0.0,
+              "right_cutoff_tie": false
+            }
+          ],
+          "universe": "identical"
+        },
+        {
+          "interpretation": "ranking agreement, not accuracy; missing nodes never filled with zero",
+          "left_case": "pagerank",
+          "left_only_nodes": [],
+          "node_count": 10000,
+          "right_case": "strength",
+          "right_only_nodes": [],
+          "spearman": 0.5328645223352791,
+          "spearman_undefined_reason": null,
+          "top_k": [
+            {
+              "common_nodes": [],
+              "jaccard": 0.0,
+              "k": 5,
+              "left_cutoff_tie": false,
+              "overlap": 0.0,
+              "right_cutoff_tie": false
+            },
+            {
+              "common_nodes": [],
+              "jaccard": 0.0,
+              "k": 10,
+              "left_cutoff_tie": false,
+              "overlap": 0.0,
+              "right_cutoff_tie": false
+            },
+            {
+              "common_nodes": [],
+              "jaccard": 0.0,
+              "k": 20,
+              "left_cutoff_tie": false,
+              "overlap": 0.0,
+              "right_cutoff_tie": false
+            }
+          ],
+          "universe": "identical"
+        }
+      ],
+      "environment": {
+        "application_source_sha256": "c466b9033b4a9a382b89118234cea4eec48637572dc4611ef7fe400d84ab5d58",
+        "benchmark_version": "1.0.0",
+        "clock": {
+          "adjustable": false,
+          "implementation": "QueryPerformanceCounter()",
+          "monotonic": true,
+          "resolution": 1e-07
+        },
+        "executable": "<PROJECT_ROOT>\\.venv\\Scripts\\python.exe",
+        "logical_cpus": 64,
+        "machine": "AMD64",
+        "measurement_notes": [
+          "One trial per fresh process; serial scheduling.",
+          "Timing and memory series are separate; OS caches and other system load are not controlled.",
+          "CPU frequency/power policy/thermal state are not locked. No hardware affinity is forced."
+        ],
+        "packages": {
+          "networkx": "3.6.1",
+          "numpy": "2.4.6",
+          "pandas": "3.1.1",
+          "psutil": "7.2.2",
+          "pyarrow": "26.0.1",
+          "scipy": "1.17.1"
+        },
+        "physical_cpus": 32,
+        "platform": "Windows-10-10.0.26300-SP0",
+        "processor": "AMD64 Family 23 Model 49 Stepping 0, AuthenticAMD",
+        "python": "3.11.1 (tags/v3.11.1:a7a450f, Dec  6 2022, 19:58:39) [MSC v.1934 64 bit (AMD64)]",
+        "total_ram_bytes": 51429548032,
+        "worker_thread_limits": {
+          "MKL_NUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1"
+        }
+      },
+      "path": "<PROJECT_ROOT>\\experiments\\synthetic-er-10000-v1\\runs\\20261107T161516-9ff2baeb",
+      "summary": {
+        "aggregated": {
+          "betweenness-k32": {
+            "memory_complete": true,
+            "memory_successes": 5,
+            "pipeline_seconds": {
+              "dataset_load_validation_seconds": {
+                "count": 0,
+                "max": null,
+                "mean": null,
+                "median": null,
+                "min": null,
+                "standard_deviation": null
+              },
+              "graph_build_seconds": {
+                "count": 0,
+                "max": null,
+                "mean": null,
+                "median": null,
+                "min": null,
+                "standard_deviation": null
+              },
+              "snapshot_read_seconds": {
+                "count": 0,
+                "max": null,
+                "mean": null,
+                "median": null,
+                "min": null,
+                "standard_deviation": null
+              },
+              "synthetic_generation_seconds": {
+                "count": 5,
+                "max": 0.4900298,
+                "mean": 0.48455566,
+                "median": 0.4855494,
+                "min": 0.4786887,
+                "standard_deviation": 0.0055824169857687945
+              }
+            },
+            "process_peak_rss_bytes": {
+              "count": 5,
+              "max": 150548480,
+              "mean": 150348595.2,
+              "median": 150286336,
+              "min": 150212608,
+              "standard_deviation": 150452.05158853767
+            },
+            "ranking_repeatable": true,
+            "runtime_seconds": {
+              "count": 5,
+              "max": 0.9061678,
+              "mean": 0.86317974,
+              "median": 0.8538677,
+              "min": 0.8347251,
+              "standard_deviation": 0.030709341436491244
+            },
+            "sampled_peak_delta_bytes": {
+              "count": 5,
+              "max": 5066752,
+              "mean": 4808704,
+              "median": 4833280,
+              "min": 4530176,
+              "standard_deviation": 216255.61171909506
+            },
+            "sampled_peak_rss_bytes": {
+              "count": 5,
+              "max": 148099072,
+              "mean": 147469107.2,
+              "median": 147390464,
+              "min": 147173376,
+              "standard_deviation": 372627.95796772954
+            },
+            "status_counts": {
+              "completed": 10
+            },
+            "timing_complete": true,
+            "timing_successes": 5
+          },
+          "pagerank": {
+            "memory_complete": true,
+            "memory_successes": 5,
+            "pipeline_seconds": {
+              "dataset_load_validation_seconds": {
+                "count": 0,
+                "max": null,
+                "mean": null,
+                "median": null,
+                "min": null,
+                "standard_deviation": null
+              },
+              "graph_build_seconds": {
+                "count": 0,
+                "max": null,
+                "mean": null,
+                "median": null,
+                "min": null,
+                "standard_deviation": null
+              },
+              "snapshot_read_seconds": {
+                "count": 0,
+                "max": null,
+                "mean": null,
+                "median": null,
+                "min": null,
+                "standard_deviation": null
+              },
+              "synthetic_generation_seconds": {
+                "count": 5,
+                "max": 0.4889343,
+                "mean": 0.47966426,
+                "median": 0.4769216,
+                "min": 0.4752916,
+                "standard_deviation": 0.005764837553912512
+              }
+            },
+            "process_peak_rss_bytes": {
+              "count": 5,
+              "max": 158179328,
+              "mean": 157913907.2,
+              "median": 157904896,
+              "min": 157696000,
+              "standard_deviation": 186343.2423116009
+            },
+            "ranking_repeatable": true,
+            "runtime_seconds": {
+              "count": 5,
+              "max": 0.0973383,
+              "mean": 0.09457048,
+              "median": 0.0951651,
+              "min": 0.0919527,
+              "standard_deviation": 0.002178654784953323
+            },
+            "sampled_peak_delta_bytes": {
+              "count": 5,
+              "max": 7569408,
+              "mean": 6250496,
+              "median": 7471104,
+              "min": 3956736,
+              "standard_deviation": 1762291.8023982295
+            },
+            "sampled_peak_rss_bytes": {
+              "count": 5,
+              "max": 157437952,
+              "mean": 156053504,
+              "median": 157134848,
+              "min": 154001408,
+              "standard_deviation": 1734831.2922056715
+            },
+            "status_counts": {
+              "completed": 10
+            },
+            "timing_complete": true,
+            "timing_successes": 5
+          },
+          "strength": {
+            "memory_complete": true,
+            "memory_successes": 5,
+            "pipeline_seconds": {
+              "dataset_load_validation_seconds": {
+                "count": 0,
+                "max": null,
+                "mean": null,
+                "median": null,
+                "min": null,
+                "standard_deviation": null
+              },
+              "graph_build_seconds": {
+                "count": 0,
+                "max": null,
+                "mean": null,
+                "median": null,
+                "min": null,
+                "standard_deviation": null
+              },
+              "snapshot_read_seconds": {
+                "count": 0,
+                "max": null,
+                "mean": null,
+                "median": null,
+                "min": null,
+                "standard_deviation": null
+              },
+              "synthetic_generation_seconds": {
+                "count": 5,
+                "max": 0.5089894,
+                "mean": 0.48939642,
+                "median": 0.4856544,
+                "min": 0.4743423,
+                "standard_deviation": 0.014197224525659953
+              }
+            },
+            "process_peak_rss_bytes": {
+              "count": 5,
+              "max": 151068672,
+              "mean": 150455091.2,
+              "median": 150261760,
+              "min": 150052864,
+              "standard_deviation": 444566.0355033884
+            },
+            "ranking_repeatable": true,
+            "runtime_seconds": {
+              "count": 5,
+              "max": 0.1043725,
+              "mean": 0.10096528,
+              "median": 0.1015065,
+              "min": 0.0963867,
+              "standard_deviation": 0.0030451357132318412
+            },
+            "sampled_peak_delta_bytes": {
+              "count": 5,
+              "max": 3022848,
+              "mean": 2951577.6,
+              "median": 2965504,
+              "min": 2863104,
+              "standard_deviation": 59044.944616791705
+            },
+            "sampled_peak_rss_bytes": {
+              "count": 5,
+              "max": 146354176,
+              "mean": 145592320,
+              "median": 145530880,
+              "min": 145170432,
+              "standard_deviation": 480045.25866630534
+            },
+            "status_counts": {
+              "completed": 10
+            },
+            "timing_complete": true,
+            "timing_successes": 5
+          }
+        },
+        "algorithm_cases": [
+          {
+            "algorithm_id": "strength",
+            "case_id": "strength",
+            "parameters": {}
+          },
+          {
+            "algorithm_id": "betweenness",
+            "case_id": "betweenness-k32",
+            "parameters": {
+              "k": 32,
+              "seed": 42
+            }
+          },
+          {
+            "algorithm_id": "pagerank",
+            "case_id": "pagerank",
+            "parameters": {}
+          }
+        ],
+        "experiment_id": "synthetic-er-10000-v1",
+        "graph": {
+          "creditor_scope": "synthetic_entities",
+          "data_kind": "synthetic",
+          "dataset_id": "synthetic-erdos_renyi",
+          "dataset_version": "generator-v1",
+          "debtor_scope": "synthetic_entities",
+          "density": 0.00040004000400040005,
+          "direction": "creditor_to_debtor",
+          "edge_count": 40000,
+          "exposure_unit": "synthetic units",
+          "graph_sha256": "4b04683762b36b05eec2a92315fa0eb43eabb01f260c6d834b31575318b648e8",
+          "node_count": 10000,
+          "selected_period": "synthetic"
+        },
+        "rankings_available": [
+          "betweenness-k32",
+          "pagerank",
+          "strength"
+        ],
+        "raw_trial_count": 30,
+        "run_id": "20261107T161516-9ff2baeb",
+        "status": "completed"
+      },
+      "timing_pipeline_medians": {}
+    },
+    {
+      "comparisons": [
+        {
+          "interpretation": "ranking agreement, not accuracy; missing nodes never filled with zero",
+          "left_case": "betweenness-k32",
+          "left_only_nodes": [],
+          "node_count": 500,
+          "right_case": "pagerank",
+          "right_only_nodes": [],
+          "spearman": 0.5182070728136454,
+          "spearman_undefined_reason": null,
+          "top_k": [
+            {
+              "common_nodes": [
+                "syn-00000000",
+                "syn-00000001",
+                "syn-00000004",
+                "syn-00000006"
+              ],
+              "jaccard": 0.6666666666666666,
+              "k": 5,
+              "left_cutoff_tie": false,
+              "overlap": 0.8,
+              "right_cutoff_tie": false
+            },
+            {
+              "common_nodes": [
+                "syn-00000000",
+                "syn-00000001",
+                "syn-00000002",
+                "syn-00000004",
+                "syn-00000005",
+                "syn-00000006",
+                "syn-00000016",
+                "syn-00000027"
+              ],
+              "jaccard": 0.6666666666666666,
+              "k": 10,
+              "left_cutoff_tie": false,
+              "overlap": 0.8,
+              "right_cutoff_tie": false
+            },
+            {
+              "common_nodes": [
+                "syn-00000000",
+                "syn-00000001",
+                "syn-00000002",
+                "syn-00000004",
+                "syn-00000005",
+                "syn-00000006",
+                "syn-00000015",
+                "syn-00000016",
+                "syn-00000027",
+                "syn-00000068",
+                "syn-00000069"
+              ],
+              "jaccard": 0.3793103448275862,
+              "k": 20,
+              "left_cutoff_tie": false,
+              "overlap": 0.55,
+              "right_cutoff_tie": false
+            }
+          ],
+          "universe": "identical"
+        },
+        {
+          "interpretation": "ranking agreement, not accuracy; missing nodes never filled with zero",
+          "left_case": "betweenness-k32",
+          "left_only_nodes": [],
+          "node_count": 500,
+          "right_case": "strength",
+          "right_only_nodes": [],
+          "spearman": 0.49058131049484405,
+          "spearman_undefined_reason": null,
+          "top_k": [
+            {
+              "common_nodes": [
+                "syn-00000000",
+                "syn-00000001",
+                "syn-00000004",
+                "syn-00000006"
+              ],
+              "jaccard": 0.6666666666666666,
+              "k": 5,
+              "left_cutoff_tie": false,
+              "overlap": 0.8,
+              "right_cutoff_tie": false
+            },
+            {
+              "common_nodes": [
+                "syn-00000000",
+                "syn-00000001",
+                "syn-00000004",
+                "syn-00000005",
+                "syn-00000006",
+                "syn-00000016",
+                "syn-00000069"
+              ],
+              "jaccard": 0.5384615384615384,
+              "k": 10,
+              "left_cutoff_tie": false,
+              "overlap": 0.7,
+              "right_cutoff_tie": false
+            },
+            {
+              "common_nodes": [
+                "syn-00000000",
+                "syn-00000001",
+                "syn-00000002",
+                "syn-00000004",
+                "syn-00000005",
+                "syn-00000006",
+                "syn-00000015",
+                "syn-00000016",
+                "syn-00000027",
+                "syn-00000043",
+                "syn-00000069"
+              ],
+              "jaccard": 0.3793103448275862,
+              "k": 20,
+              "left_cutoff_tie": false,
+              "overlap": 0.55,
+              "right_cutoff_tie": false
+            }
+          ],
+          "universe": "identical"
+        },
+        {
+          "interpretation": "ranking agreement, not accuracy; missing nodes never filled with zero",
+          "left_case": "pagerank",
+          "left_only_nodes": [],
+          "node_count": 500,
+          "right_case": "strength",
+          "right_only_nodes": [],
+          "spearman": 0.5427741054186553,
+          "spearman_undefined_reason": null,
+          "top_k": [
+            {
+              "common_nodes": [
+                "syn-00000000",
+                "syn-00000001",
+                "syn-00000004",
+                "syn-00000006",
+                "syn-00000049"
+              ],
+              "jaccard": 1.0,
+              "k": 5,
+              "left_cutoff_tie": false,
+              "overlap": 1.0,
+              "right_cutoff_tie": false
+            },
+            {
+              "common_nodes": [
+                "syn-00000000",
+                "syn-00000001",
+                "syn-00000004",
+                "syn-00000005",
+                "syn-00000006",
+                "syn-00000015",
+                "syn-00000016",
+                "syn-00000049"
+              ],
+              "jaccard": 0.6666666666666666,
+              "k": 10,
+              "left_cutoff_tie": false,
+              "overlap": 0.8,
+              "right_cutoff_tie": false
+            },
+            {
+              "common_nodes": [
+                "syn-00000000",
+                "syn-00000001",
+                "syn-00000002",
+                "syn-00000003",
+                "syn-00000004",
+                "syn-00000005",
+                "syn-00000006",
+                "syn-00000010",
+                "syn-00000015",
+                "syn-00000016",
+                "syn-00000025",
+                "syn-00000027",
+                "syn-00000049",
+                "syn-00000069"
+              ],
+              "jaccard": 0.5384615384615384,
+              "k": 20,
+              "left_cutoff_tie": false,
+              "overlap": 0.7,
+              "right_cutoff_tie": false
+            }
+          ],
+          "universe": "identical"
+        }
+      ],
+      "environment": {
+        "application_source_sha256": "c466b9033b4a9a382b89118234cea4eec48637572dc4611ef7fe400d84ab5d58",
+        "benchmark_version": "1.0.0",
+        "clock": {
+          "adjustable": false,
+          "implementation": "QueryPerformanceCounter()",
+          "monotonic": true,
+          "resolution": 1e-07
+        },
+        "executable": "<PROJECT_ROOT>\\.venv\\Scripts\\python.exe",
+        "logical_cpus": 64,
+        "machine": "AMD64",
+        "measurement_notes": [
+          "One trial per fresh process; serial scheduling.",
+          "Timing and memory series are separate; OS caches and other system load are not controlled.",
+          "CPU frequency/power policy/thermal state are not locked. No hardware affinity is forced."
+        ],
+        "packages": {
+          "networkx": "3.6.1",
+          "numpy": "2.4.6",
+          "pandas": "3.1.1",
+          "psutil": "7.2.2",
+          "pyarrow": "26.0.1",
+          "scipy": "1.17.1"
+        },
+        "physical_cpus": 32,
+        "platform": "Windows-10-10.0.26300-SP0",
+        "processor": "AMD64 Family 23 Model 49 Stepping 0, AuthenticAMD",
+        "python": "3.11.1 (tags/v3.11.1:a7a450f, Dec  6 2022, 19:58:39) [MSC v.1934 64 bit (AMD64)]",
+        "total_ram_bytes": 51429548032,
+        "worker_thread_limits": {
+          "MKL_NUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1"
+        }
+      },
+      "path": "<PROJECT_ROOT>\\experiments\\synthetic-pa-500-v1\\runs\\20261107T161738-bb6447dd",
+      "summary": {
+        "aggregated": {
+          "betweenness-k32": {
+            "memory_complete": true,
+            "memory_successes": 5,
+            "pipeline_seconds": {
+              "dataset_load_validation_seconds": {
+                "count": 0,
+                "max": null,
+                "mean": null,
+                "median": null,
+                "min": null,
+                "standard_deviation": null
+              },
+              "graph_build_seconds": {
+                "count": 0,
+                "max": null,
+                "mean": null,
+                "median": null,
+                "min": null,
+                "standard_deviation": null
+              },
+              "snapshot_read_seconds": {
+                "count": 0,
+                "max": null,
+                "mean": null,
+                "median": null,
+                "min": null,
+                "standard_deviation": null
+              },
+              "synthetic_generation_seconds": {
+                "count": 5,
+                "max": 0.0120948,
+                "mean": 0.0116075,
+                "median": 0.0115765,
+                "min": 0.0111398,
+                "standard_deviation": 0.0003839056654960953
+              }
+            },
+            "process_peak_rss_bytes": {
+              "count": 5,
+              "max": 97181696,
+              "mean": 97012940.8,
+              "median": 96993280,
+              "min": 96833536,
+              "standard_deviation": 138763.14641575408
+            },
+            "ranking_repeatable": true,
+            "runtime_seconds": {
+              "count": 5,
+              "max": 0.0154961,
+              "mean": 0.01506804,
+              "median": 0.0151069,
+              "min": 0.0145017,
+              "standard_deviation": 0.00035742482846047547
+            },
+            "sampled_peak_delta_bytes": {
+              "count": 5,
+              "max": 172032,
+              "mean": 126976,
+              "median": 126976,
+              "min": 94208,
+              "standard_deviation": 32381.723240124204
+            },
+            "sampled_peak_rss_bytes": {
+              "count": 5,
+              "max": 97157120,
+              "mean": 96987545.6,
+              "median": 96968704,
+              "min": 96808960,
+              "standard_deviation": 138011.49707470025
+            },
+            "status_counts": {
+              "completed": 10
+            },
+            "timing_complete": true,
+            "timing_successes": 5
+          },
+          "pagerank": {
+            "memory_complete": true,
+            "memory_successes": 5,
+            "pipeline_seconds": {
+              "dataset_load_validation_seconds": {
+                "count": 0,
+                "max": null,
+                "mean": null,
+                "median": null,
+                "min": null,
+                "standard_deviation": null
+              },
+              "graph_build_seconds": {
+                "count": 0,
+                "max": null,
+                "mean": null,
+                "median": null,
+                "min": null,
+                "standard_deviation": null
+              },
+              "snapshot_read_seconds": {
+                "count": 0,
+                "max": null,
+                "mean": null,
+                "median": null,
+                "min": null,
+                "standard_deviation": null
+              },
+              "synthetic_generation_seconds": {
+                "count": 5,
+                "max": 0.0116154,
+                "mean": 0.01147056,
+                "median": 0.0114493,
+                "min": 0.0114105,
+                "standard_deviation": 8.271594767636983e-05
+              }
+            },
+            "process_peak_rss_bytes": {
+              "count": 5,
+              "max": 103735296,
+              "mean": 103666483.2,
+              "median": 103723008,
+              "min": 103428096,
+              "standard_deviation": 133400.12373007755
+            },
+            "ranking_repeatable": true,
+            "runtime_seconds": {
+              "count": 5,
+              "max": 0.0035012,
+              "mean": 0.00320578,
+              "median": 0.0030514,
+              "min": 0.0029516,
+              "standard_deviation": 0.00026588522335774885
+            },
+            "sampled_peak_delta_bytes": {
+              "count": 5,
+              "max": 106496,
+              "mean": 104857.6,
+              "median": 106496,
+              "min": 98304,
+              "standard_deviation": 3663.5737743356553
+            },
+            "sampled_peak_rss_bytes": {
+              "count": 5,
+              "max": 103710720,
+              "mean": 103641907.2,
+              "median": 103698432,
+              "min": 103403520,
+              "standard_deviation": 133400.12373007755
+            },
+            "status_counts": {
+              "completed": 10
+            },
+            "timing_complete": true,
+            "timing_successes": 5
+          },
+          "strength": {
+            "memory_complete": true,
+            "memory_successes": 5,
+            "pipeline_seconds": {
+              "dataset_load_validation_seconds": {
+                "count": 0,
+                "max": null,
+                "mean": null,
+                "median": null,
+                "min": null,
+                "standard_deviation": null
+              },
+              "graph_build_seconds": {
+                "count": 0,
+                "max": null,
+                "mean": null,
+                "median": null,
+                "min": null,
+                "standard_deviation": null
+              },
+              "snapshot_read_seconds": {
+                "count": 0,
+                "max": null,
+                "mean": null,
+                "median": null,
+                "min": null,
+                "standard_deviation": null
+              },
+              "synthetic_generation_seconds": {
+                "count": 5,
+                "max": 0.0114674,
+                "mean": 0.01127464,
+                "median": 0.0112961,
+                "min": 0.0109663,
+                "standard_deviation": 0.00018936517103205667
+              }
+            },
+            "process_peak_rss_bytes": {
+              "count": 5,
+              "max": 97116160,
+              "mean": 96894976,
+              "median": 96976896,
+              "min": 96526336,
+              "standard_deviation": 226820.04511065595
+            },
+            "ranking_repeatable": true,
+            "runtime_seconds": {
+              "count": 5,
+              "max": 0.0041865,
+              "mean": 0.00367566,
+              "median": 0.0035397,
+              "min": 0.0034517,
+              "standard_deviation": 0.00030105564767995974
+            },
+            "sampled_peak_delta_bytes": {
+              "count": 5,
+              "max": 110592,
+              "mean": 106496,
+              "median": 106496,
+              "min": 98304,
+              "standard_deviation": 5016.554993219948
+            },
+            "sampled_peak_rss_bytes": {
+              "count": 5,
+              "max": 97091584,
+              "mean": 96870400,
+              "median": 96952320,
+              "min": 96501760,
+              "standard_deviation": 226820.04511065595
+            },
+            "status_counts": {
+              "completed": 10
+            },
+            "timing_complete": true,
+            "timing_successes": 5
+          }
+        },
+        "algorithm_cases": [
+          {
+            "algorithm_id": "strength",
+            "case_id": "strength",
+            "parameters": {}
+          },
+          {
+            "algorithm_id": "betweenness",
+            "case_id": "betweenness-k32",
+            "parameters": {
+              "k": 32,
+              "seed": 42
+            }
+          },
+          {
+            "algorithm_id": "pagerank",
+            "case_id": "pagerank",
+            "parameters": {}
+          }
+        ],
+        "experiment_id": "synthetic-pa-500-v1",
+        "graph": {
+          "creditor_scope": "synthetic_entities",
+          "data_kind": "synthetic",
+          "dataset_id": "synthetic-preferential_attachment",
+          "dataset_version": "generator-v1",
+          "debtor_scope": "synthetic_entities",
+          "density": 0.003991983967935871,
+          "direction": "creditor_to_debtor",
+          "edge_count": 996,
+          "exposure_unit": "synthetic units",
+          "graph_sha256": "93aef4146d208d4d132bbe6d1e495b6d4980a7d68d5c1bee6c987bd4fa05d23f",
+          "node_count": 500,
+          "selected_period": "synthetic"
+        },
+        "rankings_available": [
+          "betweenness-k32",
+          "pagerank",
+          "strength"
+        ],
+        "raw_trial_count": 30,
+        "run_id": "20261107T161738-bb6447dd",
+        "status": "completed"
+      },
+      "timing_pipeline_medians": {}
+    },
+    {
+      "comparisons": [],
+      "environment": {
+        "application_source_sha256": "c466b9033b4a9a382b89118234cea4eec48637572dc4611ef7fe400d84ab5d58",
+        "benchmark_version": "1.0.0",
+        "clock": {
+          "adjustable": false,
+          "implementation": "QueryPerformanceCounter()",
+          "monotonic": true,
+          "resolution": 1e-07
+        },
+        "executable": "<PROJECT_ROOT>\\.venv\\Scripts\\python.exe",
+        "logical_cpus": 64,
+        "machine": "AMD64",
+        "measurement_notes": [
+          "One trial per fresh process; serial scheduling.",
+          "Timing and memory series are separate; OS caches and other system load are not controlled.",
+          "CPU frequency/power policy/thermal state are not locked. No hardware affinity is forced."
+        ],
+        "packages": {
+          "networkx": "3.6.1",
+          "numpy": "2.4.6",
+          "pandas": "3.1.1",
+          "psutil": "7.2.2",
+          "pyarrow": "26.0.1",
+          "scipy": "1.17.1"
+        },
+        "physical_cpus": 32,
+        "platform": "Windows-10-10.0.26300-SP0",
+        "processor": "AMD64 Family 23 Model 49 Stepping 0, AuthenticAMD",
+        "python": "3.11.1 (tags/v3.11.1:a7a450f, Dec  6 2022, 19:58:39) [MSC v.1934 64 bit (AMD64)]",
+        "total_ram_bytes": 51429548032,
+        "worker_thread_limits": {
+          "MKL_NUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1"
+        }
+      },
+      "path": "<PROJECT_ROOT>\\experiments\\synthetic-exact-bounded-10000-v1\\runs\\20261107T161824-99f49fab",
+      "summary": {
+        "aggregated": {
+          "betweenness-exact-bounded": {
+            "memory_complete": false,
+            "memory_successes": 0,
+            "pipeline_seconds": {
+              "dataset_load_validation_seconds": {
+                "count": 0,
+                "max": null,
+                "mean": null,
+                "median": null,
+                "min": null,
+                "standard_deviation": null
+              },
+              "graph_build_seconds": {
+                "count": 0,
+                "max": null,
+                "mean": null,
+                "median": null,
+                "min": null,
+                "standard_deviation": null
+              },
+              "snapshot_read_seconds": {
+                "count": 0,
+                "max": null,
+                "mean": null,
+                "median": null,
+                "min": null,
+                "standard_deviation": null
+              },
+              "synthetic_generation_seconds": {
+                "count": 0,
+                "max": null,
+                "mean": null,
+                "median": null,
+                "min": null,
+                "standard_deviation": null
+              }
+            },
+            "process_peak_rss_bytes": {
+              "count": 0,
+              "max": null,
+              "mean": null,
+              "median": null,
+              "min": null,
+              "standard_deviation": null
+            },
+            "ranking_repeatable": null,
+            "runtime_seconds": {
+              "count": 0,
+              "max": null,
+              "mean": null,
+              "median": null,
+              "min": null,
+              "standard_deviation": null
+            },
+            "sampled_peak_delta_bytes": {
+              "count": 0,
+              "max": null,
+              "mean": null,
+              "median": null,
+              "min": null,
+              "standard_deviation": null
+            },
+            "sampled_peak_rss_bytes": {
+              "count": 0,
+              "max": null,
+              "mean": null,
+              "median": null,
+              "min": null,
+              "standard_deviation": null
+            },
+            "status_counts": {
+              "timeout": 10
+            },
+            "timing_complete": false,
+            "timing_successes": 0
+          }
+        },
+        "algorithm_cases": [
+          {
+            "algorithm_id": "betweenness",
+            "case_id": "betweenness-exact-bounded",
+            "parameters": {
+              "seed": 42
+            }
+          }
+        ],
+        "experiment_id": "synthetic-exact-bounded-10000-v1",
+        "graph": {
+          "creditor_scope": "synthetic_entities",
+          "data_kind": "synthetic",
+          "dataset_id": "synthetic-erdos_renyi",
+          "dataset_version": "generator-v1",
+          "debtor_scope": "synthetic_entities",
+          "density": 0.00040004000400040005,
+          "direction": "creditor_to_debtor",
+          "edge_count": 40000,
+          "exposure_unit": "synthetic units",
+          "graph_sha256": "4b04683762b36b05eec2a92315fa0eb43eabb01f260c6d834b31575318b648e8",
+          "node_count": 10000,
+          "selected_period": "synthetic"
+        },
+        "rankings_available": [],
+        "raw_trial_count": 10,
+        "run_id": "20261107T161824-99f49fab",
+        "status": "completed_with_failures"
+      },
+      "timing_pipeline_medians": {}
+    }
+  ],
+  "temporal": {
+    "interpretation": "Common-node ranking stability, not predictive accuracy; entry/exit nodes explicitly listed.",
+    "pairs": [
+      {
+        "cases": [
+          {
+            "case_id": "betweenness-exact",
+            "comparison": {
+              "interpretation": "ranking agreement, not accuracy; missing nodes never filled with zero",
+              "left_only_nodes": [
+                "MS"
+              ],
+              "node_count": 218,
+              "right_only_nodes": [],
+              "spearman": 0.9999600990209295,
+              "spearman_undefined_reason": null,
+              "top_k": [
+                {
+                  "common_nodes": [
+                    "AU",
+                    "BE",
+                    "CH",
+                    "FR",
+                    "GB"
+                  ],
+                  "jaccard": 1.0,
+                  "k": 5,
+                  "left_cutoff_tie": false,
+                  "overlap": 1.0,
+                  "right_cutoff_tie": false
+                },
+                {
+                  "common_nodes": [
+                    "AT",
+                    "AU",
+                    "BE",
+                    "CH",
+                    "ES",
+                    "FR",
+                    "GB",
+                    "IT",
+                    "KR",
+                    "LU"
+                  ],
+                  "jaccard": 1.0,
+                  "k": 10,
+                  "left_cutoff_tie": false,
+                  "overlap": 1.0,
+                  "right_cutoff_tie": false
+                },
+                {
+                  "common_nodes": [
+                    "AT",
+                    "AU",
+                    "BE",
+                    "CH",
+                    "DK",
+                    "ES",
+                    "FI",
+                    "FR",
+                    "GB",
+                    "GG",
+                    "HK",
+                    "IE",
+                    "IT",
+                    "KR",
+                    "LU",
+                    "NL",
+                    "SE",
+                    "TW",
+                    "US",
+                    "ZA"
+                  ],
+                  "jaccard": 1.0,
+                  "k": 20,
+                  "left_cutoff_tie": false,
+                  "overlap": 1.0,
+                  "right_cutoff_tie": false
+                }
+              ],
+              "universe": "intersection"
+            },
+            "left_median_seconds": 0.0229451,
+            "right_median_seconds": 0.0228984
+          },
+          {
+            "case_id": "betweenness-inverse-exact",
+            "comparison": {
+              "interpretation": "ranking agreement, not accuracy; missing nodes never filled with zero",
+              "left_only_nodes": [
+                "MS"
+              ],
+              "node_count": 218,
+              "right_only_nodes": [],
+              "spearman": 0.9999164750192343,
+              "spearman_undefined_reason": null,
+              "top_k": [
+                {
+                  "common_nodes": [
+                    "CH",
+                    "FR",
+                    "GB",
+                    "HK",
+                    "US"
+                  ],
+                  "jaccard": 1.0,
+                  "k": 5,
+                  "left_cutoff_tie": false,
+                  "overlap": 1.0,
+                  "right_cutoff_tie": false
+                },
+                {
+                  "common_nodes": [
+                    "CH",
+                    "FR",
+                    "GB",
+                    "HK",
+                    "LU",
+                    "SE",
+                    "TW",
+                    "US",
+                    "ZA"
+                  ],
+                  "jaccard": 0.8181818181818182,
+                  "k": 10,
+                  "left_cutoff_tie": false,
+                  "overlap": 0.9,
+                  "right_cutoff_tie": false
+                },
+                {
+                  "common_nodes": [
+                    "AT",
+                    "AU",
+                    "BE",
+                    "CA",
+                    "CH",
+                    "DK",
+                    "ES",
+                    "FI",
+                    "FR",
+                    "GB",
+                    "GG",
+                    "HK",
+                    "IT",
+                    "KR",
+                    "LU",
+                    "MO",
+                    "SE",
+                    "TW",
+                    "US",
+                    "ZA"
+                  ],
+                  "jaccard": 1.0,
+                  "k": 20,
+                  "left_cutoff_tie": true,
+                  "overlap": 1.0,
+                  "right_cutoff_tie": true
+                }
+              ],
+              "universe": "intersection"
+            },
+            "left_median_seconds": 0.0590638,
+            "right_median_seconds": 0.0580669
+          },
+          {
+            "case_id": "pagerank",
+            "comparison": {
+              "interpretation": "ranking agreement, not accuracy; missing nodes never filled with zero",
+              "left_only_nodes": [
+                "MS"
+              ],
+              "node_count": 218,
+              "right_only_nodes": [],
+              "spearman": 0.9980833031934457,
+              "spearman_undefined_reason": null,
+              "top_k": [
+                {
+                  "common_nodes": [
+                    "DE",
+                    "FR",
+                    "GB",
+                    "KY",
+                    "US"
+                  ],
+                  "jaccard": 1.0,
+                  "k": 5,
+                  "left_cutoff_tie": false,
+                  "overlap": 1.0,
+                  "right_cutoff_tie": false
+                },
+                {
+                  "common_nodes": [
+                    "CA",
+                    "CH",
+                    "DE",
+                    "FR",
+                    "GB",
+                    "JP",
+                    "KY",
+                    "LU",
+                    "NL",
+                    "US"
+                  ],
+                  "jaccard": 1.0,
+                  "k": 10,
+                  "left_cutoff_tie": false,
+                  "overlap": 1.0,
+                  "right_cutoff_tie": false
+                },
+                {
+                  "common_nodes": [
+                    "AE",
+                    "CA",
+                    "CH",
+                    "CN",
+                    "DE",
+                    "ES",
+                    "FR",
+                    "GB",
+                    "HK",
+                    "IE",
+                    "IT",
+                    "JE",
+                    "JP",
+                    "KY",
+                    "LU",
+                    "NL",
+                    "NO",
+                    "SE",
+                    "SG",
+                    "US"
+                  ],
+                  "jaccard": 1.0,
+                  "k": 20,
+                  "left_cutoff_tie": false,
+                  "overlap": 1.0,
+                  "right_cutoff_tie": false
+                }
+              ],
+              "universe": "intersection"
+            },
+            "left_median_seconds": 0.0042064,
+            "right_median_seconds": 0.0040688
+          },
+          {
+            "case_id": "strength",
+            "comparison": {
+              "interpretation": "ranking agreement, not accuracy; missing nodes never filled with zero",
+              "left_only_nodes": [
+                "MS"
+              ],
+              "node_count": 218,
+              "right_only_nodes": [],
+              "spearman": 0.9980204648492292,
+              "spearman_undefined_reason": null,
+              "top_k": [
+                {
+                  "common_nodes": [
+                    "CA",
+                    "FR",
+                    "GB",
+                    "KY",
+                    "US"
+                  ],
+                  "jaccard": 1.0,
+                  "k": 5,
+                  "left_cutoff_tie": false,
+                  "overlap": 1.0,
+                  "right_cutoff_tie": false
+                },
+                {
+                  "common_nodes": [
+                    "CA",
+                    "DE",
+                    "FR",
+                    "GB",
+                    "HK",
+                    "JP",
+                    "KY",
+                    "LU",
+                    "NL",
+                    "US"
+                  ],
+                  "jaccard": 1.0,
+                  "k": 10,
+                  "left_cutoff_tie": false,
+                  "overlap": 1.0,
+                  "right_cutoff_tie": false
+                },
+                {
+                  "common_nodes": [
+                    "AU",
+                    "BE",
+                    "CA",
+                    "CH",
+                    "CN",
+                    "DE",
+                    "ES",
+                    "FR",
+                    "GB",
+                    "HK",
+                    "IE",
+                    "IT",
+                    "JE",
+                    "JP",
+                    "KY",
+                    "LU",
+                    "NL",
+                    "SE",
+                    "SG",
+                    "US"
+                  ],
+                  "jaccard": 1.0,
+                  "k": 20,
+                  "left_cutoff_tie": false,
+                  "overlap": 1.0,
+                  "right_cutoff_tie": false
+                }
+              ],
+              "universe": "intersection"
+            },
+            "left_median_seconds": 0.0035884,
+            "right_median_seconds": 0.0033943
+          }
+        ],
+        "left_density": 0.06482761509781744,
+        "left_period": "2025-Q3",
+        "right_density": 0.06540396567031666,
+        "right_period": "2025-Q4",
+        "same_recorded_environment": true
+      }
+    ]
+  },
+  "trial_status_counts": {
+    "completed": 260,
+    "timeout": 10
+  }
+}

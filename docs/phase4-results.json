@@ -1,0 +1,136 @@
+{
+  "phase": 4,
+  "verified_on": "2026-11-07",
+  "local_url": "http://127.0.0.1:8000",
+  "development_url": "http://127.0.0.1:5173",
+  "checks": {
+    "build": "passed",
+    "typecheck": "passed",
+    "frontend_unit_passed": 5,
+    "lint": "passed",
+    "python_passed": 110,
+    "chromium_e2e_passed": 2
+  },
+  "integration_experiment": {
+    "error": null,
+    "experiment_id": "968f6249cf2454dcaebd",
+    "run_id": "20261107T174903-5df432d6",
+    "status": "completed",
+    "summary": {
+      "aggregated": {
+        "strength": {
+          "memory_complete": true,
+          "memory_successes": 5,
+          "pipeline_seconds": {
+            "dataset_load_validation_seconds": {
+              "count": 5,
+              "max": 0.0136651,
+              "mean": 0.01254636,
+              "median": 0.0128989,
+              "min": 0.0113144,
+              "standard_deviation": 0.0009387821541763558
+            },
+            "graph_build_seconds": {
+              "count": 5,
+              "max": 0.0004459,
+              "mean": 0.00036732,
+              "median": 0.000346,
+              "min": 0.0003335,
+              "standard_deviation": 4.599616288344061e-05
+            },
+            "snapshot_read_seconds": {
+              "count": 0,
+              "max": null,
+              "mean": null,
+              "median": null,
+              "min": null,
+              "standard_deviation": null
+            },
+            "synthetic_generation_seconds": {
+              "count": 0,
+              "max": null,
+              "mean": null,
+              "median": null,
+              "min": null,
+              "standard_deviation": null
+            }
+          },
+          "process_peak_rss_bytes": {
+            "count": 5,
+            "max": 96256000,
+            "mean": 96006144,
+            "median": 96006144,
+            "min": 95715328,
+            "standard_deviation": 204431.0276254561
+          },
+          "ranking_repeatable": true,
+          "runtime_seconds": {
+            "count": 5,
+            "max": 9.76e-05,
+            "mean": 8.138e-05,
+            "median": 7.56e-05,
+            "min": 6.75e-05,
+            "standard_deviation": 1.2545397562452932e-05
+          },
+          "sampled_peak_delta_bytes": {
+            "count": 5,
+            "max": 106496,
+            "mean": 105676.8,
+            "median": 106496,
+            "min": 102400,
+            "standard_deviation": 1831.7868871678277
+          },
+          "sampled_peak_rss_bytes": {
+            "count": 5,
+            "max": 96235520,
+            "mean": 95984844.8,
+            "median": 95985664,
+            "min": 95698944,
+            "standard_deviation": 202791.30124144873
+          },
+          "status_counts": {
+            "completed": 10
+          },
+          "timing_complete": true,
+          "timing_successes": 5
+        }
+      },
+      "algorithm_cases": [
+        {
+          "algorithm_id": "strength",
+          "case_id": "strength",
+          "parameters": {}
+        }
+      ],
+      "experiment_id": "web-89cca04cffe641d6",
+      "graph": {
+        "creditor_scope": "resident_reporting_banks",
+        "data_kind": "synthetic",
+        "dataset_id": "synthetic-bis-demo",
+        "dataset_version": "demo-v1",
+        "debtor_scope": "all_sectors",
+        "density": 0.5,
+        "direction": "creditor_to_debtor",
+        "edge_count": 3,
+        "exposure_unit": "million USD",
+        "graph_sha256": "52083dc3058fb5c9681c070c8394ea56cd07cddec7b2f9f8e1c0de967cecd59f",
+        "node_count": 3,
+        "selected_period": "2025-Q4"
+      },
+      "rankings_available": [
+        "strength"
+      ],
+      "raw_trial_count": 10,
+      "run_id": "20261107T174903-5df432d6",
+      "status": "completed"
+    }
+  },
+  "known_limitations": [
+    "Local single-worker queue; restart does not resume active jobs.",
+    "No uploads; restart API when registered source files change.",
+    "Graph viewport capped at 250 nodes and 400 edges; analysis uses the full graph.",
+    "Starlette httpx test-client deprecation warning."
+  ],
+  "pushed": false,
+  "deployed": false
+}

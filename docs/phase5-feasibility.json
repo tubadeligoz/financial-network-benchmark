@@ -1,0 +1,57 @@
+{
+  "phase": 5,
+  "status": "feasibility_complete_user_approved_synthetic_implementation_complete",
+  "verified_on": "2026-11-07",
+  "dataset_id": "bis-lbs",
+  "dataset_version": "WS_LBS_D_PUB/1.0",
+  "reloaded_from_source": true,
+  "snapshots": [
+    {
+      "period": "2025-Q3",
+      "node_count": 219,
+      "edge_count": 3095,
+      "graph_sha256": "fbaea23ae25b9f10747afc30c9fa5bab093c59ec5629de82d788af511b2c7509",
+      "nodes_with_financial_features": 0
+    },
+    {
+      "period": "2025-Q4",
+      "node_count": 218,
+      "edge_count": 3094,
+      "graph_sha256": "685d173adc6d483df20b4c409409035d79554ef86621553a4d93b4c76673e144",
+      "nodes_with_financial_features": 0
+    }
+  ],
+  "entity_type": "country_or_territory",
+  "direction": "creditor_to_debtor",
+  "creditor_scope": "resident_reporting_banks",
+  "debtor_scope": "all_sectors",
+  "exposure_unit": "million USD",
+  "available": [
+    "partial_country_pair_claim_stocks",
+    "periods",
+    "direction",
+    "source_provenance"
+  ],
+  "missing": [
+    "bank_level_bilateral_exposure_matrix",
+    "matched_bank_identifiers",
+    "capital_buffers",
+    "equity",
+    "complete_balance_sheets",
+    "liquidity_or_payment_capacities",
+    "maturities",
+    "approved_initial_distress_configuration"
+  ],
+  "decisions": {
+    "debtrank_on_observed_bis": "not_eligible",
+    "financial_maxflow_on_observed_bis": "not_eligible",
+    "bank_stress_on_observed_bis": "not_eligible",
+    "synthetic_debtrank": "implemented_on_separate_synthetic_bank_model",
+    "synthetic_capacity_model": "deferred_by_user_scope_selection"
+  },
+  "runtime_code_modified": true,
+  "advanced_algorithms_executed": true,
+  "new_algorithm_tests_executed": true,
+  "risk_results": "docs/phase5-results.json",
+  "recommended_next_step": "Approved Phase 5 scope complete; await user approval for Phase 6."
+}

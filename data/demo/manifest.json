@@ -1,0 +1,8 @@
+{
+  "dataset_id": "synthetic-bis-demo",
+  "source_url": "urn:fnb:synthetic-demo",
+  "source_version": "demo-v1",
+  "accessed_at": "2026-11-07",
+  "data_kind": "synthetic",
+  "description": "Handcrafted synthetic BIS-shaped fixture. Values are invented, not actual country exposures."
+}

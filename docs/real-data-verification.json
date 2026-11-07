@@ -1,0 +1,48 @@
+{
+  "coverage": "Partial observed country/territory network; banks as creditors, all sectors as debtors. Loans and deposits only.",
+  "input_rows": 4169,
+  "issue_counts": {
+    "missing_or_nonnumeric_weight": 753,
+    "observation_status": 10
+  },
+  "profile": {
+    "column_map": {},
+    "missing_policy": "exclude",
+    "period": "2025-Q4",
+    "profile": {
+      "FREQ": "Q",
+      "L_CP_SECTOR": "A",
+      "L_CURR_TYPE": "A",
+      "L_DENOM": "TO1",
+      "L_INSTR": "G",
+      "L_MEASURE": "S",
+      "L_PARENT_CTY": "5J",
+      "L_POSITION": "C",
+      "L_POS_TYPE": "N",
+      "L_REP_BANK_TYPE": "A"
+    },
+    "self_loop_policy": "error",
+    "zero_policy": "error"
+  },
+  "repeat_graph_hash_matched": true,
+  "selected_rows": 3847,
+  "source": {
+    "accessed_at": "2026-11-07T15:31:16.571658+00:00",
+    "attribution": "Source: BIS locational banking statistics",
+    "data_kind": "observed_aggregate",
+    "dataset_id": "bis-lbs",
+    "sha256": "1c55544cd3af0c6af1cf2f10b9ae67abe4f5a6709b9e195c88ed065abcb32a48",
+    "source_url": "https://stats.bis.org/api/v2/data/dataflow/BIS/WS_LBS_D_PUB/1.0/Q.S.C.G.TO1.A.5J.A..A..N?startPeriod=2025-Q4&endPeriod=2025-Q4&format=csvfile",
+    "source_version": "WS_LBS_D_PUB/1.0",
+    "terms_url": "https://data.bis.org/help/legal",
+    "upstream_last_modified": null
+  },
+  "statistics": {
+    "density": 0.06540396567031666,
+    "edge_count": 3094,
+    "graph_sha256": "685d173adc6d483df20b4c409409035d79554ef86621553a4d93b4c76673e144",
+    "node_count": 218,
+    "period": "2025-Q4",
+    "self_loop_count": 0
+  }
+}

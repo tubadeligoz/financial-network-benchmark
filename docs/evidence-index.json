@@ -1,0 +1,3044 @@
+{
+  "final_runs": [
+    {
+      "path": "experiments\\final-synthetic-debtrank-v1\\runs\\20261107T190955-5aecd7fe",
+      "summary": {
+        "aggregated": {
+          "debtrank-impact": {
+            "memory_complete": true,
+            "memory_successes": 5,
+            "pipeline_seconds": {
+              "dataset_load_validation_seconds": {
+                "count": 0,
+                "max": null,
+                "mean": null,
+                "median": null,
+                "min": null,
+                "standard_deviation": null
+              },
+              "graph_build_seconds": {
+                "count": 0,
+                "max": null,
+                "mean": null,
+                "median": null,
+                "min": null,
+                "standard_deviation": null
+              },
+              "snapshot_read_seconds": {
+                "count": 0,
+                "max": null,
+                "mean": null,
+                "median": null,
+                "min": null,
+                "standard_deviation": null
+              },
+              "synthetic_generation_seconds": {
+                "count": 5,
+                "max": 0.0009201,
+                "mean": 0.00082882,
+                "median": 0.0008586,
+                "min": 0.000726,
+                "standard_deviation": 8.481613643641167e-05
+              }
+            },
+            "process_peak_rss_bytes": {
+              "count": 5,
+              "max": 94560256,
+              "mean": 94304665.6,
+              "median": 94179328,
+              "min": 94117888,
+              "standard_deviation": 211025.50658344597
+            },
+            "ranking_repeatable": true,
+            "runtime_seconds": {
+              "count": 5,
+              "max": 0.0003856,
+              "mean": 0.00036958,
+              "median": 0.0003669,
+              "min": 0.0003485,
+              "standard_deviation": 1.4927055972294068e-05
+            },
+            "sampled_peak_delta_bytes": {
+              "count": 5,
+              "max": 106496,
+              "mean": 99942.4,
+              "median": 98304,
+              "min": 98304,
+              "standard_deviation": 3663.5737743356553
+            },
+            "sampled_peak_rss_bytes": {
+              "count": 5,
+              "max": 94543872,
+              "mean": 94285004.8,
+              "median": 94158848,
+              "min": 94101504,
+              "standard_deviation": 210404.46729858185
+            },
+            "status_counts": {
+              "completed": 10
+            },
+            "timing_complete": true,
+            "timing_successes": 5
+          },
+          "debtrank-scenario": {
+            "memory_complete": true,
+            "memory_successes": 5,
+            "pipeline_seconds": {
+              "dataset_load_validation_seconds": {
+                "count": 0,
+                "max": null,
+                "mean": null,
+                "median": null,
+                "min": null,
+                "standard_deviation": null
+              },
+              "graph_build_seconds": {
+                "count": 0,
+                "max": null,
+                "mean": null,
+                "median": null,
+                "min": null,
+                "standard_deviation": null
+              },
+              "snapshot_read_seconds": {
+                "count": 0,
+                "max": null,
+                "mean": null,
+                "median": null,
+                "min": null,
+                "standard_deviation": null
+              },
+              "synthetic_generation_seconds": {
+                "count": 5,
+                "max": 0.0007876,
+                "mean": 0.0007714800000000001,
+                "median": 0.000782,
+                "min": 0.0007403,
+                "standard_deviation": 1.9900678380396968e-05
+              }
+            },
+            "process_peak_rss_bytes": {
+              "count": 5,
+              "max": 94416896,
+              "mean": 94307123.2,
+              "median": 94294016,
+              "min": 94220288,
+              "standard_deviation": 84262.19680972007
+            },
+            "ranking_repeatable": true,
+            "runtime_seconds": {
+              "count": 5,
+              "max": 0.0001979,
+              "mean": 0.00018314,
+              "median": 0.0001836,
+              "min": 0.0001684,
+              "standard_deviation": 1.1704187284899367e-05
+            },
+            "sampled_peak_delta_bytes": {
+              "count": 5,
+              "max": 118784,
+              "mean": 106496,
+              "median": 102400,
+              "min": 102400,
+              "standard_deviation": 7094.480107802121
+            },
+            "sampled_peak_rss_bytes": {
+              "count": 5,
+              "max": 94396416,
+              "mean": 94284185.6,
+              "median": 94269440,
+              "min": 94195712,
+              "standard_deviation": 84768.3998480566
+            },
+            "status_counts": {
+              "completed": 10
+            },
+            "timing_complete": true,
+            "timing_successes": 5
+          }
+        },
+        "algorithm_cases": [
+          {
+            "algorithm_id": "debtrank",
+            "case_id": "debtrank-impact",
+            "parameters": {
+              "mode": "impact_ranking",
+              "shock_magnitude": 1
+            }
+          },
+          {
+            "algorithm_id": "debtrank",
+            "case_id": "debtrank-scenario",
+            "parameters": {
+              "initial_shocks": {
+                "SYN-BANK-C": 0.5
+              }
+            }
+          }
+        ],
+        "comparison_exclusions": [
+          {
+            "left_case": "debtrank-impact",
+            "reason": "DebtRank comparison requires the same model version and shock configuration.",
+            "right_case": "debtrank-scenario"
+          }
+        ],
+        "experiment_id": "final-synthetic-debtrank-v1",
+        "graph": {
+          "creditor_scope": "synthetic_banks",
+          "data_kind": "synthetic",
+          "dataset_id": "synthetic-bank-stress",
+          "dataset_version": "1.0.0",
+          "debtor_scope": "synthetic_banks",
+          "density": 0.25,
+          "direction": "creditor_to_debtor",
+          "edge_count": 5,
+          "exposure_unit": "synthetic monetary units",
+          "graph_sha256": "605bfe5195251491853e5213878e330dcf6c940ab8e7d9a4bdf4eb588088d6b7",
+          "node_count": 5,
+          "selected_period": "synthetic-T0"
+        },
+        "rankings_available": [
+          "debtrank-impact",
+          "debtrank-scenario"
+        ],
+        "raw_trial_count": 20,
+        "run_id": "20261107T190955-5aecd7fe",
+        "status": "completed"
+      },
+      "environment": {
+        "application_source_sha256": "734b5c28a2426a9a17b9574e9d2fcabeb0338d2bf1494bec3d545a85ef114c61",
+        "benchmark_version": "1.1.0",
+        "clock": {
+          "adjustable": false,
+          "implementation": "QueryPerformanceCounter()",
+          "monotonic": true,
+          "resolution": 1e-07
+        },
+        "dependency_versions": {
+          "Pygments": "2.21.0",
+          "annotated-doc": "0.0.5",
+          "annotated-types": "0.8.0",
+          "anyio": "4.16.0",
+          "certifi": "2026.10.23",
+          "click": "8.5.1",
+          "colorama": "0.4.6",
+          "fastapi": "0.162.2",
+          "financial-network-benchmark": "0.1.0",
+          "h11": "0.16.0",
+          "httpcore": "1.0.9",
+          "httpx": "0.28.1",
+          "idna": "3.20",
+          "iniconfig": "2.3.1",
+          "librt": "0.16.0",
+          "mypy": "1.20.2",
+          "mypy_extensions": "1.2.0",
+          "networkx": "3.6.1",
+          "numpy": "2.4.6",
+          "opentelemetry-api": "1.45.2",
+          "packaging": "26.3",
+          "pandas": "3.1.1",
+          "pathspec": "1.1.1",
+          "pip": "22.3.1",
+          "pluggy": "1.7.0",
+          "psutil": "7.2.2",
+          "pyarrow": "26.0.1",
+          "pydantic": "2.14.3",
+          "pydantic_core": "2.50.4",
+          "pytest": "9.2.0",
+          "python-dateutil": "4.0.0",
+          "ruff": "0.17.4",
+          "scipy": "1.17.1",
+          "setuptools": "65.5.0",
+          "starlette": "1.10.0",
+          "typing-inspection": "0.4.5",
+          "typing_extensions": "4.16.0",
+          "tzdata": "2026.6",
+          "uvicorn": "0.54.0"
+        },
+        "executable": "<PROJECT_ROOT>\\.venv\\Scripts\\python.exe",
+        "logical_cpus": 64,
+        "machine": "AMD64",
+        "measurement_notes": [
+          "One trial per fresh process; serial scheduling.",
+          "Timing and memory series are separate; OS caches and other system load are not controlled.",
+          "CPU frequency/power policy/thermal state are not locked. No hardware affinity is forced."
+        ],
+        "packages": {
+          "networkx": "3.6.1",
+          "numpy": "2.4.6",
+          "pandas": "3.1.1",
+          "psutil": "7.2.2",
+          "pyarrow": "26.0.1",
+          "scipy": "1.17.1"
+        },
+        "physical_cpus": 32,
+        "platform": "Windows-10-10.0.26300-SP0",
+        "processor": "AMD64 Family 23 Model 49 Stepping 0, AuthenticAMD",
+        "python": "3.11.1 (tags/v3.11.1:a7a450f, Dec  6 2022, 19:58:39) [MSC v.1934 64 bit (AMD64)]",
+        "source_archive": {
+          "manifest": "source-manifest.json",
+          "path": "source-code.zip",
+          "sha256": "ac18736c74ca718f57b4a52abed68f688e6fc3de2e066fe17eb5e6563c5d0b95"
+        },
+        "total_ram_bytes": 51429548032,
+        "worker_thread_limits": {
+          "MKL_NUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1"
+        }
+      },
+      "comparisons": []
+    },
+    {
+      "path": "experiments\\final-bis-2025q4-v1\\runs\\20261107T191023-591ad944",
+      "summary": {
+        "aggregated": {
+          "betweenness-exact": {
+            "memory_complete": true,
+            "memory_successes": 5,
+            "pipeline_seconds": {
+              "dataset_load_validation_seconds": {
+                "count": 5,
+                "max": 0.1836921,
+                "mean": 0.18181848,
+                "median": 0.1832129,
+                "min": 0.1777211,
+                "standard_deviation": 0.002481885098468504
+              },
+              "graph_build_seconds": {
+                "count": 5,
+                "max": 0.0405666,
+                "mean": 0.04008344,
+                "median": 0.0402652,
+                "min": 0.0395981,
+                "standard_deviation": 0.00044951449698536083
+              },
+              "snapshot_read_seconds": {
+                "count": 0,
+                "max": null,
+                "mean": null,
+                "median": null,
+                "min": null,
+                "standard_deviation": null
+              },
+              "synthetic_generation_seconds": {
+                "count": 0,
+                "max": null,
+                "mean": null,
+                "median": null,
+                "min": null,
+                "standard_deviation": null
+              }
+            },
+            "process_peak_rss_bytes": {
+              "count": 5,
+              "max": 114823168,
+              "mean": 114717491.2,
+              "median": 114782208,
+              "min": 114511872,
+              "standard_deviation": 133242.82333844475
+            },
+            "ranking_repeatable": true,
+            "runtime_seconds": {
+              "count": 5,
+              "max": 0.023152,
+              "mean": 0.0228785,
+              "median": 0.0229319,
+              "min": 0.0224421,
+              "standard_deviation": 0.0002618480952766316
+            },
+            "sampled_peak_delta_bytes": {
+              "count": 5,
+              "max": 200704,
+              "mean": 151552,
+              "median": 151552,
+              "min": 102400,
+              "standard_deviation": 47148.5007184746
+            },
+            "sampled_peak_rss_bytes": {
+              "count": 5,
+              "max": 109400064,
+              "mean": 109041254.4,
+              "median": 109088768,
+              "min": 108642304,
+              "standard_deviation": 322917.06459213333
+            },
+            "status_counts": {
+              "completed": 10
+            },
+            "timing_complete": true,
+            "timing_successes": 5
+          },
+          "betweenness-inverse-exact": {
+            "memory_complete": true,
+            "memory_successes": 5,
+            "pipeline_seconds": {
+              "dataset_load_validation_seconds": {
+                "count": 5,
+                "max": 0.1834853,
+                "mean": 0.18198502,
+                "median": 0.1822361,
+                "min": 0.1801162,
+                "standard_deviation": 0.0012631922921709057
+              },
+              "graph_build_seconds": {
+                "count": 5,
+                "max": 0.0403384,
+                "mean": 0.03961736,
+                "median": 0.0394825,
+                "min": 0.038806,
+                "standard_deviation": 0.0006999960664175195
+              },
+              "snapshot_read_seconds": {
+                "count": 0,
+                "max": null,
+                "mean": null,
+                "median": null,
+                "min": null,
+                "standard_deviation": null
+              },
+              "synthetic_generation_seconds": {
+                "count": 0,
+                "max": null,
+                "mean": null,
+                "median": null,
+                "min": null,
+                "standard_deviation": null
+              }
+            },
+            "process_peak_rss_bytes": {
+              "count": 5,
+              "max": 115159040,
+              "mean": 114698649.6,
+              "median": 114475008,
+              "min": 114434048,
+              "standard_deviation": 341157.7062837655
+            },
+            "ranking_repeatable": true,
+            "runtime_seconds": {
+              "count": 5,
+              "max": 0.0588866,
+              "mean": 0.05763482,
+              "median": 0.0579705,
+              "min": 0.0557039,
+              "standard_deviation": 0.0012905697644838882
+            },
+            "sampled_peak_delta_bytes": {
+              "count": 5,
+              "max": 589824,
+              "mean": 333414.4,
+              "median": 237568,
+              "min": 114688,
+              "standard_deviation": 197280.98153851528
+            },
+            "sampled_peak_rss_bytes": {
+              "count": 5,
+              "max": 111026176,
+              "mean": 110609203.2,
+              "median": 110510080,
+              "min": 110370816,
+              "standard_deviation": 265204.53411508637
+            },
+            "status_counts": {
+              "completed": 10
+            },
+            "timing_complete": true,
+            "timing_successes": 5
+          },
+          "pagerank": {
+            "memory_complete": true,
+            "memory_successes": 5,
+            "pipeline_seconds": {
+              "dataset_load_validation_seconds": {
+                "count": 5,
+                "max": 0.1854682,
+                "mean": 0.18346618,
+                "median": 0.1832667,
+                "min": 0.1821187,
+                "standard_deviation": 0.0013173520892305164
+              },
+              "graph_build_seconds": {
+                "count": 5,
+                "max": 0.0401867,
+                "mean": 0.03994964,
+                "median": 0.0401215,
+                "min": 0.0395132,
+                "standard_deviation": 0.00029807564140667405
+              },
+              "snapshot_read_seconds": {
+                "count": 0,
+                "max": null,
+                "mean": null,
+                "median": null,
+                "min": null,
+                "standard_deviation": null
+              },
+              "synthetic_generation_seconds": {
+                "count": 0,
+                "max": null,
+                "mean": null,
+                "median": null,
+                "min": null,
+                "standard_deviation": null
+              }
+            },
+            "process_peak_rss_bytes": {
+              "count": 5,
+              "max": 123744256,
+              "mean": 122734182.4,
+              "median": 122441728,
+              "min": 121888768,
+              "standard_deviation": 917241.5624669436
+            },
+            "ranking_repeatable": true,
+            "runtime_seconds": {
+              "count": 5,
+              "max": 0.0047683,
+              "mean": 0.0043771999999999995,
+              "median": 0.0043928,
+              "min": 0.0041087,
+              "standard_deviation": 0.0002574404979796302
+            },
+            "sampled_peak_delta_bytes": {
+              "count": 5,
+              "max": 335872,
+              "mean": 154009.6,
+              "median": 106496,
+              "min": 106496,
+              "standard_deviation": 101726.03810627837
+            },
+            "sampled_peak_rss_bytes": {
+              "count": 5,
+              "max": 119619584,
+              "mean": 118632448,
+              "median": 118312960,
+              "min": 117784576,
+              "standard_deviation": 889841.2703038672
+            },
+            "status_counts": {
+              "completed": 10
+            },
+            "timing_complete": true,
+            "timing_successes": 5
+          },
+          "strength": {
+            "memory_complete": true,
+            "memory_successes": 5,
+            "pipeline_seconds": {
+              "dataset_load_validation_seconds": {
+                "count": 5,
+                "max": 0.1843698,
+                "mean": 0.18333332,
+                "median": 0.1834897,
+                "min": 0.1819384,
+                "standard_deviation": 0.0008824838338462639
+              },
+              "graph_build_seconds": {
+                "count": 5,
+                "max": 0.0412043,
+                "mean": 0.04062732,
+                "median": 0.0405019,
+                "min": 0.0402129,
+                "standard_deviation": 0.00042432691642175905
+              },
+              "snapshot_read_seconds": {
+                "count": 0,
+                "max": null,
+                "mean": null,
+                "median": null,
+                "min": null,
+                "standard_deviation": null
+              },
+              "synthetic_generation_seconds": {
+                "count": 0,
+                "max": null,
+                "mean": null,
+                "median": null,
+                "min": null,
+                "standard_deviation": null
+              }
+            },
+            "process_peak_rss_bytes": {
+              "count": 5,
+              "max": 114868224,
+              "mean": 114566758.4,
+              "median": 114610176,
+              "min": 114110464,
+              "standard_deviation": 283714.1641243877
+            },
+            "ranking_repeatable": true,
+            "runtime_seconds": {
+              "count": 5,
+              "max": 0.0037404,
+              "mean": 0.00358004,
+              "median": 0.0035964,
+              "min": 0.0033934,
+              "standard_deviation": 0.00013361155638641443
+            },
+            "sampled_peak_delta_bytes": {
+              "count": 5,
+              "max": 159744,
+              "mean": 120422.4,
+              "median": 114688,
+              "min": 102400,
+              "standard_deviation": 22546.610494706296
+            },
+            "sampled_peak_rss_bytes": {
+              "count": 5,
+              "max": 108830720,
+              "mean": 108438323.2,
+              "median": 108326912,
+              "min": 108183552,
+              "standard_deviation": 276478.482958801
+            },
+            "status_counts": {
+              "completed": 10
+            },
+            "timing_complete": true,
+            "timing_successes": 5
+          }
+        },
+        "algorithm_cases": [
+          {
+            "algorithm_id": "strength",
+            "case_id": "strength",
+            "parameters": {}
+          },
+          {
+            "algorithm_id": "betweenness",
+            "case_id": "betweenness-exact",
+            "parameters": {
+              "seed": 42
+            }
+          },
+          {
+            "algorithm_id": "betweenness",
+            "case_id": "betweenness-inverse-exact",
+            "parameters": {
+              "mode": "inverse_exposure",
+              "seed": 42
+            }
+          },
+          {
+            "algorithm_id": "pagerank",
+            "case_id": "pagerank",
+            "parameters": {}
+          }
+        ],
+        "comparison_exclusions": [],
+        "experiment_id": "final-bis-2025q4-v1",
+        "graph": {
+          "creditor_scope": "resident_reporting_banks",
+          "data_kind": "observed_aggregate",
+          "dataset_id": "bis-lbs",
+          "dataset_version": "WS_LBS_D_PUB/1.0",
+          "debtor_scope": "all_sectors",
+          "density": 0.06540396567031666,
+          "direction": "creditor_to_debtor",
+          "edge_count": 3094,
+          "exposure_unit": "million USD",
+          "graph_sha256": "685d173adc6d483df20b4c409409035d79554ef86621553a4d93b4c76673e144",
+          "node_count": 218,
+          "selected_period": "2025-Q4"
+        },
+        "rankings_available": [
+          "betweenness-exact",
+          "betweenness-inverse-exact",
+          "pagerank",
+          "strength"
+        ],
+        "raw_trial_count": 40,
+        "run_id": "20261107T191023-591ad944",
+        "status": "completed"
+      },
+      "environment": {
+        "application_source_sha256": "734b5c28a2426a9a17b9574e9d2fcabeb0338d2bf1494bec3d545a85ef114c61",
+        "benchmark_version": "1.1.0",
+        "clock": {
+          "adjustable": false,
+          "implementation": "QueryPerformanceCounter()",
+          "monotonic": true,
+          "resolution": 1e-07
+        },
+        "dependency_versions": {
+          "Pygments": "2.21.0",
+          "annotated-doc": "0.0.5",
+          "annotated-types": "0.8.0",
+          "anyio": "4.16.0",
+          "certifi": "2026.10.23",
+          "click": "8.5.1",
+          "colorama": "0.4.6",
+          "fastapi": "0.162.2",
+          "financial-network-benchmark": "0.1.0",
+          "h11": "0.16.0",
+          "httpcore": "1.0.9",
+          "httpx": "0.28.1",
+          "idna": "3.20",
+          "iniconfig": "2.3.1",
+          "librt": "0.16.0",
+          "mypy": "1.20.2",
+          "mypy_extensions": "1.2.0",
+          "networkx": "3.6.1",
+          "numpy": "2.4.6",
+          "opentelemetry-api": "1.45.2",
+          "packaging": "26.3",
+          "pandas": "3.1.1",
+          "pathspec": "1.1.1",
+          "pip": "22.3.1",
+          "pluggy": "1.7.0",
+          "psutil": "7.2.2",
+          "pyarrow": "26.0.1",
+          "pydantic": "2.14.3",
+          "pydantic_core": "2.50.4",
+          "pytest": "9.2.0",
+          "python-dateutil": "4.0.0",
+          "ruff": "0.17.4",
+          "scipy": "1.17.1",
+          "setuptools": "65.5.0",
+          "starlette": "1.10.0",
+          "typing-inspection": "0.4.5",
+          "typing_extensions": "4.16.0",
+          "tzdata": "2026.6",
+          "uvicorn": "0.54.0"
+        },
+        "executable": "<PROJECT_ROOT>\\.venv\\Scripts\\python.exe",
+        "logical_cpus": 64,
+        "machine": "AMD64",
+        "measurement_notes": [
+          "One trial per fresh process; serial scheduling.",
+          "Timing and memory series are separate; OS caches and other system load are not controlled.",
+          "CPU frequency/power policy/thermal state are not locked. No hardware affinity is forced."
+        ],
+        "packages": {
+          "networkx": "3.6.1",
+          "numpy": "2.4.6",
+          "pandas": "3.1.1",
+          "psutil": "7.2.2",
+          "pyarrow": "26.0.1",
+          "scipy": "1.17.1"
+        },
+        "physical_cpus": 32,
+        "platform": "Windows-10-10.0.26300-SP0",
+        "processor": "AMD64 Family 23 Model 49 Stepping 0, AuthenticAMD",
+        "python": "3.11.1 (tags/v3.11.1:a7a450f, Dec  6 2022, 19:58:39) [MSC v.1934 64 bit (AMD64)]",
+        "source_archive": {
+          "manifest": "source-manifest.json",
+          "path": "source-code.zip",
+          "sha256": "ac18736c74ca718f57b4a52abed68f688e6fc3de2e066fe17eb5e6563c5d0b95"
+        },
+        "total_ram_bytes": 51429548032,
+        "worker_thread_limits": {
+          "MKL_NUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1"
+        }
+      },
+      "comparisons": [
+        {
+          "interpretation": "ranking agreement, not accuracy; missing nodes never filled with zero",
+          "left_case": "betweenness-exact",
+          "left_only_nodes": [],
+          "node_count": 218,
+          "right_case": "betweenness-inverse-exact",
+          "right_only_nodes": [],
+          "spearman": 0.8997854033906845,
+          "spearman_undefined_reason": null,
+          "top_k": [
+            {
+              "common_nodes": [
+                "CH",
+                "FR",
+                "GB"
+              ],
+              "jaccard": 0.42857142857142855,
+              "k": 5,
+              "left_cutoff_tie": false,
+              "overlap": 0.6,
+              "right_cutoff_tie": false
+            },
+            {
+              "common_nodes": [
+                "AT",
+                "CH",
+                "FR",
+                "GB",
+                "LU"
+              ],
+              "jaccard": 0.3333333333333333,
+              "k": 10,
+              "left_cutoff_tie": false,
+              "overlap": 0.5,
+              "right_cutoff_tie": false
+            },
+            {
+              "common_nodes": [
+                "AT",
+                "AU",
+                "BE",
+                "CH",
+                "DK",
+                "ES",
+                "FI",
+                "FR",
+                "GB",
+                "GG",
+                "HK",
+                "IT",
+                "KR",
+                "LU",
+                "SE",
+                "TW",
+                "US",
+                "ZA"
+              ],
+              "jaccard": 0.8181818181818182,
+              "k": 20,
+              "left_cutoff_tie": false,
+              "overlap": 0.9,
+              "right_cutoff_tie": true
+            }
+          ],
+          "universe": "identical"
+        },
+        {
+          "interpretation": "ranking agreement, not accuracy; missing nodes never filled with zero",
+          "left_case": "betweenness-exact",
+          "left_only_nodes": [],
+          "node_count": 218,
+          "right_case": "pagerank",
+          "right_only_nodes": [],
+          "spearman": 0.5201246791648624,
+          "spearman_undefined_reason": null,
+          "top_k": [
+            {
+              "common_nodes": [
+                "FR",
+                "GB"
+              ],
+              "jaccard": 0.25,
+              "k": 5,
+              "left_cutoff_tie": false,
+              "overlap": 0.4,
+              "right_cutoff_tie": false
+            },
+            {
+              "common_nodes": [
+                "CH",
+                "FR",
+                "GB",
+                "LU"
+              ],
+              "jaccard": 0.25,
+              "k": 10,
+              "left_cutoff_tie": false,
+              "overlap": 0.4,
+              "right_cutoff_tie": false
+            },
+            {
+              "common_nodes": [
+                "CH",
+                "ES",
+                "FR",
+                "GB",
+                "HK",
+                "IE",
+                "IT",
+                "LU",
+                "NL",
+                "SE",
+                "US"
+              ],
+              "jaccard": 0.3793103448275862,
+              "k": 20,
+              "left_cutoff_tie": false,
+              "overlap": 0.55,
+              "right_cutoff_tie": false
+            }
+          ],
+          "universe": "identical"
+        },
+        {
+          "interpretation": "ranking agreement, not accuracy; missing nodes never filled with zero",
+          "left_case": "betweenness-exact",
+          "left_only_nodes": [],
+          "node_count": 218,
+          "right_case": "strength",
+          "right_only_nodes": [],
+          "spearman": 0.5557481382618364,
+          "spearman_undefined_reason": null,
+          "top_k": [
+            {
+              "common_nodes": [
+                "FR",
+                "GB"
+              ],
+              "jaccard": 0.25,
+              "k": 5,
+              "left_cutoff_tie": false,
+              "overlap": 0.4,
+              "right_cutoff_tie": false
+            },
+            {
+              "common_nodes": [
+                "FR",
+                "GB",
+                "LU"
+              ],
+              "jaccard": 0.17647058823529413,
+              "k": 10,
+              "left_cutoff_tie": false,
+              "overlap": 0.3,
+              "right_cutoff_tie": false
+            },
+            {
+              "common_nodes": [
+                "AU",
+                "BE",
+                "CH",
+                "ES",
+                "FR",
+                "GB",
+                "HK",
+                "IE",
+                "IT",
+                "LU",
+                "NL",
+                "SE",
+                "US"
+              ],
+              "jaccard": 0.48148148148148145,
+              "k": 20,
+              "left_cutoff_tie": false,
+              "overlap": 0.65,
+              "right_cutoff_tie": false
+            }
+          ],
+          "universe": "identical"
+        },
+        {
+          "interpretation": "ranking agreement, not accuracy; missing nodes never filled with zero",
+          "left_case": "betweenness-inverse-exact",
+          "left_only_nodes": [],
+          "node_count": 218,
+          "right_case": "pagerank",
+          "right_only_nodes": [],
+          "spearman": 0.47752029339824825,
+          "spearman_undefined_reason": null,
+          "top_k": [
+            {
+              "common_nodes": [
+                "FR",
+                "GB",
+                "US"
+              ],
+              "jaccard": 0.42857142857142855,
+              "k": 5,
+              "left_cutoff_tie": false,
+              "overlap": 0.6,
+              "right_cutoff_tie": false
+            },
+            {
+              "common_nodes": [
+                "CH",
+                "FR",
+                "GB",
+                "LU",
+                "US"
+              ],
+              "jaccard": 0.3333333333333333,
+              "k": 10,
+              "left_cutoff_tie": false,
+              "overlap": 0.5,
+              "right_cutoff_tie": false
+            },
+            {
+              "common_nodes": [
+                "CA",
+                "CH",
+                "ES",
+                "FR",
+                "GB",
+                "HK",
+                "IT",
+                "LU",
+                "SE",
+                "US"
+              ],
+              "jaccard": 0.3333333333333333,
+              "k": 20,
+              "left_cutoff_tie": true,
+              "overlap": 0.5,
+              "right_cutoff_tie": false
+            }
+          ],
+          "universe": "identical"
+        },
+        {
+          "interpretation": "ranking agreement, not accuracy; missing nodes never filled with zero",
+          "left_case": "betweenness-inverse-exact",
+          "left_only_nodes": [],
+          "node_count": 218,
+          "right_case": "strength",
+          "right_only_nodes": [],
+          "spearman": 0.5065968241017077,
+          "spearman_undefined_reason": null,
+          "top_k": [
+            {
+              "common_nodes": [
+                "FR",
+                "GB",
+                "US"
+              ],
+              "jaccard": 0.42857142857142855,
+              "k": 5,
+              "left_cutoff_tie": false,
+              "overlap": 0.6,
+              "right_cutoff_tie": false
+            },
+            {
+              "common_nodes": [
+                "FR",
+                "GB",
+                "HK",
+                "LU",
+                "US"
+              ],
+              "jaccard": 0.3333333333333333,
+              "k": 10,
+              "left_cutoff_tie": false,
+              "overlap": 0.5,
+              "right_cutoff_tie": false
+            },
+            {
+              "common_nodes": [
+                "AU",
+                "BE",
+                "CA",
+                "CH",
+                "ES",
+                "FR",
+                "GB",
+                "HK",
+                "IT",
+                "LU",
+                "SE",
+                "US"
+              ],
+              "jaccard": 0.42857142857142855,
+              "k": 20,
+              "left_cutoff_tie": true,
+              "overlap": 0.6,
+              "right_cutoff_tie": false
+            }
+          ],
+          "universe": "identical"
+        },
+        {
+          "interpretation": "ranking agreement, not accuracy; missing nodes never filled with zero",
+          "left_case": "pagerank",
+          "left_only_nodes": [],
+          "node_count": 218,
+          "right_case": "strength",
+          "right_only_nodes": [],
+          "spearman": 0.9836123773577912,
+          "spearman_undefined_reason": null,
+          "top_k": [
+            {
+              "common_nodes": [
+                "FR",
+                "GB",
+                "KY",
+                "US"
+              ],
+              "jaccard": 0.6666666666666666,
+              "k": 5,
+              "left_cutoff_tie": false,
+              "overlap": 0.8,
+              "right_cutoff_tie": false
+            },
+            {
+              "common_nodes": [
+                "CA",
+                "DE",
+                "FR",
+                "GB",
+                "JP",
+                "KY",
+                "LU",
+                "NL",
+                "US"
+              ],
+              "jaccard": 0.8181818181818182,
+              "k": 10,
+              "left_cutoff_tie": false,
+              "overlap": 0.9,
+              "right_cutoff_tie": false
+            },
+            {
+              "common_nodes": [
+                "CA",
+                "CH",
+                "CN",
+                "DE",
+                "ES",
+                "FR",
+                "GB",
+                "HK",
+                "IE",
+                "IT",
+                "JE",
+                "JP",
+                "KY",
+                "LU",
+                "NL",
+                "SE",
+                "SG",
+                "US"
+              ],
+              "jaccard": 0.8181818181818182,
+              "k": 20,
+              "left_cutoff_tie": false,
+              "overlap": 0.9,
+              "right_cutoff_tie": false
+            }
+          ],
+          "universe": "identical"
+        }
+      ]
+    }
+  ],
+  "profiles": {
+    "profile-before": {
+      "environment": {
+        "python": "3.11.1 (tags/v3.11.1:a7a450f, Dec  6 2022, 19:58:39) [MSC v.1934 64 bit (AMD64)]",
+        "executable": "<PROJECT_ROOT>\\.venv\\Scripts\\python.exe",
+        "platform": "Windows-10-10.0.26300-SP0",
+        "processor": "AMD64 Family 23 Model 49 Stepping 0, AuthenticAMD",
+        "machine": "AMD64",
+        "logical_cpus": 64,
+        "physical_cpus": 32,
+        "total_ram_bytes": 51429548032,
+        "packages": {
+          "networkx": "3.6.1",
+          "numpy": "2.4.6",
+          "pandas": "3.1.1",
+          "scipy": "1.17.1",
+          "psutil": "7.2.2",
+          "pyarrow": "26.0.1"
+        },
+        "application_source_sha256": "3dff54e0d2267c700a3c08ae41db30d75356263549fa731cf621029774682bf4",
+        "benchmark_version": "1.0.0",
+        "clock": {
+          "implementation": "QueryPerformanceCounter()",
+          "monotonic": true,
+          "adjustable": false,
+          "resolution": 1e-07
+        },
+        "worker_thread_limits": {
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1"
+        },
+        "measurement_notes": [
+          "One trial per fresh process; serial scheduling.",
+          "Timing and memory series are separate; OS caches and other system load are not controlled.",
+          "CPU frequency/power policy/thermal state are not locked. No hardware affinity is forced."
+        ]
+      },
+      "repeat_count": 5,
+      "records": [
+        {
+          "case": "synthetic-banks",
+          "identity": {
+            "dataset_id": "synthetic-bank-stress",
+            "dataset_version": "1.0.0",
+            "selected_period": "synthetic-T0",
+            "graph_sha256": "605bfe5195251491853e5213878e330dcf6c940ab8e7d9a4bdf4eb588088d6b7",
+            "data_kind": "synthetic",
+            "node_count": 5,
+            "edge_count": 5,
+            "density": 0.25,
+            "direction": "creditor_to_debtor",
+            "exposure_unit": "synthetic monetary units",
+            "creditor_scope": "synthetic_banks",
+            "debtor_scope": "synthetic_banks"
+          },
+          "source": {
+            "kind": "synthetic_financial",
+            "period": "synthetic-T0"
+          },
+          "load_validate_build": {
+            "seconds": [
+              0.0007180999964475632,
+              0.000381199992261827,
+              0.0003473000251688063,
+              0.00034959998447448015,
+              0.0004039999912492931
+            ],
+            "summary": {
+              "count": 5,
+              "mean": 0.0004400399979203939,
+              "median": 0.000381199992261827,
+              "standard_deviation": 0.00015720884970775724,
+              "min": 0.0003473000251688063,
+              "max": 0.0007180999964475632
+            }
+          },
+          "graph_serialization": {
+            "seconds": [
+              5.7999975979328156e-05,
+              5.219999002292752e-05,
+              4.8600020818412304e-05,
+              4.7200010158121586e-05,
+              4.650000482797623e-05
+            ],
+            "summary": {
+              "count": 5,
+              "mean": 5.050000036135316e-05,
+              "median": 4.8600020818412304e-05,
+              "standard_deviation": 4.733904862577317e-06,
+              "min": 4.650000482797623e-05,
+              "max": 5.7999975979328156e-05
+            },
+            "utf8_bytes": 4165
+          },
+          "algorithms": {
+            "strength": {
+              "engine_total": {
+                "seconds": [
+                  0.003695000021252781,
+                  0.0033058999688364565,
+                  0.0032779000466689467,
+                  0.003381199960131198,
+                  0.0033733000163920224
+                ],
+                "summary": {
+                  "count": 5,
+                  "mean": 0.003406660002656281,
+                  "median": 0.0033733000163920224,
+                  "standard_deviation": 0.00016705745976638775,
+                  "min": 0.0032779000466689467,
+                  "max": 0.003695000021252781
+                }
+              },
+              "compute_seconds": [
+                6.619998021051288e-05,
+                5.800003418698907e-05,
+                5.15999854542315e-05,
+                5.4500007536262274e-05,
+                5.530001362785697e-05
+              ],
+              "compute_summary": {
+                "count": 5,
+                "mean": 5.7120004203170535e-05,
+                "median": 5.530001362785697e-05,
+                "standard_deviation": 5.564794971151482e-06,
+                "min": 5.15999854542315e-05,
+                "max": 6.619998021051288e-05
+              },
+              "result_serialization": {
+                "seconds": [
+                  0.00029659998835995793,
+                  0.00025459995958954096,
+                  0.00025540002388879657,
+                  0.00025729998014867306,
+                  0.00024800002574920654
+                ],
+                "summary": {
+                  "count": 5,
+                  "mean": 0.000262379995547235,
+                  "median": 0.00025540002388879657,
+                  "standard_deviation": 1.9447666696806217e-05,
+                  "min": 0.00024800002574920654,
+                  "max": 0.00029659998835995793
+                }
+              },
+              "result_bytes": 4454,
+              "scores_sha256": "2d6e085106d1d5a4782e7503b89ac228de761cdcbe875d1f9bf7c5955ce3037f"
+            },
+            "pagerank": {
+              "engine_total": {
+                "seconds": [
+                  0.00859479996142909,
+                  0.007873399998061359,
+                  0.007954400032758713,
+                  0.007616999966558069,
+                  0.007836500008124858
+                ],
+                "summary": {
+                  "count": 5,
+                  "mean": 0.007975219993386417,
+                  "median": 0.007873399998061359,
+                  "standard_deviation": 0.0003681864137024078,
+                  "min": 0.007616999966558069,
+                  "max": 0.00859479996142909
+                }
+              },
+              "compute_seconds": [
+                0.005196799989789724,
+                0.004447399987839162,
+                0.0045075000380165875,
+                0.004337399965152144,
+                0.004534200008492917
+              ],
+              "compute_summary": {
+                "count": 5,
+                "mean": 0.0046046599978581074,
+                "median": 0.0045075000380165875,
+                "standard_deviation": 0.0003395559872008131,
+                "min": 0.004337399965152144,
+                "max": 0.005196799989789724
+              },
+              "result_serialization": {
+                "seconds": [
+                  0.00021949998335912824,
+                  0.00018360000103712082,
+                  0.0001808000379242003,
+                  0.00017589994240552187,
+                  0.00018230004934594035
+                ],
+                "summary": {
+                  "count": 5,
+                  "mean": 0.00018842000281438231,
+                  "median": 0.00018230004934594035,
+                  "standard_deviation": 1.761723031452167e-05,
+                  "min": 0.00017589994240552187,
+                  "max": 0.00021949998335912824
+                }
+              },
+              "result_bytes": 2984,
+              "scores_sha256": "16d46ec32c0b2984face328e49f132ec90c883733e231dc499b1896d60fc3f88"
+            },
+            "betweenness": {
+              "engine_total": {
+                "seconds": [
+                  0.003842799982521683,
+                  0.0033304000389762223,
+                  0.003360499977134168,
+                  0.003248099994380027,
+                  0.0032429000129923224
+                ],
+                "summary": {
+                  "count": 5,
+                  "mean": 0.0034049400012008844,
+                  "median": 0.0033304000389762223,
+                  "standard_deviation": 0.0002500541093783263,
+                  "min": 0.0032429000129923224,
+                  "max": 0.003842799982521683
+                }
+              },
+              "compute_seconds": [
+                0.00030229997355490923,
+                6.0699996538460255e-05,
+                5.5800017435103655e-05,
+                5.339999916031957e-05,
+                5.289999535307288e-05
+              ],
+              "compute_summary": {
+                "count": 5,
+                "mean": 0.00010501999640837312,
+                "median": 5.5800017435103655e-05,
+                "standard_deviation": 0.00011032608114973259,
+                "min": 5.289999535307288e-05,
+                "max": 0.00030229997355490923
+              },
+              "result_serialization": {
+                "seconds": [
+                  0.00019679998513311148,
+                  0.00018229999113827944,
+                  0.00017710000975057483,
+                  0.00017690000822767615,
+                  0.00017590000061318278
+                ],
+                "summary": {
+                  "count": 5,
+                  "mean": 0.00018179999897256495,
+                  "median": 0.00017710000975057483,
+                  "standard_deviation": 8.748705127187318e-06,
+                  "min": 0.00017590000061318278,
+                  "max": 0.00019679998513311148
+                }
+              },
+              "result_bytes": 2907,
+              "scores_sha256": "06674b78d6c89bd1d548d4c97df54b214e5943848cfa03463a7e37f9d19439ec"
+            }
+          }
+        },
+        {
+          "case": "synthetic-1000",
+          "identity": {
+            "dataset_id": "synthetic-erdos_renyi",
+            "dataset_version": "generator-v1",
+            "selected_period": "synthetic",
+            "graph_sha256": "0a8350afc9e8291ab0ef5fc597ad29289962b9c731a75c6fd11f237731dbff2b",
+            "data_kind": "synthetic",
+            "node_count": 1000,
+            "edge_count": 4000,
+            "density": 0.004004004004004004,
+            "direction": "creditor_to_debtor",
+            "exposure_unit": "synthetic units",
+            "creditor_scope": "synthetic_entities",
+            "debtor_scope": "synthetic_entities"
+          },
+          "source": {
+            "kind": "synthetic",
+            "generator": {
+              "node_count": 1000,
+              "edge_count": 4000,
+              "seed": 42
+            }
+          },
+          "load_validate_build": {
+            "seconds": [
+              0.048142699990421534,
+              0.0469856999698095,
+              0.09396349999587983,
+              0.04677139996783808,
+              0.09679600002709776
+            ],
+            "summary": {
+              "count": 5,
+              "mean": 0.06653185999020934,
+              "median": 0.048142699990421534,
+              "standard_deviation": 0.026358596334543783,
+              "min": 0.04677139996783808,
+              "max": 0.09679600002709776
+            }
+          },
+          "graph_serialization": {
+            "seconds": [
+              0.013214899983722717,
+              0.01294169999891892,
+              0.013057100004516542,
+              0.013099099975079298,
+              0.013185999996494502
+            ],
+            "summary": {
+              "count": 5,
+              "mean": 0.013099759991746396,
+              "median": 0.013099099975079298,
+              "standard_deviation": 0.00010896998168800223,
+              "min": 0.01294169999891892,
+              "max": 0.013214899983722717
+            },
+            "utf8_bytes": 794377
+          },
+          "algorithms": {
+            "strength": {
+              "engine_total": {
+                "seconds": [
+                  0.059919700026512146,
+                  0.10668289999011904,
+                  0.059285699971951544,
+                  0.06450259999837726,
+                  0.12056310003390536
+                ],
+                "summary": {
+                  "count": 5,
+                  "mean": 0.08219080000417307,
+                  "median": 0.06450259999837726,
+                  "standard_deviation": 0.029179677399002568,
+                  "min": 0.059285699971951544,
+                  "max": 0.12056310003390536
+                }
+              },
+              "compute_seconds": [
+                0.007665899989660829,
+                0.00761839997721836,
+                0.00796960003208369,
+                0.007830700022168458,
+                0.007676499953959137
+              ],
+              "compute_summary": {
+                "count": 5,
+                "mean": 0.007752219995018095,
+                "median": 0.007676499953959137,
+                "standard_deviation": 0.0001453492864472778,
+                "min": 0.00761839997721836,
+                "max": 0.00796960003208369
+              },
+              "result_serialization": {
+                "seconds": [
+                  0.02211709995754063,
+                  0.021430400025565177,
+                  0.02138089999789372,
+                  0.021525699994526803,
+                  0.02293819998158142
+                ],
+                "summary": {
+                  "count": 5,
+                  "mean": 0.021878459991421552,
+                  "median": 0.021525699994526803,
+                  "standard_deviation": 0.00066195943526495,
+                  "min": 0.02138089999789372,
+                  "max": 0.02293819998158142
+                }
+              },
+              "result_bytes": 231833,
+              "scores_sha256": "3a18b8c1455726177e099dfaa675e82aadffd91c235f9ed28fc409f6d0adb367"
+            },
+            "pagerank": {
+              "engine_total": {
+                "seconds": [
+                  0.05716059997212142,
+                  0.11291120003443211,
+                  0.05697839998174459,
+                  0.06055920000653714,
+                  0.10822739999275655
+                ],
+                "summary": {
+                  "count": 5,
+                  "mean": 0.07916735999751837,
+                  "median": 0.06055920000653714,
+                  "standard_deviation": 0.0287491031016997,
+                  "min": 0.05697839998174459,
+                  "max": 0.11291120003443211
+                }
+              },
+              "compute_seconds": [
+                0.004771699954289943,
+                0.004768700047861785,
+                0.0046808000188320875,
+                0.004893300007097423,
+                0.004549800010863692
+              ],
+              "compute_summary": {
+                "count": 5,
+                "mean": 0.004732860007788986,
+                "median": 0.004768700047861785,
+                "standard_deviation": 0.00012723526262321062,
+                "min": 0.004549800010863692,
+                "max": 0.004893300007097423
+              },
+              "result_serialization": {
+                "seconds": [
+                  0.010397200006991625,
+                  0.01025399996433407,
+                  0.010222000011708587,
+                  0.010198200005106628,
+                  0.010215200018137693
+                ],
+                "summary": {
+                  "count": 5,
+                  "mean": 0.010257320001255722,
+                  "median": 0.010222000011708587,
+                  "standard_deviation": 8.076850752920185e-05,
+                  "min": 0.010198200005106628,
+                  "max": 0.010397200006991625
+                }
+              },
+              "result_bytes": 93196,
+              "scores_sha256": "ec30746f5deed09cd8705acc9a1c39d25aa05b778376f5de972c3764baf1c63a"
+            },
+            "betweenness": {
+              "engine_total": {
+                "seconds": [
+                  0.14974709996022284,
+                  0.10158489999594167,
+                  0.15642090002074838,
+                  0.10098200000356883,
+                  0.15073080000001937
+                ],
+                "summary": {
+                  "count": 5,
+                  "mean": 0.13189313999610022,
+                  "median": 0.14974709996022284,
+                  "standard_deviation": 0.028059402702995843,
+                  "min": 0.10098200000356883,
+                  "max": 0.15642090002074838
+                }
+              },
+              "compute_seconds": [
+                0.09763810003641993,
+                0.048985400004312396,
+                0.09961209999164566,
+                0.04919649998191744,
+                0.0493074000114575
+              ],
+              "compute_summary": {
+                "count": 5,
+                "mean": 0.06894790000515058,
+                "median": 0.0493074000114575,
+                "standard_deviation": 0.02710068812691621,
+                "min": 0.048985400004312396,
+                "max": 0.09961209999164566
+              },
+              "result_serialization": {
+                "seconds": [
+                  0.010308799974154681,
+                  0.010363000037614256,
+                  0.01021709997439757,
+                  0.010186099971178919,
+                  0.010283000010531396
+                ],
+                "summary": {
+                  "count": 5,
+                  "mean": 0.010271599993575364,
+                  "median": 0.010283000010531396,
+                  "standard_deviation": 7.097230606402631e-05,
+                  "min": 0.010186099971178919,
+                  "max": 0.010363000037614256
+                }
+              },
+              "result_bytes": 92575,
+              "scores_sha256": "fcd9eaa994c5b8c3716c7cbf44b61952af08532b5baa39fd93cd3befae1fa595"
+            }
+          }
+        },
+        {
+          "case": "bis-Q4",
+          "identity": {
+            "dataset_id": "bis-lbs",
+            "dataset_version": "WS_LBS_D_PUB/1.0",
+            "selected_period": "2025-Q4",
+            "graph_sha256": "685d173adc6d483df20b4c409409035d79554ef86621553a4d93b4c76673e144",
+            "data_kind": "observed_aggregate",
+            "node_count": 218,
+            "edge_count": 3094,
+            "density": 0.06540396567031666,
+            "direction": "creditor_to_debtor",
+            "exposure_unit": "million USD",
+            "creditor_scope": "resident_reporting_banks",
+            "debtor_scope": "all_sectors"
+          },
+          "source": {
+            "kind": "bis",
+            "input": "<PROJECT_ROOT>\\data\\raw\\bis-all-sectors-2025q4\\observations.csv",
+            "manifest": "<PROJECT_ROOT>\\data\\raw\\bis-all-sectors-2025q4\\manifest.json",
+            "period": "2025-Q4",
+            "missing_policy": "exclude"
+          },
+          "load_validate_build": {
+            "seconds": [
+              0.3919513000291772,
+              0.44348779995925725,
+              0.38611290004337206,
+              0.38932080002268776,
+              0.46585149999009445
+            ],
+            "summary": {
+              "count": 5,
+              "mean": 0.41534486000891774,
+              "median": 0.3919513000291772,
+              "standard_deviation": 0.03681699193767903,
+              "min": 0.38611290004337206,
+              "max": 0.46585149999009445
+            }
+          },
+          "load_validation": {
+            "seconds": [
+              0.3482409000280313,
+              0.33249909995356575,
+              0.32528630003798753,
+              0.31471970002166927,
+              0.32487239997135475
+            ],
+            "summary": {
+              "count": 5,
+              "mean": 0.32912368000252173,
+              "median": 0.32528630003798753,
+              "standard_deviation": 0.01242110167752902,
+              "min": 0.31471970002166927,
+              "max": 0.3482409000280313
+            }
+          },
+          "graph_build": {
+            "seconds": [
+              0.040344999986700714,
+              0.10082769999280572,
+              0.039686900039669126,
+              0.0399946000543423,
+              0.0405274000368081
+            ],
+            "summary": {
+              "count": 5,
+              "mean": 0.05227632002206519,
+              "median": 0.040344999986700714,
+              "standard_deviation": 0.027142974028872575,
+              "min": 0.039686900039669126,
+              "max": 0.10082769999280572
+            }
+          },
+          "graph_serialization": {
+            "seconds": [
+              0.02589559997431934,
+              0.02468209998914972,
+              0.02411030000075698,
+              0.023995399998966604,
+              0.024220100021921098
+            ],
+            "summary": {
+              "count": 5,
+              "mean": 0.024580699997022747,
+              "median": 0.024220100021921098,
+              "standard_deviation": 0.0007799244346333484,
+              "min": 0.023995399998966604,
+              "max": 0.02589559997431934
+            },
+            "utf8_bytes": 2115987
+          },
+          "algorithms": {
+            "strength": {
+              "engine_total": {
+                "seconds": [
+                  0.13764359999913722,
+                  0.1986314000096172,
+                  0.13164839998353273,
+                  0.1334688999922946,
+                  0.13173389999428764
+                ],
+                "summary": {
+                  "count": 5,
+                  "mean": 0.14662523999577387,
+                  "median": 0.1334688999922946,
+                  "standard_deviation": 0.02917386485578291,
+                  "min": 0.13164839998353273,
+                  "max": 0.1986314000096172
+                }
+              },
+              "compute_seconds": [
+                0.0029480000375770032,
+                0.0027920000138692558,
+                0.0027289999998174608,
+                0.002902099979110062,
+                0.00274679996073246
+              ],
+              "compute_summary": {
+                "count": 5,
+                "mean": 0.0028235799982212484,
+                "median": 0.0027920000138692558,
+                "standard_deviation": 9.680338224796122e-05,
+                "min": 0.0027289999998174608,
+                "max": 0.0029480000375770032
+              },
+              "result_serialization": {
+                "seconds": [
+                  0.004897699982393533,
+                  0.004863700014539063,
+                  0.004854500002693385,
+                  0.005009800021070987,
+                  0.06998979998752475
+                ],
+                "summary": {
+                  "count": 5,
+                  "mean": 0.017923100001644342,
+                  "median": 0.004897699982393533,
+                  "standard_deviation": 0.029106235772705304,
+                  "min": 0.004854500002693385,
+                  "max": 0.06998979998752475
+                }
+              },
+              "result_bytes": 45443,
+              "scores_sha256": "56f5bd0dea8f3c3a03a303d342038a848a874a32b7708a16aa0cdebde74ab191"
+            },
+            "pagerank": {
+              "engine_total": {
+                "seconds": [
+                  0.13178769999649376,
+                  0.1364795999834314,
+                  0.142901899991557,
+                  0.2128981000278145,
+                  0.15267370000947267
+                ],
+                "summary": {
+                  "count": 5,
+                  "mean": 0.15534820000175387,
+                  "median": 0.142901899991557,
+                  "standard_deviation": 0.033110329031555294,
+                  "min": 0.13178769999649376,
+                  "max": 0.2128981000278145
+                }
+              },
+              "compute_seconds": [
+                0.0037243000115267932,
+                0.004358400008641183,
+                0.0036344999680295587,
+                0.004675999982282519,
+                0.0038705000188201666
+              ],
+              "compute_summary": {
+                "count": 5,
+                "mean": 0.004052739997860044,
+                "median": 0.0038705000188201666,
+                "standard_deviation": 0.0004466234452837974,
+                "min": 0.0036344999680295587,
+                "max": 0.004675999982282519
+              },
+              "result_serialization": {
+                "seconds": [
+                  0.0025492000277154148,
+                  0.0025031999684870243,
+                  0.002436000038869679,
+                  0.002538899949286133,
+                  0.00255430000834167
+                ],
+                "summary": {
+                  "count": 5,
+                  "mean": 0.002516319998539984,
+                  "median": 0.002538899949286133,
+                  "standard_deviation": 4.91346688928547e-05,
+                  "min": 0.002436000038869679,
+                  "max": 0.00255430000834167
+                }
+              },
+              "result_bytes": 20955,
+              "scores_sha256": "2944c57cf943d29f87d624a561d77fd6f64d944da9ab9dedc77d64a3c35b8a4c"
+            },
+            "betweenness": {
+              "engine_total": {
+                "seconds": [
+                  0.15712089999578893,
+                  0.21836170001188293,
+                  0.15220089996000752,
+                  0.15725700004259124,
+                  0.2223233999684453
+                ],
+                "summary": {
+                  "count": 5,
+                  "mean": 0.1814527799957432,
+                  "median": 0.15725700004259124,
+                  "standard_deviation": 0.035587303182488525,
+                  "min": 0.15220089996000752,
+                  "max": 0.2223233999684453
+                }
+              },
+              "compute_seconds": [
+                0.02319610002450645,
+                0.022796300007030368,
+                0.022746699978597462,
+                0.02314430003752932,
+                0.0229160999879241
+              ],
+              "compute_summary": {
+                "count": 5,
+                "mean": 0.02295990000711754,
+                "median": 0.0229160999879241,
+                "standard_deviation": 0.00020244225923779908,
+                "min": 0.022746699978597462,
+                "max": 0.02319610002450645
+              },
+              "result_serialization": {
+                "seconds": [
+                  0.002381499973125756,
+                  0.002319200022611767,
+                  0.0027071000076830387,
+                  0.0023680999875068665,
+                  0.002291699987836182
+                ],
+                "summary": {
+                  "count": 5,
+                  "mean": 0.002413519995752722,
+                  "median": 0.0023680999875068665,
+                  "standard_deviation": 0.0001680876661635129,
+                  "min": 0.002291699987836182,
+                  "max": 0.0027071000076830387
+                }
+              },
+              "result_bytes": 17670,
+              "scores_sha256": "381cd6e4382d0eec4b7a3c42688a6f11d3d94f746e60fb321d921c695a88c0a9"
+            }
+          }
+        }
+      ],
+      "api": [
+        {
+          "endpoint": "/health",
+          "cold_seconds": 0.004585199989378452,
+          "warm": {
+            "seconds": [
+              0.0027828000020235777,
+              0.0025526999961584806,
+              0.0024869999615475535,
+              0.0033712000004015863,
+              0.0026231000083498657
+            ],
+            "summary": {
+              "count": 5,
+              "mean": 0.002763359993696213,
+              "median": 0.0026231000083498657,
+              "standard_deviation": 0.00035716689134651023,
+              "min": 0.0024869999615475535,
+              "max": 0.0033712000004015863
+            }
+          },
+          "payload_bytes": 63
+        },
+        {
+          "endpoint": "/datasets",
+          "cold_seconds": 2.3999906000099145,
+          "warm": {
+            "seconds": [
+              0.012050800025463104,
+              0.011197799991350621,
+              0.011461400019470602,
+              0.011296899989247322,
+              0.01112089998787269
+            ],
+            "summary": {
+              "count": 5,
+              "mean": 0.011425560002680867,
+              "median": 0.011296899989247322,
+              "standard_deviation": 0.0003719728952938014,
+              "min": 0.01112089998787269,
+              "max": 0.012050800025463104
+            }
+          },
+          "payload_bytes": 6750
+        },
+        {
+          "endpoint": "/datasets/synthetic-bank-stress/periods/synthetic-T0/graph?limit_nodes=60",
+          "cold_seconds": 0.004154499969445169,
+          "warm": {
+            "seconds": [
+              0.0037351000355556607,
+              0.0035402000066824257,
+              0.003358400019351393,
+              0.0030956999980844557,
+              0.00360330002149567
+            ],
+            "summary": {
+              "count": 5,
+              "mean": 0.003466540016233921,
+              "median": 0.0035402000066824257,
+              "standard_deviation": 0.000247724723835253,
+              "min": 0.0030956999980844557,
+              "max": 0.0037351000355556607
+            }
+          },
+          "payload_bytes": 1492
+        },
+        {
+          "endpoint": "/datasets/synthetic-bank-stress/periods/synthetic-T0/statistics",
+          "cold_seconds": 0.0034265999565832317,
+          "warm": {
+            "seconds": [
+              0.003259100019931793,
+              0.003057299996726215,
+              0.0030712999869138002,
+              0.003492899995762855,
+              0.0028488999814726412
+            ],
+            "summary": {
+              "count": 5,
+              "mean": 0.003145899996161461,
+              "median": 0.0030712999869138002,
+              "standard_deviation": 0.0002423052698094941,
+              "min": 0.0028488999814726412,
+              "max": 0.003492899995762855
+            }
+          },
+          "payload_bytes": 1176
+        },
+        {
+          "endpoint": "/experiments",
+          "cold_seconds": 0.020256999996490777,
+          "warm": {
+            "seconds": [
+              0.0172889000386931,
+              0.01805929996771738,
+              0.021294799982570112,
+              0.018734300043433905,
+              0.018750800052657723
+            ],
+            "summary": {
+              "count": 5,
+              "mean": 0.018825620017014443,
+              "median": 0.018734300043433905,
+              "standard_deviation": 0.0015049536352217954,
+              "min": 0.0172889000386931,
+              "max": 0.021294799982570112
+            }
+          },
+          "payload_bytes": 63270
+        },
+        {
+          "endpoint": "/datasets/bis-lbs/periods/2025-Q4/graph?limit_nodes=60",
+          "cold_seconds": 0.01307659997837618,
+          "warm": {
+            "seconds": [
+              0.010503400000743568,
+              0.00986450002528727,
+              0.011001799954101443,
+              0.011105400044471025,
+              0.009976100001949817
+            ],
+            "summary": {
+              "count": 5,
+              "mean": 0.010490240005310625,
+              "median": 0.010503400000743568,
+              "standard_deviation": 0.0005692493096442816,
+              "min": 0.00986450002528727,
+              "max": 0.011105400044471025
+            }
+          },
+          "payload_bytes": 32849
+        },
+        {
+          "endpoint": "/datasets/bis-lbs/periods/2025-Q4/analyses",
+          "cold_seconds": 0.025886999967042357,
+          "warm": {
+            "seconds": [
+              0.026226499991025776,
+              0.024853100010659546,
+              0.02782289998140186,
+              0.028604699997231364,
+              0.027468400017824024
+            ],
+            "summary": {
+              "count": 5,
+              "mean": 0.026995119999628513,
+              "median": 0.027468400017824024,
+              "standard_deviation": 0.0014730060924261403,
+              "min": 0.024853100010659546,
+              "max": 0.028604699997231364
+            }
+          },
+          "payload_bytes": 75554
+        }
+      ],
+      "process_rss_after_bytes": 264392704,
+      "limitations": [
+        "ASGI TestClient timings include validation/encoding, not TCP/browser latency.",
+        "Diagnostic same-process timings are not isolated benchmark runtime/memory trials.",
+        "Sequential before/after measurements; machine load/caches are uncontrolled."
+      ]
+    },
+    "profile-after": {
+      "environment": {
+        "python": "3.11.1 (tags/v3.11.1:a7a450f, Dec  6 2022, 19:58:39) [MSC v.1934 64 bit (AMD64)]",
+        "executable": "<PROJECT_ROOT>\\.venv\\Scripts\\python.exe",
+        "platform": "Windows-10-10.0.26300-SP0",
+        "processor": "AMD64 Family 23 Model 49 Stepping 0, AuthenticAMD",
+        "machine": "AMD64",
+        "logical_cpus": 64,
+        "physical_cpus": 32,
+        "total_ram_bytes": 51429548032,
+        "packages": {
+          "networkx": "3.6.1",
+          "numpy": "2.4.6",
+          "pandas": "3.1.1",
+          "scipy": "1.17.1",
+          "psutil": "7.2.2",
+          "pyarrow": "26.0.1"
+        },
+        "application_source_sha256": "6bb7680def52e2e7bd786c59ff6517fefe7d04bf0ac9bae023e34cbdd11626ea",
+        "benchmark_version": "1.1.0",
+        "dependency_versions": {
+          "annotated-doc": "0.0.5",
+          "annotated-types": "0.8.0",
+          "anyio": "4.16.0",
+          "certifi": "2026.10.23",
+          "click": "8.5.1",
+          "colorama": "0.4.6",
+          "fastapi": "0.162.2",
+          "financial-network-benchmark": "0.1.0",
+          "h11": "0.16.0",
+          "httpcore": "1.0.9",
+          "httpx": "0.28.1",
+          "idna": "3.20",
+          "iniconfig": "2.3.1",
+          "librt": "0.16.0",
+          "mypy": "1.20.2",
+          "mypy_extensions": "1.2.0",
+          "networkx": "3.6.1",
+          "numpy": "2.4.6",
+          "opentelemetry-api": "1.45.2",
+          "packaging": "26.3",
+          "pandas": "3.1.1",
+          "pathspec": "1.1.1",
+          "pip": "22.3.1",
+          "pluggy": "1.7.0",
+          "psutil": "7.2.2",
+          "pyarrow": "26.0.1",
+          "pydantic": "2.14.3",
+          "pydantic_core": "2.50.4",
+          "Pygments": "2.21.0",
+          "pytest": "9.2.0",
+          "python-dateutil": "4.0.0",
+          "ruff": "0.17.4",
+          "scipy": "1.17.1",
+          "setuptools": "65.5.0",
+          "starlette": "1.10.0",
+          "typing_extensions": "4.16.0",
+          "typing-inspection": "0.4.5",
+          "tzdata": "2026.6",
+          "uvicorn": "0.54.0"
+        },
+        "clock": {
+          "implementation": "QueryPerformanceCounter()",
+          "monotonic": true,
+          "adjustable": false,
+          "resolution": 1e-07
+        },
+        "worker_thread_limits": {
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1"
+        },
+        "measurement_notes": [
+          "One trial per fresh process; serial scheduling.",
+          "Timing and memory series are separate; OS caches and other system load are not controlled.",
+          "CPU frequency/power policy/thermal state are not locked. No hardware affinity is forced."
+        ]
+      },
+      "repeat_count": 5,
+      "records": [
+        {
+          "case": "synthetic-banks",
+          "identity": {
+            "dataset_id": "synthetic-bank-stress",
+            "dataset_version": "1.0.0",
+            "selected_period": "synthetic-T0",
+            "graph_sha256": "605bfe5195251491853e5213878e330dcf6c940ab8e7d9a4bdf4eb588088d6b7",
+            "data_kind": "synthetic",
+            "node_count": 5,
+            "edge_count": 5,
+            "density": 0.25,
+            "direction": "creditor_to_debtor",
+            "exposure_unit": "synthetic monetary units",
+            "creditor_scope": "synthetic_banks",
+            "debtor_scope": "synthetic_banks"
+          },
+          "source": {
+            "kind": "synthetic_financial",
+            "period": "synthetic-T0"
+          },
+          "load_validate_build": {
+            "seconds": [
+              0.0007576000061817467,
+              0.00037429999792948365,
+              0.0003678999491967261,
+              0.00034710002364590764,
+              0.0004042999935336411
+            ],
+            "summary": {
+              "count": 5,
+              "mean": 0.00045023999409750105,
+              "median": 0.00037429999792948365,
+              "standard_deviation": 0.00017303560341534543,
+              "min": 0.00034710002364590764,
+              "max": 0.0007576000061817467
+            }
+          },
+          "graph_serialization": {
+            "seconds": [
+              5.9399986639618874e-05,
+              5.259999306872487e-05,
+              4.900002386420965e-05,
+              5.670002428814769e-05,
+              4.900002386420965e-05
+            ],
+            "summary": {
+              "count": 5,
+              "mean": 5.334001034498215e-05,
+              "median": 5.259999306872487e-05,
+              "standard_deviation": 4.6430484938658895e-06,
+              "min": 4.900002386420965e-05,
+              "max": 5.9399986639618874e-05
+            },
+            "utf8_bytes": 4165
+          },
+          "algorithms": {
+            "strength": {
+              "engine_total": {
+                "seconds": [
+                  0.0037131999852135777,
+                  0.003429699980188161,
+                  0.0033471000497229397,
+                  0.0032360999612137675,
+                  0.003215600037947297
+                ],
+                "summary": {
+                  "count": 5,
+                  "mean": 0.0033883400028571486,
+                  "median": 0.0033471000497229397,
+                  "standard_deviation": 0.00020122221258635204,
+                  "min": 0.003215600037947297,
+                  "max": 0.0037131999852135777
+                }
+              },
+              "compute_seconds": [
+                6.86999992467463e-05,
+                6.210000719875097e-05,
+                5.029997555539012e-05,
+                5.059997783973813e-05,
+                4.7900015488266945e-05
+              ],
+              "compute_summary": {
+                "count": 5,
+                "mean": 5.591999506577849e-05,
+                "median": 5.059997783973813e-05,
+                "standard_deviation": 9.023972681633298e-06,
+                "min": 4.7900015488266945e-05,
+                "max": 6.86999992467463e-05
+              },
+              "result_serialization": {
+                "seconds": [
+                  0.0002926999586634338,
+                  0.00025889999233186245,
+                  0.0002528000040911138,
+                  0.0002633000258356333,
+                  0.000248399970587343
+                ],
+                "summary": {
+                  "count": 5,
+                  "mean": 0.00026321999030187726,
+                  "median": 0.00025889999233186245,
+                  "standard_deviation": 1.7435211639937548e-05,
+                  "min": 0.000248399970587343,
+                  "max": 0.0002926999586634338
+                }
+              },
+              "result_bytes": 4454,
+              "scores_sha256": "2d6e085106d1d5a4782e7503b89ac228de761cdcbe875d1f9bf7c5955ce3037f"
+            },
+            "pagerank": {
+              "engine_total": {
+                "seconds": [
+                  0.008487199957016855,
+                  0.007779000035952777,
+                  0.007798000006005168,
+                  0.007829899957869202,
+                  0.007601300021633506
+                ],
+                "summary": {
+                  "count": 5,
+                  "mean": 0.007899079995695502,
+                  "median": 0.007798000006005168,
+                  "standard_deviation": 0.00034058047526915514,
+                  "min": 0.007601300021633506,
+                  "max": 0.008487199957016855
+                }
+              },
+              "compute_seconds": [
+                0.005150799988768995,
+                0.004321999964304268,
+                0.0045350000145845115,
+                0.004321000014897436,
+                0.004420400015078485
+              ],
+              "compute_summary": {
+                "count": 5,
+                "mean": 0.004549839999526739,
+                "median": 0.004420400015078485,
+                "standard_deviation": 0.00034727750561057733,
+                "min": 0.004321000014897436,
+                "max": 0.005150799988768995
+              },
+              "result_serialization": {
+                "seconds": [
+                  0.0002044999855570495,
+                  0.00018250005086883903,
+                  0.00017940002726390958,
+                  0.00017579999985173345,
+                  0.0001762000028975308
+                ],
+                "summary": {
+                  "count": 5,
+                  "mean": 0.00018368001328781248,
+                  "median": 0.00017940002726390958,
+                  "standard_deviation": 1.1950177866440952e-05,
+                  "min": 0.00017579999985173345,
+                  "max": 0.0002044999855570495
+                }
+              },
+              "result_bytes": 2984,
+              "scores_sha256": "16d46ec32c0b2984face328e49f132ec90c883733e231dc499b1896d60fc3f88"
+            },
+            "betweenness": {
+              "engine_total": {
+                "seconds": [
+                  0.003465800022240728,
+                  0.0032035000040195882,
+                  0.003228900022804737,
+                  0.003355199994985014,
+                  0.0033845999860204756
+                ],
+                "summary": {
+                  "count": 5,
+                  "mean": 0.0033276000060141085,
+                  "median": 0.003355199994985014,
+                  "standard_deviation": 0.00010983225707587961,
+                  "min": 0.0032035000040195882,
+                  "max": 0.003465800022240728
+                }
+              },
+              "compute_seconds": [
+                0.0002747999969869852,
+                5.909998435527086e-05,
+                5.339999916031957e-05,
+                6.479996955022216e-05,
+                5.370000144466758e-05
+              ],
+              "compute_summary": {
+                "count": 5,
+                "mean": 0.00010115999029949307,
+                "median": 5.909998435527086e-05,
+                "standard_deviation": 9.717949169843118e-05,
+                "min": 5.339999916031957e-05,
+                "max": 0.0002747999969869852
+              },
+              "result_serialization": {
+                "seconds": [
+                  0.00021359999664127827,
+                  0.00018229999113827944,
+                  0.00017780001508072019,
+                  0.00017549999756738544,
+                  0.0001756999990902841
+                ],
+                "summary": {
+                  "count": 5,
+                  "mean": 0.0001849799999035895,
+                  "median": 0.00017780001508072019,
+                  "standard_deviation": 1.6231356241034445e-05,
+                  "min": 0.00017549999756738544,
+                  "max": 0.00021359999664127827
+                }
+              },
+              "result_bytes": 2907,
+              "scores_sha256": "06674b78d6c89bd1d548d4c97df54b214e5943848cfa03463a7e37f9d19439ec"
+            }
+          }
+        },
+        {
+          "case": "synthetic-1000",
+          "identity": {
+            "dataset_id": "synthetic-erdos_renyi",
+            "dataset_version": "generator-v1",
+            "selected_period": "synthetic",
+            "graph_sha256": "0a8350afc9e8291ab0ef5fc597ad29289962b9c731a75c6fd11f237731dbff2b",
+            "data_kind": "synthetic",
+            "node_count": 1000,
+            "edge_count": 4000,
+            "density": 0.004004004004004004,
+            "direction": "creditor_to_debtor",
+            "exposure_unit": "synthetic units",
+            "creditor_scope": "synthetic_entities",
+            "debtor_scope": "synthetic_entities"
+          },
+          "source": {
+            "kind": "synthetic",
+            "generator": {
+              "node_count": 1000,
+              "edge_count": 4000,
+              "seed": 42
+            }
+          },
+          "load_validate_build": {
+            "seconds": [
+              0.048017799970693886,
+              0.04557020001811907,
+              0.09226509998552501,
+              0.044305299990810454,
+              0.09541519999038428
+            ],
+            "summary": {
+              "count": 5,
+              "mean": 0.06511471999110655,
+              "median": 0.048017799970693886,
+              "standard_deviation": 0.026280159426531096,
+              "min": 0.044305299990810454,
+              "max": 0.09541519999038428
+            }
+          },
+          "graph_serialization": {
+            "seconds": [
+              0.013294300006236881,
+              0.012837800022680312,
+              0.012797100003808737,
+              0.012695299985352904,
+              0.012745100015308708
+            ],
+            "summary": {
+              "count": 5,
+              "mean": 0.012873920006677508,
+              "median": 0.012797100003808737,
+              "standard_deviation": 0.00024105238658251964,
+              "min": 0.012695299985352904,
+              "max": 0.013294300006236881
+            },
+            "utf8_bytes": 794377
+          },
+          "algorithms": {
+            "strength": {
+              "engine_total": {
+                "seconds": [
+                  0.06009659997653216,
+                  0.10932940000202507,
+                  0.05940069997450337,
+                  0.06015010003466159,
+                  0.1135810999548994
+                ],
+                "summary": {
+                  "count": 5,
+                  "mean": 0.08051157998852432,
+                  "median": 0.06015010003466159,
+                  "standard_deviation": 0.028289089906291556,
+                  "min": 0.05940069997450337,
+                  "max": 0.1135810999548994
+                }
+              },
+              "compute_seconds": [
+                0.007790000003296882,
+                0.007550299982540309,
+                0.007760100008454174,
+                0.0076428999891504645,
+                0.008025200047995895
+              ],
+              "compute_summary": {
+                "count": 5,
+                "mean": 0.007753700006287545,
+                "median": 0.007760100008454174,
+                "standard_deviation": 0.0001793872458650558,
+                "min": 0.007550299982540309,
+                "max": 0.008025200047995895
+              },
+              "result_serialization": {
+                "seconds": [
+                  0.021720900025684386,
+                  0.021646000037435442,
+                  0.021516899985726923,
+                  0.02161669998895377,
+                  0.021556699997745454
+                ],
+                "summary": {
+                  "count": 5,
+                  "mean": 0.021611440007109194,
+                  "median": 0.02161669998895377,
+                  "standard_deviation": 7.927459088469103e-05,
+                  "min": 0.021516899985726923,
+                  "max": 0.021720900025684386
+                }
+              },
+              "result_bytes": 231833,
+              "scores_sha256": "3a18b8c1455726177e099dfaa675e82aadffd91c235f9ed28fc409f6d0adb367"
+            },
+            "pagerank": {
+              "engine_total": {
+                "seconds": [
+                  0.055664600047748536,
+                  0.10988340002950281,
+                  0.0567043999908492,
+                  0.05586080002831295,
+                  0.11038870003540069
+                ],
+                "summary": {
+                  "count": 5,
+                  "mean": 0.07770038002636284,
+                  "median": 0.0567043999908492,
+                  "standard_deviation": 0.029612696064967553,
+                  "min": 0.055664600047748536,
+                  "max": 0.11038870003540069
+                }
+              },
+              "compute_seconds": [
+                0.004729499982204288,
+                0.0046737000229768455,
+                0.004637999983970076,
+                0.004678099998272955,
+                0.00444779999088496
+              ],
+              "compute_summary": {
+                "count": 5,
+                "mean": 0.004633419995661825,
+                "median": 0.0046737000229768455,
+                "standard_deviation": 0.00010877259479539934,
+                "min": 0.00444779999088496,
+                "max": 0.004729499982204288
+              },
+              "result_serialization": {
+                "seconds": [
+                  0.010333900048863143,
+                  0.010245599958579987,
+                  0.01007190003292635,
+                  0.010237199952825904,
+                  0.010100400017108768
+                ],
+                "summary": {
+                  "count": 5,
+                  "mean": 0.01019780000206083,
+                  "median": 0.010237199952825904,
+                  "standard_deviation": 0.00010919932921021076,
+                  "min": 0.01007190003292635,
+                  "max": 0.010333900048863143
+                }
+              },
+              "result_bytes": 93196,
+              "scores_sha256": "ec30746f5deed09cd8705acc9a1c39d25aa05b778376f5de972c3764baf1c63a"
+            },
+            "betweenness": {
+              "engine_total": {
+                "seconds": [
+                  0.1497903999988921,
+                  0.09951789997285232,
+                  0.15124889998696744,
+                  0.10050470003625378,
+                  0.14941439998801798
+                ],
+                "summary": {
+                  "count": 5,
+                  "mean": 0.1300952599965967,
+                  "median": 0.14941439998801798,
+                  "standard_deviation": 0.027473534443845645,
+                  "min": 0.09951789997285232,
+                  "max": 0.15124889998696744
+                }
+              },
+              "compute_seconds": [
+                0.09786580002401024,
+                0.047933599969837815,
+                0.10059159999946132,
+                0.0483896000077948,
+                0.04775910003809258
+              ],
+              "compute_summary": {
+                "count": 5,
+                "mean": 0.06850794000783936,
+                "median": 0.0483896000077948,
+                "standard_deviation": 0.02806158680311021,
+                "min": 0.04775910003809258,
+                "max": 0.10059159999946132
+              },
+              "result_serialization": {
+                "seconds": [
+                  0.010275500011630356,
+                  0.010138500016182661,
+                  0.009998599998652935,
+                  0.010111199982929975,
+                  0.009845900000073016
+                ],
+                "summary": {
+                  "count": 5,
+                  "mean": 0.010073940001893789,
+                  "median": 0.010111199982929975,
+                  "standard_deviation": 0.0001611374395318726,
+                  "min": 0.009845900000073016,
+                  "max": 0.010275500011630356
+                }
+              },
+              "result_bytes": 92575,
+              "scores_sha256": "fcd9eaa994c5b8c3716c7cbf44b61952af08532b5baa39fd93cd3befae1fa595"
+            }
+          }
+        },
+        {
+          "case": "bis-Q4",
+          "identity": {
+            "dataset_id": "bis-lbs",
+            "dataset_version": "WS_LBS_D_PUB/1.0",
+            "selected_period": "2025-Q4",
+            "graph_sha256": "685d173adc6d483df20b4c409409035d79554ef86621553a4d93b4c76673e144",
+            "data_kind": "observed_aggregate",
+            "node_count": 218,
+            "edge_count": 3094,
+            "density": 0.06540396567031666,
+            "direction": "creditor_to_debtor",
+            "exposure_unit": "million USD",
+            "creditor_scope": "resident_reporting_banks",
+            "debtor_scope": "all_sectors"
+          },
+          "source": {
+            "kind": "bis",
+            "input": "<PROJECT_ROOT>\\data\\raw\\bis-all-sectors-2025q4\\observations.csv",
+            "manifest": "<PROJECT_ROOT>\\data\\raw\\bis-all-sectors-2025q4\\manifest.json",
+            "period": "2025-Q4",
+            "missing_policy": "exclude"
+          },
+          "load_validate_build": {
+            "seconds": [
+              0.28034649998880923,
+              0.3179363000090234,
+              0.2566960999974981,
+              0.2566025999840349,
+              0.3100941000157036
+            ],
+            "summary": {
+              "count": 5,
+              "mean": 0.28433511999901384,
+              "median": 0.28034649998880923,
+              "standard_deviation": 0.02890277465995474,
+              "min": 0.2566025999840349,
+              "max": 0.3179363000090234
+            }
+          },
+          "load_validation": {
+            "seconds": [
+              0.16580610000528395,
+              0.16967079997994006,
+              0.1700497000128962,
+              0.1672219000174664,
+              0.1698880000039935
+            ],
+            "summary": {
+              "count": 5,
+              "mean": 0.16852730000391603,
+              "median": 0.16967079997994006,
+              "standard_deviation": 0.0019095678195535887,
+              "min": 0.16580610000528395,
+              "max": 0.1700497000128962
+            }
+          },
+          "graph_build": {
+            "seconds": [
+              0.042145100014749914,
+              0.09968490002211183,
+              0.039036399975884706,
+              0.03951480000978336,
+              0.03923009999562055
+            ],
+            "summary": {
+              "count": 5,
+              "mean": 0.05192226000363007,
+              "median": 0.03951480000978336,
+              "standard_deviation": 0.02672987100981645,
+              "min": 0.039036399975884706,
+              "max": 0.09968490002211183
+            }
+          },
+          "graph_serialization": {
+            "seconds": [
+              0.024722800008021295,
+              0.023047299997415394,
+              0.023400100006256253,
+              0.023497199988923967,
+              0.022420799999963492
+            ],
+            "summary": {
+              "count": 5,
+              "mean": 0.02341764000011608,
+              "median": 0.023400100006256253,
+              "standard_deviation": 0.0008427517120931008,
+              "min": 0.022420799999963492,
+              "max": 0.024722800008021295
+            },
+            "utf8_bytes": 2115987
+          },
+          "algorithms": {
+            "strength": {
+              "engine_total": {
+                "seconds": [
+                  0.12971159996232018,
+                  0.18932190001942217,
+                  0.1307941999984905,
+                  0.12956929998472333,
+                  0.12953999999444932
+                ],
+                "summary": {
+                  "count": 5,
+                  "mean": 0.1417873999918811,
+                  "median": 0.12971159996232018,
+                  "standard_deviation": 0.02657764502264511,
+                  "min": 0.12953999999444932,
+                  "max": 0.18932190001942217
+                }
+              },
+              "compute_seconds": [
+                0.0027535000117495656,
+                0.002743499993812293,
+                0.0028529000119306147,
+                0.0032285000197589397,
+                0.00324309995630756
+              ],
+              "compute_summary": {
+                "count": 5,
+                "mean": 0.002964299998711795,
+                "median": 0.0028529000119306147,
+                "standard_deviation": 0.0002515602816416254,
+                "min": 0.002743499993812293,
+                "max": 0.00324309995630756
+              },
+              "result_serialization": {
+                "seconds": [
+                  0.004780400020536035,
+                  0.004675199976190925,
+                  0.004652800038456917,
+                  0.004646599991247058,
+                  0.005094099964480847
+                ],
+                "summary": {
+                  "count": 5,
+                  "mean": 0.004769819998182356,
+                  "median": 0.004675199976190925,
+                  "standard_deviation": 0.0001891422897321565,
+                  "min": 0.004646599991247058,
+                  "max": 0.005094099964480847
+                }
+              },
+              "result_bytes": 45443,
+              "scores_sha256": "56f5bd0dea8f3c3a03a303d342038a848a874a32b7708a16aa0cdebde74ab191"
+            },
+            "pagerank": {
+              "engine_total": {
+                "seconds": [
+                  0.1937428999808617,
+                  0.12856929999543354,
+                  0.1289655999862589,
+                  0.18997080001281574,
+                  0.13009360001888126
+                ],
+                "summary": {
+                  "count": 5,
+                  "mean": 0.15426843999885023,
+                  "median": 0.13009360001888126,
+                  "standard_deviation": 0.03434382731697699,
+                  "min": 0.12856929999543354,
+                  "max": 0.1937428999808617
+                }
+              },
+              "compute_seconds": [
+                0.004212400002870709,
+                0.0036610999959520996,
+                0.004321000014897436,
+                0.003984400012996048,
+                0.004079999984242022
+              ],
+              "compute_summary": {
+                "count": 5,
+                "mean": 0.004051780002191663,
+                "median": 0.004079999984242022,
+                "standard_deviation": 0.00025310348548849654,
+                "min": 0.0036610999959520996,
+                "max": 0.004321000014897436
+              },
+              "result_serialization": {
+                "seconds": [
+                  0.002376799995545298,
+                  0.002295199956279248,
+                  0.002394900016952306,
+                  0.002300499996636063,
+                  0.002288100018631667
+                ],
+                "summary": {
+                  "count": 5,
+                  "mean": 0.0023310999968089163,
+                  "median": 0.002300499996636063,
+                  "standard_deviation": 5.057940168353268e-05,
+                  "min": 0.002288100018631667,
+                  "max": 0.002394900016952306
+                }
+              },
+              "result_bytes": 20955,
+              "scores_sha256": "2944c57cf943d29f87d624a561d77fd6f64d944da9ab9dedc77d64a3c35b8a4c"
+            },
+            "betweenness": {
+              "engine_total": {
+                "seconds": [
+                  0.14794930000789464,
+                  0.20808620000025257,
+                  0.14809159998549148,
+                  0.14844520000042394,
+                  0.14719940000213683
+                ],
+                "summary": {
+                  "count": 5,
+                  "mean": 0.1599543399992399,
+                  "median": 0.14809159998549148,
+                  "standard_deviation": 0.026910361995088044,
+                  "min": 0.14719940000213683,
+                  "max": 0.20808620000025257
+                }
+              },
+              "compute_seconds": [
+                0.022258600045461208,
+                0.022196799982339144,
+                0.02200619998620823,
+                0.021987700019963086,
+                0.021975799987558275
+              ],
+              "compute_summary": {
+                "count": 5,
+                "mean": 0.02208502000430599,
+                "median": 0.02200619998620823,
+                "standard_deviation": 0.00013251186818578247,
+                "min": 0.021975799987558275,
+                "max": 0.022258600045461208
+              },
+              "result_serialization": {
+                "seconds": [
+                  0.0023604000452905893,
+                  0.002870399970561266,
+                  0.06523619999643415,
+                  0.002218100009486079,
+                  0.0021899999701417983
+                ],
+                "summary": {
+                  "count": 5,
+                  "mean": 0.014975019998382777,
+                  "median": 0.0023604000452905893,
+                  "standard_deviation": 0.02809818687255925,
+                  "min": 0.0021899999701417983,
+                  "max": 0.06523619999643415
+                }
+              },
+              "result_bytes": 17670,
+              "scores_sha256": "381cd6e4382d0eec4b7a3c42688a6f11d3d94f746e60fb321d921c695a88c0a9"
+            }
+          }
+        }
+      ],
+      "api": [
+        {
+          "endpoint": "/health",
+          "cold_seconds": 0.004473600012715906,
+          "warm": {
+            "seconds": [
+              0.0025012000114656985,
+              0.0026023000245913863,
+              0.002142000012099743,
+              0.002249999961350113,
+              0.00224620004883036
+            ],
+            "summary": {
+              "count": 5,
+              "mean": 0.0023483400116674604,
+              "median": 0.002249999961350113,
+              "standard_deviation": 0.00019399832514033867,
+              "min": 0.002142000012099743,
+              "max": 0.0026023000245913863
+            }
+          },
+          "payload_bytes": 63
+        },
+        {
+          "endpoint": "/datasets",
+          "cold_seconds": 2.064610300003551,
+          "warm": {
+            "seconds": [
+              0.0037770000053569674,
+              0.0034463999909348786,
+              0.0033143999753519893,
+              0.0033230999833904207,
+              0.0035336000146344304
+            ],
+            "summary": {
+              "count": 5,
+              "mean": 0.003478899993933737,
+              "median": 0.0034463999909348786,
+              "standard_deviation": 0.00018989856415255294,
+              "min": 0.0033143999753519893,
+              "max": 0.0037770000053569674
+            }
+          },
+          "payload_bytes": 6750
+        },
+        {
+          "endpoint": "/datasets/synthetic-bank-stress/periods/synthetic-T0/graph?limit_nodes=60",
+          "cold_seconds": 0.004585199989378452,
+          "warm": {
+            "seconds": [
+              0.002516700013075024,
+              0.0029504999984055758,
+              0.0026005000108852983,
+              0.0025167999556288123,
+              0.0024415000225417316
+            ],
+            "summary": {
+              "count": 5,
+              "mean": 0.0026052000001072885,
+              "median": 0.0025167999556288123,
+              "standard_deviation": 0.00020105887007724593,
+              "min": 0.0024415000225417316,
+              "max": 0.0029504999984055758
+            }
+          },
+          "payload_bytes": 1492
+        },
+        {
+          "endpoint": "/datasets/synthetic-bank-stress/periods/synthetic-T0/statistics",
+          "cold_seconds": 0.002660199999809265,
+          "warm": {
+            "seconds": [
+              0.002521999995224178,
+              0.0023327000089921057,
+              0.0025647999718785286,
+              0.002387500018812716,
+              0.0023650999646633863
+            ],
+            "summary": {
+              "count": 5,
+              "mean": 0.002434419991914183,
+              "median": 0.002387500018812716,
+              "standard_deviation": 0.0001024974403763859,
+              "min": 0.0023327000089921057,
+              "max": 0.0025647999718785286
+            }
+          },
+          "payload_bytes": 1176
+        },
+        {
+          "endpoint": "/experiments",
+          "cold_seconds": 0.019648500019684434,
+          "warm": {
+            "seconds": [
+              0.014444499975070357,
+              0.014278599992394447,
+              0.01413879997562617,
+              0.01356710004620254,
+              0.014687999966554344
+            ],
+            "summary": {
+              "count": 5,
+              "mean": 0.014223399991169571,
+              "median": 0.014278599992394447,
+              "standard_deviation": 0.0004200214758013442,
+              "min": 0.01356710004620254,
+              "max": 0.014687999966554344
+            }
+          },
+          "payload_bytes": 63270
+        },
+        {
+          "endpoint": "/datasets/bis-lbs/periods/2025-Q4/graph?limit_nodes=60",
+          "cold_seconds": 0.35402779997093603,
+          "warm": {
+            "seconds": [
+              0.010118099977262318,
+              0.00952970003709197,
+              0.009019600052852184,
+              0.009733199956826866,
+              0.009233599994331598
+            ],
+            "summary": {
+              "count": 5,
+              "mean": 0.009526840003672987,
+              "median": 0.00952970003709197,
+              "standard_deviation": 0.00042879570812127835,
+              "min": 0.009019600052852184,
+              "max": 0.010118099977262318
+            }
+          },
+          "payload_bytes": 32849
+        },
+        {
+          "endpoint": "/datasets/bis-lbs/periods/2025-Q4/analyses",
+          "cold_seconds": 0.025781899981666356,
+          "warm": {
+            "seconds": [
+              0.019516000000294298,
+              0.019751799991354346,
+              0.019273600017186254,
+              0.01946649997262284,
+              0.019500599999446422
+            ],
+            "summary": {
+              "count": 5,
+              "mean": 0.019501699996180833,
+              "median": 0.019500599999446422,
+              "standard_deviation": 0.00017031173606952532,
+              "min": 0.019273600017186254,
+              "max": 0.019751799991354346
+            }
+          },
+          "payload_bytes": 75554
+        }
+      ],
+      "process_rss_after_bytes": 243097600,
+      "limitations": [
+        "ASGI TestClient timings include validation/encoding, not TCP/browser latency.",
+        "Diagnostic same-process timings are not isolated benchmark runtime/memory trials.",
+        "Sequential before/after measurements; machine load/caches are uncontrolled."
+      ]
+    },
+    "payloads": {
+      "records": [
+        {
+          "dataset": "bis-lbs",
+          "period": "2025-Q4",
+          "full": {
+            "bytes": 42452,
+            "seconds": [
+              0.34520250000059605,
+              0.01075790001777932,
+              0.010723400046117604,
+              0.010237700014840811,
+              0.011437200009822845
+            ],
+            "summary": {
+              "count": 5,
+              "mean": 0.07767174001783132,
+              "median": 0.01075790001777932,
+              "standard_deviation": 0.14955485096334536,
+              "min": 0.010237700014840811,
+              "max": 0.34520250000059605
+            }
+          },
+          "summary": {
+            "bytes": 968,
+            "seconds": [
+              0.003481400024611503,
+              0.0034668000298552215,
+              0.0028552000294439495,
+              0.003188100003171712,
+              0.003607399994507432
+            ],
+            "summary": {
+              "count": 5,
+              "mean": 0.0033197800163179635,
+              "median": 0.0034668000298552215,
+              "standard_deviation": 0.00030151092574775195,
+              "min": 0.0028552000294439495,
+              "max": 0.003607399994507432
+            }
+          }
+        },
+        {
+          "dataset": "synthetic-er-1000-v1",
+          "period": "synthetic",
+          "full": {
+            "bytes": 215015,
+            "seconds": [
+              0.09328620001906529,
+              0.021357999998144805,
+              0.02193079999415204,
+              0.022416199964936823,
+              0.023321199987549335
+            ],
+            "summary": {
+              "count": 5,
+              "mean": 0.03646247999276966,
+              "median": 0.022416199964936823,
+              "standard_deviation": 0.031773579511572884,
+              "min": 0.021357999998144805,
+              "max": 0.09328620001906529
+            }
+          },
+          "summary": {
+            "bytes": 759,
+            "seconds": [
+              0.0032936999923549592,
+              0.0032513999613001943,
+              0.0036969000357203186,
+              0.0038001000066287816,
+              0.003862599958665669
+            ],
+            "summary": {
+              "count": 5,
+              "mean": 0.0035809399909339846,
+              "median": 0.0036969000357203186,
+              "standard_deviation": 0.0002880597289641176,
+              "min": 0.0032513999613001943,
+              "max": 0.003862599958665669
+            }
+          }
+        }
+      ],
+      "scope": "ASGI TestClient; five serial requests; full/summary same graph"
+    }
+  },
+  "validation": {
+    "python_passed": 141,
+    "frontend_unit_passed": 8,
+    "synthetic_browser_passed": 3,
+    "optional_real_browser_skipped": 1,
+    "hosted_ci_executed": false
+  }
+}

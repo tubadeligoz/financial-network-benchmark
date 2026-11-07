@@ -1,0 +1,98 @@
+import { test, expect } from '@playwright/test';
+// Real local API integration: no request mocking or precomputed success fixture.
+test('dataset → graph → algorithm → benchmark → results and exports',async({page})=>{
+  const errors:string[]=[];page.on('pageerror',e=>errors.push(e.message));
+  await page.goto('/');await expect(page.getByRole('heading',{name:'Start with the evidence.'})).toBeVisible();
+  await page.getByLabel('Dataset',{exact:true}).selectOption('synthetic-demo');
+  await page.getByLabel('Period',{exact:true}).selectOption('2025-Q4');
+  const validation=await page.request.get('/api/v1/datasets/synthetic-demo/periods/2025-Q4/validation');
+  expect((await validation.json()).valid).toBe(true);
+  await page.getByRole('button',{name:'Open Graph Explorer'}).click();
+  await expect(page.getByTestId('network-graph')).toBeVisible();
+  await page.getByLabel('Search nodes').fill('US');await page.getByRole('button',{name:/US ·/}).click();
+  await expect(page.locator('.node-title')).toHaveText('US');
+  await page.getByLabel('Overlay algorithm').selectOption('pagerank');
+  await page.getByRole('button',{name:'Calculate selected method'}).click();
+  await expect(page.locator('.job-status')).toContainText('Job completed',{timeout:30000});
+  await expect(page.getByText('3 calculated nodes')).toBeVisible();
+  await page.getByRole('button',{name:'Benchmarks',exact:true}).click();
+  await page.getByRole('checkbox',{name:/Unweighted betweenness/}).uncheck();
+  await page.getByRole('checkbox',{name:/Weighted PageRank/}).uncheck();
+  await page.getByRole('button',{name:'Run benchmark'}).click();
+  await expect(page.locator('.job-status')).toContainText('Job completed',{timeout:90000});
+  await page.getByRole('button',{name:'View results'}).click();
+  await expect(page.getByRole('heading',{name:'Critical node rankings'})).toBeVisible();
+  await expect(page.getByText('5 / 5',{exact:false}).first()).toBeVisible();
+  const downloadEvent=page.waitForEvent('download');await page.getByRole('link',{name:'JSON',exact:true}).click();const download=await downloadEvent;expect(download.suggestedFilename()).toMatch(/\.json$/);
+  const exported=await page.request.get(await page.getByRole('link',{name:'JSON',exact:true}).getAttribute('href')??'');const payload=await exported.json();expect(payload.rankings.strength.scores).toHaveLength(3);expect(payload.summary.raw_trial_count).toBe(10);expect(payload.raw_measurements).toBeTruthy();
+  const svgEvent=page.waitForEvent('download');await page.getByRole('button',{name:'Export Median algorithm runtime as SVG'}).click();expect((await svgEvent).suggestedFilename()).toMatch(/\.svg$/);
+  await page.getByRole('button',{name:'Open node',exact:true}).first().click();await expect(page.locator('.node-title')).not.toBeEmpty();
+  expect(errors).toEqual([]);
+});
+test('observed data, period selection, responsive navigation and themes',async({page})=>{
+  test.skip(process.env.FNB_REAL_DATA!=='1','Optional local BIS CSVs and historical experiments; never required in CI.');
+  await page.setViewportSize({width:1440,height:1000});await page.goto('/');await expect(page.getByRole('heading',{name:'Start with the evidence.'})).toBeVisible();
+  await page.screenshot({path:'test-results/datasets-desktop.png',fullPage:true,animations: "disabled"});
+  await page.getByLabel('Period',{exact:true}).selectOption('2025-Q3');await page.getByRole('button',{name:'Open Graph Explorer'}).click();await expect(page.getByText('60 / 219 nodes',{exact:false})).toBeVisible();
+  await page.screenshot({path:'test-results/graph-desktop.png',fullPage:true,animations: "disabled"});
+  await page.getByRole('button',{name:'Results & Analysis',exact:true}).click();await expect(page.getByRole('heading',{name:'Critical node rankings'})).toBeVisible();await page.screenshot({path:'test-results/results-desktop.png',fullPage:true,animations: "disabled"});
+  await page.setViewportSize({width:390,height:844});await page.getByRole('button',{name:'Toggle navigation'}).click();await page.getByRole('button',{name:'Datasets',exact:true}).click();await expect(page.getByRole('heading',{name:'Start with the evidence.'})).toBeVisible();
+  await page.getByRole('button',{name:'Use dark theme'}).click();await page.screenshot({path:'test-results/datasets-mobile-dark.png',fullPage:true,animations: "disabled"});
+  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth)).toBe(true);
+  await page.getByRole('button',{name:'Open Graph Explorer'}).click();await expect(page.getByLabel('Visible nodes')).toHaveValue('30');await expect(page.getByTestId('network-graph')).toBeVisible();await page.screenshot({path:'test-results/graph-mobile-dark.png',fullPage:true,animations: "disabled"});
+  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth)).toBe(true);
+});
+
+test('synthetic financial scenarios, propagation, periods, risk benchmark and export',async({page})=>{
+  const errors:string[]=[];page.on('pageerror',e=>errors.push(e.message));
+  await page.goto('/');await page.getByLabel('Dataset',{exact:true}).selectOption('synthetic-bank-stress');
+  await page.getByRole('button',{name:'Open Graph Explorer'}).click();
+  await expect(page.getByRole('heading',{name:'Synthetic financial stress lab'})).toBeVisible();
+  await page.getByRole('checkbox',{name:'SYN-BANK-B',exact:true}).check();
+  await page.getByLabel('Shock magnitudes').fill('0.1, 0.5');
+  await page.getByRole('button',{name:'Run stress scenarios'}).click();
+  await expect(page.locator('.job-status')).toContainText('Job completed',{timeout:30000});
+  await expect(page.getByRole('heading',{name:'Seed systemic impact ranking · separate single-bank shock experiments'})).toBeVisible();
+  const slider=page.getByRole('slider',{name:'Propagation step',exact:true});await slider.focus();await slider.press('End');
+  await expect(page.getByText('Red arrows: debtor → creditor loss',{exact:true})).toBeVisible();
+  await page.evaluate(()=>window.scrollTo(0,0));await page.screenshot({path:'test-results/synthetic-stress-desktop.png',fullPage:true,animations:'disabled'});
+  const link=page.getByRole('link',{name:'Stress JSON',exact:true});const response=await page.request.get(await link.getAttribute('href')??'');const suite=await response.json();
+  expect(suite.scenarios).toHaveLength(4);expect(suite.impact_rankings).toHaveLength(4);expect(new Set(suite.scenarios.map((r:{period:string})=>r.period)).size).toBe(2);
+  const download=page.waitForEvent('download');await link.click();expect((await download).suggestedFilename()).toMatch(/^stress-.*\.json$/);
+  await page.setViewportSize({width:390,height:844});
+  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth)).toBe(true);
+  await page.locator('.graph-panel').screenshot({path:'test-results/synthetic-stress-mobile.png',animations:'disabled'});
+  await page.setViewportSize({width:1440,height:1000});
+  await page.getByRole('button',{name:'Benchmarks',exact:true}).click();
+  await page.getByRole('checkbox',{name:/Weighted degree/}).uncheck();await page.getByRole('checkbox',{name:/Unweighted betweenness/}).uncheck();await page.getByRole('checkbox',{name:/Weighted PageRank/}).uncheck();
+  await page.getByRole('checkbox',{name:/DebtRank seed systemic impact/}).check();
+  await page.getByRole('button',{name:'Run benchmark'}).click();await expect(page.locator('.job-status')).toContainText('Job completed',{timeout:90000});
+  await page.getByRole('button',{name:'View results'}).click();await expect(page.getByRole('heading',{name:'Synthetic financial stress lab'})).toBeVisible();
+  await expect(page.getByText('5 / 5',{exact:false}).first()).toBeVisible();
+  await page.getByLabel('Dataset',{exact:true}).selectOption(process.env.FNB_REAL_DATA==='1'?'bis-lbs':'synthetic-demo');await page.getByRole('button',{name:'Graph Explorer',exact:true}).click();
+  await expect(page.getByText(/DebtRank unavailable:/)).toBeVisible();expect(errors).toEqual([]);
+});
+
+test('synthetic-only responsive navigation, period selection and bounded large graph',async({page})=>{
+  await page.goto('/');await page.getByLabel('Dataset',{exact:true}).selectOption('synthetic-bank-stress');
+  await page.getByLabel('Period',{exact:true}).selectOption('synthetic-T1');
+  await page.getByRole('button',{name:'Open Graph Explorer'}).click();await expect(page.getByTestId('network-graph')).toBeVisible();
+  await page.setViewportSize({width:390,height:844});await page.getByRole('button',{name:'Toggle navigation'}).click();
+  await page.getByRole('button',{name:'Datasets',exact:true}).click();await page.getByRole('button',{name:'Use dark theme'}).click();
+  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth)).toBe(true);
+  await page.screenshot({path:'test-results/synthetic-responsive.png',fullPage:true,animations:'disabled'});
+  await page.setViewportSize({width:1440,height:1000});
+  // Both the isolated CI workspace and the main workspace register this generated source.
+  const options=await page.getByLabel('Dataset',{exact:true}).locator('option').evaluateAll(nodes=>nodes.map(n=>(n as HTMLOptionElement).value));
+  const generated=options.includes('ci-synthetic-1000')?'ci-synthetic-1000':'synthetic-er-1000-v1';
+  await page.getByLabel('Dataset',{exact:true}).selectOption(generated);await page.getByRole('button',{name:'Open Graph Explorer'}).click();
+  await page.getByLabel('Visible nodes').selectOption('250');
+  await expect(page.getByText('250 / 1000 nodes',{exact:false})).toBeVisible();
+  const timings=await page.evaluate(()=>performance.getEntriesByName('fnb.network.initialize').map(e=>e.duration));
+  console.log('Measured Cytoscape initialization/layout durations (ms):',JSON.stringify(timings));
+  expect(timings.length).toBeGreaterThan(0);
+  const count=timings.length;
+  await page.getByLabel('Search nodes').fill('syn-');await page.getByRole('button',{name:'Zoom in',exact:true}).click();
+  expect(await page.evaluate(()=>performance.getEntriesByName('fnb.network.initialize').length)).toBe(count);
+  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth)).toBe(true);
+});

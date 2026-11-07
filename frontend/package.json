@@ -1,0 +1,46 @@
+{
+  "name": "financial-network-benchmark-web",
+  "private": true,
+  "version": "0.5.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1 --port 5173 --strictPort",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview --host 127.0.0.1 --port 4173 --strictPort",
+    "typecheck": "tsc -b --pretty false",
+    "lint": "eslint src tests",
+    "test": "vitest run",
+    "test:e2e": "playwright test"
+  },
+  "dependencies": {
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "cytoscape": "3.34.4",
+    "echarts": "6.1.0",
+    "lucide-react": "0.468.0"
+  },
+  "devDependencies": {
+    "typescript": "5.9.3",
+    "vite": "7.3.7",
+    "@vitejs/plugin-react": "5.2.0",
+    "tailwindcss": "4.3.5",
+    "@tailwindcss/vite": "4.3.5",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "@types/cytoscape": "3.31.0",
+    "@types/node": "24.19.2",
+    "eslint": "9.39.5",
+    "@eslint/js": "9.39.5",
+    "typescript-eslint": "8.72.1",
+    "eslint-plugin-react-hooks": "5.2.0",
+    "eslint-plugin-react-refresh": "0.4.26",
+    "globals": "16.5.0",
+    "vitest": "3.2.7",
+    "jsdom": "26.1.0",
+    "@testing-library/react": "16.3.3",
+    "@testing-library/jest-dom": "6.10.0",
+    "@testing-library/user-event": "14.6.8",
+    "@playwright/test": "1.65.0"
+  },
+  "packageManager": "npm@11.6.2"
+}
